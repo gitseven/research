@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.6 — Button Cell (Zn–Ag₂O) ΔG° and E°</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.6</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>In the button cells widely used in watches and other devices the following reaction takes place: Zn(s) + Ag₂O(s) + H₂O(l) → Zn²⁺(aq) + 2Ag(s) + 2OH⁻(aq). Determine ΔᵣG° and E° for the reaction.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Alkaline Silver Oxide Cell</h2>
+      <p>Silver oxide button cells are compact primary batteries that exploit a zinc anode and a silver(I) oxide cathode in an alkaline electrolyte (typically KOH or NaOH). The alkaline environment stabilises hydroxide ions and supports high ionic conductivity. At the cathode, silver(I) oxide is reduced to metallic silver while consuming water and electrons: Ag₂O + H₂O + 2e⁻ → 2Ag + 2OH⁻. At the anode, zinc is oxidised in the presence of hydroxide, often represented overall as Zn + 2OH⁻ → Zn(OH)₂ + 2e⁻, which can subsequently dehydrate or transform to zincate species depending on conditions. When written in terms of aqueous ions, one may also express the net chemistry as Zn + Ag₂O + H₂O → Zn²⁺ + 2Ag + 2OH⁻ with OH⁻ acting as spectators in the potential expression. The cell exhibits a relatively flat discharge voltage, commonly around 1.55 V under load, although the formal combination of standard half-cell values (Ag₂O/Ag in base and Zn²⁺/Zn) gives E°cell ≈ 1.105 V; practical cells differ due to specific electrolyte activities, complexation (zincate formation), and design. Advantages of the system include high energy density for small sizes, good shelf life, and stable voltage—hence its widespread use in watches and miniature electronics. The thermodynamic link ΔG° = −n F E° quantifies the maximum non-expansion work obtainable, while kinetic and mass-transport considerations determine the observed voltage under load and through the cell’s life. Understanding the alkaline media role and half-reaction stoichiometry is essential when translating tabulated E° values to real devices.</p>
+      <div class="formula">E° ≈ 0.342 − (−0.763) = 1.105 V  |  ΔG° = −n F E° = −2 × 96485 × 1.105 ≈ −2.13 × 10⁵ J mol⁻¹</div>
+      <svg viewBox="0 0 680 200" role="img" aria-label="Button cell schematic">
+        <rect x="20" y="20" width="640" height="160" rx="12" fill="#0b1220" stroke="#1f2937" />
+        <text x="340" y="40" fill="#9ca3af" text-anchor="middle">Zn | OH⁻ || Ag₂O/Ag (alkaline)</text>
+        <line x1="120" y1="70" x2="560" y2="70" stroke="#34d399" stroke-width="3" />
+        <text x="340" y="60" fill="#34d399" text-anchor="middle">E° ≈ 1.105 V</text>
+        <text x="140" y="120" fill="#9ca3af">Anode: Zn → Zn²⁺ + 2e⁻</text>
+        <text x="380" y="120" fill="#9ca3af">Cathode: Ag₂O + H₂O + 2e⁻ → 2Ag + 2OH⁻</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>E° ≈ <strong>1.105 V</strong> and ΔᵣG° ≈ <strong>−213 kJ mol⁻¹</strong> (n=2).</p>
+    </div>
+  </div>
+</body>
+</html>
+
+

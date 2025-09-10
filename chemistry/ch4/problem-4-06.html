@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.6 — Determine k from Half-Life (First Order)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.6</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Time required to decompose SO₂Cl₂ to half of its initial amount is 60 minutes. If the decomposition is a first order reaction, calculate the rate constant of the reaction.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — First-Order Half-Life</h2>
+      <p>First-order reactions display exponential decay of reactant concentration with time: [A](t) = [A]₀ e^(−kt). A consequence is that the time to reduce the amount by any fixed fraction depends only on the rate constant k and not on the initial concentration. The <em>half‑life</em> t₁/₂ is obtained by setting [A](t₁/₂) = [A]₀/2, giving 1/2 = e^(−kt₁/₂) and hence t₁/₂ = (ln 2)/k. This property allows quick determination of k from measured half-lives and, conversely, prediction of how many half-lives correspond to a specified conversion. Because many processes (radioactive decay, unimolecular decompositions, pharmacokinetic elimination) follow first-order kinetics, t₁/₂ is a widely reported and intuitively accessible metric. Ensure unit consistency: if t₁/₂ is in minutes, k will be in min⁻¹; conversions to s⁻¹ or h⁻¹ can be made afterward. When data are available at multiple temperatures, Arrhenius analysis (ln k vs 1/T) reveals activation energy and pre-exponential factors, but for a single measurement, the half-life relation is the most direct route to k.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">k = (ln 2)/t₁/₂ = 0.693 / 60 min = <strong>1.155×10⁻² min⁻¹</strong></div>
+      <p>In SI: k = 1.155×10⁻² / 60 = <strong>1.925×10⁻⁴ s⁻¹</strong>.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>For first order, t₁/₂ = 0.693/k; for zero and second order, half-life depends on [A]₀.</li>
+        <li>Keep the units of k consistent with the reported t₁/₂ (minutes vs seconds).</li>
+        <li>Check reasonableness: shorter half-life implies larger k.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

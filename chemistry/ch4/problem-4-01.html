@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.1 — Average Rate from Concentration Change</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.1</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>For the reaction R → P, the concentration of a reactant changes from 0.03 M to 0.02 M in 25 minutes. Calculate the average rate of reaction using units of time both in minutes and seconds.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Average vs Instantaneous Rate</h2>
+      <p>The rate of a chemical reaction quantifies how fast reactants are consumed or products are formed. Two related, but distinct, measures are commonly used. The <em>average rate</em> over a finite time interval Δt is defined from stoichiometry as minus the change in reactant concentration divided by time, −Δ[R]/Δt, or equivalently the product formation Δ[P]/Δt. It provides a coarse-grained snapshot of progress between two measured points, smoothing any curvature in the concentration–time profile. The <em>instantaneous rate</em> is the limit as Δt → 0, i.e., the slope of the concentration–time curve at a specific time t, and is what the differential rate law v = k f([species]) describes. Because most reactions slow down as reactants are depleted, average rates computed over longer windows are typically lower than early-time instantaneous rates. Units must reflect concentration per unit time; in laboratory practice, rates are often reported as mol L⁻¹ s⁻¹ or mol L⁻¹ min⁻¹. When stoichiometric coefficients other than one are present, a normalised definition is used so that a single rate describes the reaction regardless of which species is monitored: v = −(1/ν<sub>R</sub>) d[R]/dt = (1/ν<sub>P</sub>) d[P]/dt. Careful attention to significant figures, time conversions (minutes to seconds), and consistent concentration units ensures meaningful comparison of rates across different experiments. Conceptually, average rate is to kinetics what average velocity is to motion: a practical, interval-based measure that approaches the instantaneous derivative as the interval shrinks.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Average rate = −Δ[R]/Δt = −(0.02 − 0.03)/25 min = 0.01/25 = 4.0×10⁻⁴ mol L⁻¹ min⁻¹</div>
+      <p>In seconds: 25 min = 1500 s → 0.01/1500 = <strong>6.67×10⁻⁶ mol L⁻¹ s⁻¹</strong>.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use consistent units; convert minutes to seconds when needed and keep concentration units uniform.</li>
+        <li>For reactions with coefficients ≠ 1, normalise using v = −(1/ν<sub>R</sub>)Δ[R]/Δt.</li>
+        <li>Average rate uses finite difference; for instantaneous rate, use derivative or very small Δt.</li>
+        <li>Report significant figures consistent with the given data precision.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

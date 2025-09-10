@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.13 — Half-life from k (First Order)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.13</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Calculate the half-life of a first order reaction from their rate constants given below: (i) 200 s⁻¹ (ii) 2 min⁻¹ (iii) 4 years⁻¹</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Universal First-order Half-life</h2>
+      <p>For first-order kinetics, the decay law [A](t) = [A]₀ e^(−kt) implies that the time required to reduce the amount to any fixed fraction is independent of the initial concentration. Setting [A](t₁/₂) = [A]₀/2 yields t₁/₂ = (ln 2)/k ≈ 0.693/k. This simple reciprocal relationship allows rapid interconversion between k and half-life across chemistry, physics, and biology. Because k carries units of reciprocal time, t₁/₂ naturally inherits the time unit reciprocal to k’s (e.g., if k is in s⁻¹, t₁/₂ is in seconds). The logarithmic nature of exponential decay means that equal decrements in the natural log of concentration occur in equal time steps. This trait is exploited in linearised plots (ln[A] vs t) where the slope is −k and the intercept is ln[A]₀. In multistep mechanisms, apparent first-order behaviour can arise under pseudo-first-order conditions when one reactant is in large excess; in such cases, the observed half-life pertains to the effective rate constant at those conditions. Care with units and significant figures is essential when k is reported in unconventional time bases (minutes⁻¹, years⁻¹). Converting t₁/₂ between units after calculation ensures clarity for comparison.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">(i) t₁/₂ = 0.693/200 = 3.465×10⁻³ s</div>
+      <div class="formula">(ii) t₁/₂ = 0.693/2 = 0.3465 min ≈ 20.79 s</div>
+      <div class="formula">(iii) t₁/₂ = 0.693/4 = 0.17325 years</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use t₁/₂ = 0.693/k directly; keep k and t in reciprocal units.</li>
+        <li>Convert to desired units after calculating (e.g., minutes to seconds).</li>
+        <li>Check magnitudes: larger k → shorter t₁/₂.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

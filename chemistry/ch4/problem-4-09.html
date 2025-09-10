@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.9 — Fraction with Energy ≥ Eₐ</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.9</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The activation energy for the reaction 2HI(g) → H₂(g) + I₂(g) is 209.5 kJ mol⁻¹ at 581 K. Calculate the fraction of molecules of reactants having energy equal to or greater than activation energy.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Energy Distribution and Arrhenius Factor</h2>
+      <p>In gas‑phase kinetics, not all molecules carry the same kinetic (or internal) energy at a given temperature; instead, energies are distributed according to the Maxwell–Boltzmann distribution. Reaction events require that colliding molecules possess sufficient energy to overcome the activation barrier Eₐ (and appropriate orientation). The Arrhenius expression k = A e^(−Eₐ/RT) embeds the fraction of energetically capable molecules within the exponential term e^(−Eₐ/RT), often referred to as the Boltzmann factor. While the true fraction depends on the full distribution (and on orientation/entropy terms), a common approximation for examination problems is to estimate the fraction of molecules with energy ≥ Eₐ as f ≈ e^(−Eₐ/RT). This approach captures the dominant exponential sensitivity of the reactive fraction to Eₐ and T: higher temperatures dramatically increase f, whereas larger Eₐ reduces it exponentially. The pre‑exponential factor A accounts for collision frequency and steric requirements; however, for the specific question of energetic eligibility, e^(−Eₐ/RT) suffices. Careful attention to units is essential: use Eₐ in J mol⁻¹, R = 8.314 J mol⁻¹ K⁻¹, and T in kelvin. The resulting fraction can be exceedingly small for large barriers at modest temperatures, highlighting why many gas‑phase reactions are slow without heating or catalysis.</p>
+      <svg viewBox="0 0 600 220" role="img" aria-label="Boltzmann tail">
+        <path d="M60 180 Q 140 60 240 80 T 540 180" fill="none" stroke="#2563eb" stroke-width="3" />
+        <line x1="360" y1="40" x2="360" y2="180" stroke="#ef4444" stroke-dasharray="4 3" />
+        <text x="360" y="36" fill="#ef4444" text-anchor="middle">Eₐ</text>
+        <text x="120" y="60" fill="#374151">Maxwell–Boltzmann distribution</text>
+        <text x="430" y="160" fill="#374151">Tail area ≈ e^(−Eₐ/RT)</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Eₐ = 209.5 kJ mol⁻¹ = 2.095×10⁵ J mol⁻¹;  R = 8.314 J mol⁻¹ K⁻¹;  T = 581 K</div>
+      <div class="formula">f ≈ e^(−Eₐ/RT) = exp(−2.095×10⁵ / (8.314×581)) = exp(−43.4) ≈ <strong>1.5×10⁻¹9</strong></div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Convert Eₐ to J mol⁻¹ before substitution; keep T in kelvin.</li>
+        <li>Use the exponential key carefully; very small values are expected for large barriers.</li>
+        <li>Remember this is an approximation for the energetic fraction, ignoring orientation factors.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 8 Problem 8.24 — Unpaired Electrons and Aqueous Stability</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .tips { border-left:3px solid #34d399; padding-left:10px; background:#f8fafc; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    svg { max-width:100%; height:auto; display:block; margin:8px 0; }
+    .muted { color:#6b7280; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>d- and f-Block Elements · Problem 8.24</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Calculate the number of unpaired electrons in the following gaseous ions: Mn²⁺, Cr³⁺, V³⁺ and Ti³⁺. Which one of these is the most stable in aqueous solution?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — d-electron Count and Aqueous Stability</h2>
+      <p>For first-row transition metal ions, the 4s electrons are lost before 3d upon ionization. Unpaired electron counts are obtained from the resulting 3d configuration in the gaseous state. In aqueous solution, stability often correlates with high hydration enthalpy and favorable crystal field stabilization energy (CFSE). Cr³⁺ (d³) in octahedral water complexes has particularly large CFSE (−1.2Δ₀) with no pairing energy penalty, making it notably stable. By contrast, high-spin d⁵ ions like Mn²⁺ gain no CFSE in octahedral fields (0Δ₀) and are less stabilized by ligand fields. V³⁺ (d²) and Ti³⁺ (d¹) do gain some CFSE, but not as much as Cr³⁺. Therefore, among these ions, Cr³⁺ is generally the most stable in aqueous solution due to the balance of CFSE and hydration effects.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Electronic configurations (gaseous ions) and unpaired electrons:</p>
+      <div class="formula">Mn²⁺: [Ar] 3d⁵ → 5 unpaired</div>
+      <div class="formula">Cr³⁺: [Ar] 3d³ → 3 unpaired</div>
+      <div class="formula">V³⁺: [Ar] 3d² → 2 unpaired</div>
+      <div class="formula">Ti³⁺: [Ar] 3d¹ → 1 unpaired</div>
+      <p><strong>Most stable in aqueous solution:</strong> Cr³⁺, due to high octahedral CFSE and strong hydration.</p>
+    </div>
+
+    <div class="panel tips">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Remove 4s electrons before 3d when forming cations.</li>
+        <li>Use ground-state 3d counts: Mn (d⁵), Cr (d⁵s¹ → d⁵), V (d³s²), Ti (d²s²).</li>
+        <li>For CFSE in octahedral fields: d¹ (−0.4Δ₀), d² (−0.8Δ₀), d³ (−1.2Δ₀), d⁵ (HS: 0Δ₀).</li>
+        <li>Cr³⁺(aq) is kinetically inert and thermodynamically stabilized relative to others.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Visual: Octahedral CFSE vs d-electron Count</h2>
+      <svg viewBox="0 0 500 260" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="460" height="220" fill="#f8fafc" stroke="#e5e7eb" stroke-width="2" rx="8"/>
+        <text x="250" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#374151">CFSE in Octahedral Field</text>
+        
+        <line x1="60" y1="200" x2="440" y2="200" stroke="#374151" stroke-width="2"/>
+        <text x="250" y="220" text-anchor="middle" font-size="12" fill="#374151">d-electron count</text>
+        
+        <line x1="60" y1="60" x2="60" y2="200" stroke="#374151" stroke-width="2"/>
+        <text x="30" y="130" text-anchor="middle" font-size="12" fill="#374151" transform="rotate(-90 30 130)">Relative CFSE</text>
+        
+        <circle cx="110" cy="180" r="5" fill="#06b6d4"/>
+        <text x="110" y="195" text-anchor="middle" font-size="10" fill="#374151">d¹</text>
+        
+        <circle cx="170" cy="160" r="5" fill="#06b6d4"/>
+        <text x="170" y="195" text-anchor="middle" font-size="10" fill="#374151">d²</text>
+        
+        <circle cx="230" cy="140" r="5" fill="#06b6d4"/>
+        <text x="230" y="195" text-anchor="middle" font-size="10" fill="#374151">d³</text>
+        
+        <circle cx="290" cy="200" r="5" fill="#06b6d4"/>
+        <text x="290" y="195" text-anchor="middle" font-size="10" fill="#374151">d⁵ (HS)</text>
+        
+        <text x="250" y="100" text-anchor="middle" font-size="12" fill="#6b7280">Cr³⁺(d³) shows large CFSE → enhanced stability in water</text>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
+
+

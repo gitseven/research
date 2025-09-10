@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.18 — 99% vs 90% Completion Times (First Order)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.18</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>For a first order reaction, show that time required for 99% completion is twice the time required for the completion of 90% of reaction.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Fractional Completion in First Order</h2>
+      <p>For first‑order kinetics, the integrated law is ln([A]₀/[A]) = kt. If a fraction x of the reaction has completed, the remaining fraction is (1−x), so ln(1/(1−x)) = kt. Thus, the time to reach any specified completion x is t(x) = (1/k) ln(1/(1−x)). This functional form depends only on x and k, not on [A]₀. Comparing two completions x₁ and x₂ gives a simple ratio t(x₂)/t(x₁) = ln[1/(1−x₂)] / ln[1/(1−x₁)]. For 90% completion, x = 0.90 ⇒ factor ln(10); for 99% completion, x = 0.99 ⇒ factor ln(100). Because ln(100) = 2 ln(10), the time to reach 99% is exactly twice the time to reach 90%, independent of k. This result generalises: moving one additional “nine” of completion multiplies time by the same constant factor because each step corresponds to a fixed increase in ln(1/(1−x)).</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">t₉₀ = (1/k) ln(10);  t₉₉ = (1/k) ln(100) = (1/k)·2 ln(10) = 2 t₉₀</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use t(x) = (1/k) ln(1/(1−x)) for first‑order completion times.</li>
+        <li>Recall ln(100) = 2 ln(10) to show the 2× relationship.</li>
+        <li>Independence from [A]₀ is a hallmark of first‑order kinetics.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.17 — Feasibility from Standard Potentials</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Electrochemistry · Problem 3.17</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Using the standard electrode potentials given in Table 3.1, predict if the reaction between the following is feasible: (i) Fe³⁺(aq) and I⁻(aq) (ii) Ag⁺(aq) and Cu(s) (iii) Fe³⁺(aq) and Br⁻(aq) (iv) Ag(s) and Fe³⁺(aq) (v) Br₂(aq) and Fe²⁺(aq)</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Cell EMF from E° and Feasibility</h2>
+      <p>A redox reaction under standard conditions is feasible if the associated cell potential E°cell = E°(cathode) − E°(anode) is positive. Use standard reduction potentials: species with higher (more positive) E° are better oxidants (more readily reduced). For a proposed reaction “A oxidizes B,” assign reductions and oxidations, subtract potentials, and check the sign. As examples, the couples: Ag⁺/Ag (+0.80 V), Fe³⁺/Fe²⁺ (+0.77 V), Br₂/Br⁻ (+1.07 V), I₂/I⁻ (+0.54 V), Cu²⁺/Cu (+0.34 V) suggest halogens are strong oxidants in the order Br₂ > I₂, and Ag⁺ can oxidize Cu(s) to Cu²⁺ since +0.80 − (+0.34) > 0. By contrast, Fe³⁺ vs I⁻ compares +0.77 (Fe³⁺/Fe²⁺) with +0.54 (I₂/I⁻), giving positive E° when Fe³⁺ is reduced and I⁻ is oxidized to I₂.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer (using common E° values)</h2>
+      <ul>
+        <li>(i) Fe³⁺ + I⁻ → Fe²⁺ + ½I₂: E° ≈ +0.77 − (+0.54) = +0.23 V → feasible.</li>
+        <li>(ii) Ag⁺ + Cu(s) → Ag(s) + Cu²⁺: E° ≈ +0.80 − (+0.34) = +0.46 V → feasible.</li>
+        <li>(iii) Fe³⁺ + Br⁻ → Fe²⁺ + ½Br₂: E° ≈ +0.77 − (+1.07) = −0.30 V → not feasible.</li>
+        <li>(iv) Fe³⁺ + Ag(s) → Fe²⁺ + Ag⁺: E° ≈ +0.77 − (+0.80) = −0.03 V → not feasible.</li>
+        <li>(v) Br₂ + Fe²⁺ → 2Br⁻ + Fe³⁺: E° ≈ +1.07 − (+0.77) = +0.30 V → feasible.</li>
+      </ul>
+      <div class="formula">Criterion: E°cell > 0 → spontaneous (feasible).</div>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.24 — Concentration after Time (First Order)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.24</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Consider a certain reaction A → Products with k = 2.0 × 10⁻² s⁻¹. Calculate the concentration of A remaining after 100 s if the initial concentration of A is 1.0 mol L⁻¹.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Integrated First-Order Law</h2>
+      <p>For first-order decay, [A](t) = [A]₀ e^(−kt). The exponential factor e^(−kt) gives the fraction remaining after time t. Because k is in s⁻¹ here, t must be in seconds. This simple form allows direct evaluation of remaining concentration without intermediate steps.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">[A](100 s) = 1.0 × e^(−0.02 × 100) = e^(−2) = <strong>0.135 mol L⁻¹</strong></div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use [A] = [A]₀ e^(−kt); ensure k and t are in reciprocal units.</li>
+        <li>e^(−2) ≈ 0.1353 is a useful constant to remember.</li>
+        <li>If asked for fraction remaining, report e^(−kt) directly.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

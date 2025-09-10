@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 8 Problem 8.31 — Ce³⁺ Configuration and Spin-only Magnetic Moment</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .tips { border-left:3px solid #34d399; padding-left:10px; background:#f8fafc; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    svg { max-width:100%; height:auto; display:block; margin:8px 0; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>d- and f-Block Elements · Problem 8.31</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Use Hund's rule to derive the electronic configuration of Ce³⁺ ion, and calculate its magnetic moment on the basis of 'spin-only' formula.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Ce and Ce³⁺, Hund’s Rule, Spin-only</h2>
+      <p>Cerium (Ce, Z = 58) is a lanthanoid with ground-state configuration often written as [Xe] 4f¹ 5d¹ 6s². On forming Ce³⁺, the two 6s electrons and the 5d electron are removed first, giving a 4f¹ configuration: Ce³⁺ = [Xe] 4f¹. Hund’s rule states that electrons occupy degenerate orbitals singly with parallel spins to maximize multiplicity before pairing. The 4f subshell has seven orbitals; with one electron, it remains unpaired. The “spin-only” magnetic moment for first-row transition ions and many 4f ions is approximated by μ = √[n(n+2)] Bohr magnetons (BM), where n is the number of unpaired electrons. For Ce³⁺ (4f¹), n = 1, so μ ≈ √3 ≈ 1.73 BM. While 4f ions can exhibit significant orbital contributions, the spin-only value provides a first, widely used estimate, sufficient for qualitative comparisons and many problem-solving contexts.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Ce (Z = 58): [Xe] 4f¹ 5d¹ 6s²</div>
+      <div class="formula">Ce³⁺: remove 6s² and 5d¹ → [Xe] 4f¹</div>
+      <div class="formula">Unpaired electrons n = 1 → μ = √[n(n+2)] = √3 ≈ 1.73 BM (spin-only)</div>
+    </div>
+
+    <div class="panel tips">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Remove 6s then 5d before 4f when forming trivalent lanthanoid ions.</li>
+        <li>Apply Hund’s rule to determine unpaired electrons in 4f.</li>
+        <li>Use μ = √[n(n+2)] BM for a quick spin-only estimate.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Visual: Ce → Ce³⁺ Electron Removal</h2>
+      <svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="460" height="140" fill="#f8fafc" stroke="#e5e7eb" stroke-width="2" rx="8"/>
+        <text x="250" y="40" text-anchor="middle" font-size="14" font-weight="bold" fill="#374151">Electron Removal to Form Ce³⁺</text>
+        <rect x="50" y="70" width="170" height="60" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="6"/>
+        <text x="135" y="90" text-anchor="middle" font-size="12" fill="#1e40af">Ce: [Xe] 4f¹ 5d¹ 6s²</text>
+        <text x="135" y="110" text-anchor="middle" font-size="10" fill="#1e40af">−(6s², 5d¹)</text>
+        <path d="M 220 100 L 280 100" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+        <rect x="280" y="70" width="170" height="60" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="6"/>
+        <text x="365" y="90" text-anchor="middle" font-size="12" fill="#166534">Ce³⁺: [Xe] 4f¹</text>
+        <text x="365" y="110" text-anchor="middle" font-size="10" fill="#166534">n = 1 → μ ≈ 1.73 BM</text>
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+          </marker>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
+
+

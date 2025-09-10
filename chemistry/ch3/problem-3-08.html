@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.8 — Molar Conductivity of KCl</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.8</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The conductivity of 0.20 M solution of KCl at 298 K is 0.0248 S cm⁻¹. Calculate its molar conductivity.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept</h2>
+      <p>Molar conductivity provides a concentration-normalised measure of a solution’s ability to conduct electricity and allows meaningful comparison between electrolytes and concentrations. It is defined as Λ<sub>m</sub> = κ × (1000/C), where κ is the specific conductivity in S cm⁻¹ and C is the molar concentration in mol L⁻¹; the factor 1000 converts litres to cubic centimetres. Physically, κ depends on both the number of charge carriers (ionic concentration) and their mobilities (influenced by ion size, solvation, and solvent viscosity). For a strong 1:1 electrolyte like KCl, complete dissociation is assumed over a wide concentration range, but inter-ionic interactions (ionic atmosphere and electrophoretic effects) still reduce mobility at higher concentrations. As the solution is diluted, these interactions diminish, so Λ<sub>m</sub> increases and approaches the limiting value Λ<sub>m</sub>⁰ at infinite dilution, where ions migrate independently (Kohlrausch’s law). In contrast, κ may decrease with dilution because the number of charge carriers per unit volume falls more rapidly than mobility rises. Hence, Λ<sub>m</sub> is the more appropriate metric when comparing different concentrations of the same electrolyte. Temperature control is crucial: higher temperature generally increases ion mobility (lower viscosity), raising both κ and Λ<sub>m</sub>. In practice, to compute Λ<sub>m</sub> one first calibrates the cell constant using a standard KCl solution of known conductivity, measures the sample’s resistance to obtain κ, and then applies the formula above with the sample concentration. The resulting units, S cm² mol⁻¹, reflect the conductance contribution per mole of electrolyte dispersed uniformly in solution.</p>
+      <div class="formula">Λ<sub>m</sub> = κ × (1000 / C)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Λ<sub>m</sub> = 0.0248 × (1000/0.20) = 0.0248 × 5000 = <strong>124 S cm² mol⁻¹</strong>.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+

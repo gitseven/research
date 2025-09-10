@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.15 — Decomposition of N₂O₅: Plots and Rate Law</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.15</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The experimental data for decomposition of N₂O₅ [2N₂O₅ → 4NO₂ + O₂] in gas phase at 318K are given below: (i) Plot [N₂O₅] against t. (ii) Find the half-life period for the reaction. (iii) Draw a graph between log[N₂O₅] and t. (iv) What is the rate law?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Diagnostic Plots for Order</h2>
+      <p>Identifying reaction order from concentration–time data relies on integrated forms and their linear plots. For zero order, [A] vs t is linear with slope −k; for first order, ln[A] vs t (or log₁₀[A] vs t) is linear with slope −k (or −k/2.303); for second order (single reactant), 1/[A] vs t is linear with slope +k. Constructing these plots from the data and assessing linearity (R², residuals) reveals the order and gives k from the slope. The half-life further supports the diagnosis: for first order, t₁/₂ = 0.693/k is constant and independent of [A]₀; for zero and second order, t₁/₂ depends on [A]₀. For the thermal decomposition of N₂O₅ in the gas phase, first-order kinetics are commonly observed under conditions where decomposition proceeds via a unimolecular step or a steady-state mechanism that yields an apparent first-order rate law. Thus, log plots should yield straight lines and the slope magnitude gives k/2.303 for base‑10 logs.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>(i) Plot [N₂O₅] vs t: decaying curve. (ii) Determine t where [N₂O₅] halves from its initial value (constant across intervals if first order). (iii) Graph log[N₂O₅] vs t is linear; slope = −k/2.303. (iv) Rate law: first order, r = k[N₂O₅].</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use log₁₀ for convenience; convert slope to k via k = −2.303 × slope.</li>
+        <li>Check if half-lives from the data are roughly constant to confirm first order.</li>
+        <li>For noisy data, fit a straight line to log plot and report R².</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

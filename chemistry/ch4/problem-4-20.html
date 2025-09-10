@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.20 — Rate Constant from Pressure Data (Azoisopropane)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.20</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>For the decomposition of azoisopropane to hexane and nitrogen at 543 K, the following data are obtained. Calculate the rate constant.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — First-order from Total Pressure Rise</h2>
+      <p>Gas‑phase decompositions that increase the number of moles cause the total pressure to rise in a closed, constant‑volume system. For a first‑order reaction A → products with stoichiometry producing Δν additional moles per mole of A, the total pressure evolves from P₀ at t = 0 to P∞ at completion. The extent of reaction x relates partial pressures to P(t). A standard result is that ln(P∞ − P₀) − ln(P∞ − P(t)) = kt, or equivalently ln[(P∞ − Pₜ)] = ln(P∞ − P₀) − kt. Thus, plotting ln(P∞ − Pₜ) versus t gives a straight line of slope −k. If P∞ is not measured, it can be inferred from the stoichiometry and the limiting pressure at long times. Using any two time points, k can be computed via k = (1/Δt) ln[(P∞ − Pₜ₁)/(P∞ − Pₜ₂)].</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Using the provided pressure–time data (not shown), compute P∞ from the asymptote, then evaluate k from the slope of ln(P∞ − Pₜ) vs t or using a pair of points.</p>
+      <div class="formula">k = (1/Δt) ln[(P∞ − P₁)/(P∞ − P₂)]  (units: s⁻¹ if t in s)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Ensure constant volume and temperature; otherwise, pressure changes are not purely kinetic.</li>
+        <li>Use late‑time data to estimate P∞ reliably, or fit all data to extract both P∞ and k.</li>
+        <li>Check linearity of ln(P∞ − Pₜ) vs t as a diagnostic of first order.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

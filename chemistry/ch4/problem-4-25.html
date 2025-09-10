@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.25 — Fraction Remaining from Half-life</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.25</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Sucrose decomposes in acid solution into glucose and fructose according to the first order rate law, with t₁/₂ = 3.00 hours. What fraction of sample of sucrose remains after 8 hours?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Using Half-life to Get Fraction</h2>
+      <p>For first-order reactions, the fraction remaining after time t is f = e^(−kt) with k = 0.693/t₁/₂. Combining gives f = e^{−(0.693 t / t₁/₂)} = 2^{−(t/t₁/₂)}. Thus, one can compute the fraction by counting half-lives: after n half-lives, f = (1/2)^n. For non-integer multiples, the exponential form provides an exact value.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">t/t₁/₂ = 8 / 3.00 = 2.6667 → f = 2^{−2.6667} = <strong>0.157</strong> (≈ 15.7%)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use f = 2^{−(t/t₁/₂)} for quick half-life calculations.</li>
+        <li>Alternatively, compute k then f = e^(−kt) to the same result.</li>
+        <li>Check: 3 half-lives would give 12.5%; at 2.67 half-lives, 15–16% is reasonable.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

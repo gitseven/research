@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 9 Problem 9.21 — Color Difference: [Fe(CN)₆]⁴⁻ vs [Fe(H₂O)₆]²⁺</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    svg { max-width:100%; height:auto; display:block; margin:8px 0; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coordination Compounds · Problem 9.21</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Explain why [Fe(CN)₆]⁴⁻ and [Fe(H₂O)₆]²⁺ are of different colours in dilute solutions.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Ligand Field, Metal Oxidation, and Charge-Transfer</h2>
+      <p>Observed color originates from electronic transitions. In transition-metal complexes, primary contributions come from d–d transitions within split d-levels and, in strongly covalent systems, from ligand-to-metal or metal-to-ligand charge-transfer (LMCT/MLCT). The complexes [Fe(CN)₆]⁴⁻ (ferrocyanide) and [Fe(H₂O)₆]²⁺ differ in both ligand field strength and electronic structure. In ferrocyanide, Fe is +2 in a strong-field, π-acceptor CN⁻ environment that significantly increases the crystal field splitting Δ₀ and enhances covalency and potential charge-transfer bands. This usually yields intense colors and shifts absorption to different wavelengths than aqua complexes. In contrast, [Fe(H₂O)₆]²⁺ contains Fe²⁺ with weak-field H₂O ligands, producing a smaller Δ₀ and typically weaker, Laporte-forbidden d–d bands partially allowed via vibronic coupling, hence paler or differently tinted colors. Furthermore, CN⁻, being a π-acceptor, stabilizes low-spin configurations, modifying the t₂g–e_g energy gap and selection rules relative to high-spin aqua species. Therefore, differences in Δ₀ magnitude, spin state (often low-spin in cyanide vs high/variable with water), and the presence of intense charge-transfer transitions in cyanide complexes account for distinct colors in dilute solutions.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <ul>
+        <li>[Fe(CN)₆]⁴⁻ (Fe²⁺, strong-field CN⁻): large Δ₀, low-spin, significant LMCT → distinct, often more intense color.</li>
+        <li>[Fe(H₂O)₆]²⁺ (Fe²⁺, weak-field H₂O): smaller Δ₀, high-spin, weak d–d bands → different (usually paler) color.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Visual: Effect of Ligand Field on Absorption</h2>
+      <svg viewBox="0 0 520 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="480" height="180" fill="#f8fafc" stroke="#e5e7eb" rx="8"/>
+        <text x="150" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">[Fe(H₂O)₆]²⁺ (weak field)</text>
+        <rect x="70" y="80" width="160" height="20" fill="#93c5fd"/>
+        <text x="150" y="120" text-anchor="middle" font-size="10" fill="#374151">smaller Δ₀ → longer λ absorption</text>
+        <text x="370" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#374151">[Fe(CN)₆]⁴⁻ (strong field)</text>
+        <rect x="290" y="80" width="160" height="20" fill="#fca5a5"/>
+        <text x="370" y="120" text-anchor="middle" font-size="10" fill="#374151">larger Δ₀/CT → different λ/intensity</text>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
+
+

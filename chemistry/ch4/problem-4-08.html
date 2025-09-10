@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.8 — Calculate Eₐ from Rate Doubling</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.8</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The rate of the chemical reaction doubles for an increase of 10 K in absolute temperature from 298 K. Calculate Eₐ.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Two-Point Arrhenius</h2>
+      <p>When rate constants at two temperatures are known (or related by a ratio), the Arrhenius equation can be written in ratio form without needing A explicitly: ln(k₂/k₁) = −Eₐ/R (1/T₂ − 1/T₁). This expression isolates Eₐ given the temperature change and the observed change in k. Small temperature intervals around room temperature often produce factors of ~2 per 10 K for moderate activation energies; the exact Eₐ is determined by substituting the measured ratio. Using base‑10 logs is equally valid if consistently converted: log(k₂/k₁) = (−Eₐ/2.303R)(1/T₂ − 1/T₁). Careful handling of sign and the (1/T) difference is crucial; note that if T₂ &gt; T₁ and k₂ &gt; k₁, then 1/T₂ − 1/T₁ &lt; 0, making the right-hand side positive as required by ln(k₂/k₁) &gt; 0.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Given k₂/k₁ = 2, T₁ = 298 K, T₂ = 308 K</div>
+      <div class="formula">Eₐ = R ln 2 / (1/T₁ − 1/T₂) = 8.314×0.693 / (1/298 − 1/308) ≈ <strong>5.29×10⁴ J mol⁻¹</strong> ≈ <strong>52.9 kJ mol⁻¹</strong></div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use the ratio form directly to avoid computing A.</li>
+        <li>Compute (1/T₁ − 1/T₂) carefully; it is positive when T₂ &gt; T₁ in the denominator form used above.</li>
+        <li>Keep units consistent; R in J mol⁻¹ K⁻¹ yields Eₐ in J mol⁻¹.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

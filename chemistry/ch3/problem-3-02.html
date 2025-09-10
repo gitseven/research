@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.2 — Reducing Power vs E°</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    table { width:100%; border-collapse: collapse; }
+    th, td { border-bottom:1px solid #1f2937; padding:8px; text-align:left; }
+    .muted { color:#374151; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.2</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Given the standard electrode potentials: K⁺/K = −2.93 V, Ag⁺/Ag = +0.80 V, Hg²⁺/Hg = +0.79 V, Mg²⁺/Mg = −2.37 V, Cr³⁺/Cr = −0.74 V. Arrange these metals in increasing order of reducing power.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Reducing Power and E°</h2>
+      <p>The reducing power of a metal reflects how readily it donates electrons to reduce another species, which is equivalent to how easily the metal itself is oxidised to its cation. Standard reduction potentials, E°(Mⁿ⁺/M), provide a quantitative scale for this tendency under standard conditions (1 M, 1 bar, 298 K). A more negative E° value indicates that the forward reduction Mⁿ⁺ + ne⁻ → M is less favourable, and therefore the reverse oxidation M → Mⁿ⁺ + ne⁻ is more favourable. Consequently, metals with more negative E° are stronger reducing agents. When comparing multiple metals, the order of increasing reducing power corresponds to increasing ease of oxidation (i.e., increasingly negative E°). For example, potassium (K) and magnesium (Mg) possess very negative standard potentials and are powerful reductants, while silver (Ag) with a positive E° is a poor reductant and resists oxidation. This interpretation also aligns with observed reactivity in water and acid, galvanic series behaviour, and the position of metals in the periodic table: highly electropositive s-block metals tend to top the reducing power scale, followed by select early d-block metals. In applied electrochemistry, this ranking determines the feasibility and spontaneity of displacement reactions and underpins choices of sacrificial anodes in corrosion protection. Thus, arranging metals by reducing power is effectively arranging them by the negativity of their E° values (most negative = strongest reducing agent).</p>
+      <table>
+        <thead><tr><th>Couple</th><th>E° (V)</th><th>Reducing Power</th></tr></thead>
+        <tbody>
+          <tr><td>K⁺/K</td><td>−2.93</td><td>Highest</td></tr>
+          <tr><td>Mg²⁺/Mg</td><td>−2.37</td><td>↑</td></tr>
+          <tr><td>Cr³⁺/Cr</td><td>−0.74</td><td>→</td></tr>
+          <tr><td>Hg²⁺/Hg</td><td>+0.79</td><td>↓</td></tr>
+          <tr><td>Ag⁺/Ag</td><td>+0.80</td><td>Lowest</td></tr>
+        </tbody>
+      </table>
+      <svg viewBox="0 0 600 120" role="img" aria-label="Reducing power scale">
+        <rect x="40" y="50" width="520" height="10" fill="#1f2937" />
+        <circle cx="80" cy="55" r="6" fill="#34d399" />
+        <text x="80" y="40" fill="#e5e7eb" text-anchor="middle">K</text>
+        <circle cx="180" cy="55" r="6" fill="#34d399" />
+        <text x="180" y="40" fill="#e5e7eb" text-anchor="middle">Mg</text>
+        <circle cx="300" cy="55" r="6" fill="#34d399" />
+        <text x="300" y="40" fill="#e5e7eb" text-anchor="middle">Cr</text>
+        <circle cx="460" cy="55" r="6" fill="#34d399" />
+        <text x="460" y="40" fill="#e5e7eb" text-anchor="middle">Hg</text>
+        <circle cx="540" cy="55" r="6" fill="#34d399" />
+        <text x="540" y="40" fill="#e5e7eb" text-anchor="middle">Ag</text>
+        <text x="300" y="95" fill="#9ca3af" text-anchor="middle">→ Increasing E° (less reducing)</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p><strong>Increasing reducing power:</strong> Ag &lt; Hg &lt; Cr &lt; Mg &lt; K.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Order metals by E°(Mⁿ⁺/M): more negative → stronger reductant.</li>
+        <li>If two E° values are close (e.g., Ag and Hg), keep the sign and magnitude precise to avoid swapping.</li>
+        <li>Translate “increasing reducing power” as “increasing ease of oxidation of the metal”.</li>
+        <li>Remember: alkali metals typically top reducing strength lists; coinage metals are weak reductants.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

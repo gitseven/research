@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.27 — Eₐ and Temperature for Given Half-period</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.27</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The rate constant for the first order decomposition of H₂O₂ is given by: log k = 14.34 − 1.25 × 10⁴ K/T. Calculate Eₐ for this reaction and at what temperature will its half-period be 256 minutes?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Base-10 Arrhenius Form</h2>
+      <p>Arrhenius in base‑10 logarithms reads: log k = log A − Eₐ/(2.303 RT). Comparing with log k = a − b/T, one identifies b = Eₐ/(2.303 R) and a = log A. Thus Eₐ = b(2.303R). After extracting Eₐ, the temperature for a specified half‑period follows from k = 0.693/t₁/₂ and k(T) = 10^{a − b/T}. Solve T from log k = a − b/T → T = b/(a − log k). Ensure time units for k (s⁻¹ or min⁻¹) match the half‑period units.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Eₐ = 2.303 R b = 2.303 × 8.314 × 1.25×10⁴ = <strong>2.39×10⁵ J mol⁻¹</strong> ≈ <strong>239 kJ mol⁻¹</strong></div>
+      <div class="formula">t₁/₂ = 256 min → k = 0.693/256 = 2.707×10⁻³ min⁻¹ → log k = −2.567</div>
+      <div class="formula">T = b/(a − log k) = 1.25×10⁴ / (14.34 − (−2.567)) = 1.25×10⁴ / 16.907 ≈ <strong>739 K</strong></div>
+      <p>(If k is desired in s⁻¹, convert minutes to seconds consistently before solving.)</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use base‑10 identity: Eₐ = 2.303 R b when log k = a − b/T.</li>
+        <li>Compute k from half‑period first, then solve for T.</li>
+        <li>Keep unit consistency (min⁻¹ vs s⁻¹) throughout.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

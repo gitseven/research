@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.10 — Order with respect to A and B</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.10</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>What is the order of the reaction with respect to A and B?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Determining Partial Orders</h2>
+      <p>The order of a reaction with respect to a given reactant is the exponent of its concentration in the rate law. For a rate law of the form r = k[A]^n[B]^m, the <em>partial orders</em> are n (with respect to A) and m (with respect to B). These must be obtained experimentally because they reflect the mechanism’s kinetics rather than the overall stoichiometric equation. Two common experimental strategies are used. (1) <em>Initial rates method</em>: holding [B] constant while varying [A] allows one to measure how the initial rate scales with [A]; from v ∝ [A]^n, a log–log plot log v vs log [A] yields a slope equal to n. Repeating with [A] constant while varying [B] yields m. (2) <em>Isolation method</em>: keeping one reactant in large excess makes its concentration effectively constant, so the rate law reduces to pseudo‑order in the other reactant; time–course data then fit an integrated law (e.g., first‑order if n = 1) to determine the order. Additional checks include half‑life dependence (first order: t₁/₂ independent of [A]₀; second order: t₁/₂ ∝ 1/[A]₀) and linearity of integrated plots (e.g., ln[A] vs t). Once n and m are known, the overall order is n + m. Accurate determination requires temperature control (k is T‑dependent), constant ionic strength for ionic reactions, and avoiding side reactions or product inhibition during the initial rate window.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p><strong>With respect to A:</strong> the exponent of [A] in the rate law (denote it n). <strong>With respect to B:</strong> the exponent of [B] (denote it m). Determine n and m from initial‑rates or isolation experiments.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use log v vs log [A] (B constant) to get slope = n; swap roles to get m.</li>
+        <li>If one reactant is in large excess, fit a pseudo‑first/second‑order integrated plot to extract the order.</li>
+        <li>Check half‑life behavior as a diagnostic of first vs second order.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

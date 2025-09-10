@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.12 — Mixed Order: First in A, Zero in B</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.12</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The reaction between A and B is first order with respect to A and zero order with respect to B. Fill in the blanks in the following table.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Zero Order vs First Order Contributions</h2>
+      <p>A rate law r = k[A]^1[B]^0 simplifies to r = k[A], indicating the rate depends linearly on A and is independent of B (within the range studied). Zero‑order dependence often arises when the surface or catalytic sites are saturated with B, so changing [B] does not alter the rate, or when a preceding fast equilibrium fixes the effective concentration of the reactive form of B. In problems that require filling a rate table, doubling [A] at constant [B] doubles the rate; doubling [B] at constant [A] leaves the rate unchanged. If both A and B are changed, only the change in [A] matters. For integrated kinetics under pseudo‑first‑order conditions (B zero‑order), the time course for A follows the first‑order expression, and a plot of ln[A] vs t is linear with slope −k. Recognising zero‑order behaviour is critical in catalytic kinetics and photochemistry, where flux‑limited regimes can make rates independent of reactant concentration.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Rate law: r = k[A]. In the table, scale rates directly with [A] changes; ignore [B] changes (no effect).</p>
+      <div class="formula">Examples: if [A] doubles → rate ×2; if [B] doubles → rate ×1 (no change)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Replace [B]^0 by 1 in the rate expression; drop [B] entirely.</li>
+        <li>Check for linear ln[A] vs t to confirm first‑order decay in A.</li>
+        <li>When in doubt, compute rate ratios: v₂/v₁ = ([A]₂/[A]₁)^1 ([B]₂/[B]₁)^0.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

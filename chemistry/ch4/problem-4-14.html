@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.14 — Radiocarbon Dating Half-life Application</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.14</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The half-life for radioactive decay of ¹⁴C is 5730 years. An archaeological artifact containing wood had only 80% of the ¹⁴C found in a living tree. Estimate the age of the sample.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — First-order Decay and Dating</h2>
+      <p>Radioactive decay follows first-order kinetics: N(t) = N₀ e^(−λt), where λ is the decay constant. The half-life t₁/₂ and λ are related by t₁/₂ = ln 2 / λ, so λ = 0.693/t₁/₂. Radiocarbon dating exploits the fact that living organisms maintain a roughly constant ratio of ¹⁴C/¹²C by exchanging CO₂ with the atmosphere. After death, exchange stops and ¹⁴C decays, reducing the ¹⁴C level relative to living material. Measuring the remaining fraction f = N/N₀ yields age via t = (1/λ) ln(1/f). Because the half-life is long, small analytical errors in f can lead to substantial uncertainty in t, so high-precision measurements and corrections for isotopic fractionation and past atmospheric ¹⁴C variations are used in advanced protocols (e.g., calibration curves). For textbook problems, treating decay as ideal first‑order with the tabulated half-life suffices to estimate ages to first approximation.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">λ = 0.693 / 5730 y = 1.209×10⁻⁴ y⁻¹</div>
+      <div class="formula">f = 0.80 → t = (1/λ) ln(1/0.80) = (5730/0.693) × 0.2231 ≈ <strong>1843 years</strong></div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use t = (1/λ) ln(N₀/N) with λ = 0.693/t₁/₂.</li>
+        <li>Express the remaining activity or ¹⁴C as a fraction f of the modern level.</li>
+        <li>Check order of magnitude: 80% remaining is well under one half-life (~2k years).</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

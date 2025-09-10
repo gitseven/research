@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.15 — Mass of Ni Deposited (I·t Law)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Electrochemistry · Problem 3.15</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>A solution of Ni(NO₃)₂ is electrolysed between platinum electrodes using a current of 5 amperes for 20 minutes. What mass of Ni is deposited at the cathode?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Faraday’s First Law</h2>
+      <p>Charge passed Q = I × t (coulombs). Moles of electrons = Q/F, where F ≈ 96485 C mol⁻¹. For Ni²⁺ + 2e⁻ → Ni(s), two moles of electrons deposit one mole of Ni. Therefore, moles Ni = (Q/F)/2, and mass m = (Q/F) × (M/2), with Ni atomic mass M ≈ 58.69 g mol⁻¹. This calculation assumes 100% current efficiency with inert electrodes. Side reactions (e.g., H₂ evolution) or passivation reduce actual yield in practice, but theoretical yield follows stoichiometry directly from Faraday’s law. Using SI units, ensure time is in seconds and current in amperes to obtain Q in coulombs. The approach generalizes to other metal ions by replacing the electron stoichiometry and atomic mass accordingly.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Q = I t = 5 A × (20 × 60 s) = 6000 C</div>
+      <div class="formula">mol e⁻ = Q/F ≈ 6000/96485 ≈ 0.0622 mol; mol Ni = 0.0622/2 ≈ 0.0311 mol</div>
+      <div class="formula">m(Ni) = 0.0311 × 58.69 g mol⁻¹ ≈ 1.83 g</div>
+      <p>Approximately 1.83 g of Ni is deposited.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Compute Q = I t; convert minutes to seconds.</li>
+        <li>Divide moles of electrons by 2 for Ni²⁺.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

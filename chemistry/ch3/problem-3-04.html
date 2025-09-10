@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.4 — Standard Cell Potential, ΔG°, K</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    code { background:#0b1220; border:1px solid #1f2937; padding:2px 6px; border-radius:6px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.4</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Calculate the standard cell potentials of galvanic cell in which the following reactions take place: (i) 2Cr(s) + 3Cd²⁺(aq) → 2Cr³⁺(aq) + 3Cd (ii) Fe²⁺(aq) + Ag⁺(aq) → Fe³⁺(aq) + Ag(s). Calculate the ΔᵣG° and equilibrium constants.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — E°, ΔG°, and K</h2>
+      <p>The thermodynamics of an electrochemical reaction at standard conditions links electrical potential, free energy, and the equilibrium position. The standard cell potential E° quantifies the driving force for electron transfer when reactants and products are all at unit activity. It is found by pairing half-reactions as reductions and subtracting the anode potential: E° = E°<sub>cathode</sub> − E°<sub>anode</sub>. The Gibbs free energy change ΔG° relates to E° through ΔG° = −n F E°, where n is the total number of electrons transferred and F is the Faraday constant (96485 C mol⁻¹). A positive E° gives a negative ΔG°, indicating spontaneity. The equilibrium constant K is connected to ΔG° via ΔG° = −R T ln K, so combining gives ln K = n F E° / (R T). Thus, even a modest positive E° can correspond to a very large K because of the factor nF/RT (~39 at 298 K per volt). In practice, one identifies the relevant half-reactions from tabulated standard potentials, ensures electrons are balanced (multiplying half-reactions as needed without altering their E° values), and then computes E°, ΔG°, and K. These relationships are invaluable for predicting reaction feasibility, estimating product distributions at equilibrium, and comparing alternative oxidant–reductant pairs in battery or corrosion applications.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <h3>(i) 2Cr + 3Cd²⁺ → 2Cr³⁺ + 3Cd</h3>
+      <p>Using typical E°: Cd²⁺/Cd = −0.403 V; Cr³⁺/Cr = −0.740 V.</p>
+      <p>E° = (−0.403) − (−0.740) = +0.337 V; n = 6. ΔG° = −6×96485×0.337 ≈ −1.95×10⁵ J mol⁻¹ (−195 kJ mol⁻¹). K ≈ exp(6×96485×0.337/(8.314×298)) ≈ 1×10¹¹.</p>
+
+      <h3>(ii) Fe²⁺ + Ag⁺ → Fe³⁺ + Ag</h3>
+      <p>E° = 0.800 − 0.771 = +0.029 V; n = 1. ΔG° ≈ −2.8 kJ mol⁻¹. K ≈ 3.2.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Pick cathode/anode from tabulated E° values; do not change E° when multiplying half-reactions.</li>
+        <li>Balance electrons to find n; then use ΔG° = −nFE° and ln K = nFE°/RT.</li>
+        <li>Remember unit conversions: J vs kJ, and use T = 298 K unless otherwise specified.</li>
+        <li>Small positive E° can still imply large K because nF/RT ≈ 39 V⁻¹ at 298 K.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

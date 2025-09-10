@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.5 — Nernst Equation Applications</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.5</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Write the Nernst equation and emf of the following cells at 298 K: (i) Mg(s) | Mg²⁺(0.001 M) || Cu²⁺(0.0001 M) | Cu(s) (ii) Fe(s) | Fe²⁺(0.001 M) || H⁺(1 M) | H₂(g)(1 bar) | Pt(s) (iii) Sn(s) | Sn²⁺(0.050 M) || H⁺(0.020 M) | H₂(g)(1 bar) | Pt(s) (iv) Pt(s) | Br⁻(0.010 M) | Br₂(l) || H⁺(0.030 M) | H₂(g)(1 bar) | Pt(s).</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Nernst Equation</h2>
+      <div class="formula">E = E° − (0.05916 / n) log Q  (at 298 K)</div>
+      <p>The Nernst equation expresses how the cell potential depends on the activities (or effective concentrations/pressures) of reactants and products under nonstandard conditions. Starting from ΔG = ΔG° + R T ln Q and ΔG = −n F E, substitution yields E = E° − (R T / n F) ln Q, which becomes the base-10 form shown at 298 K. Here, n is the number of electrons transferred in the balanced overall reaction, and Q is the reaction quotient constructed from product activities divided by reactant activities, each raised to the power of their stoichiometric coefficients. Solids and pure liquids have unit activity and therefore do not appear in Q; gases enter via their partial pressures; dissolved species enter via their molar activities (often approximated by molarities at low to moderate ionic strength). The equation shows that when products accumulate (Q increases), the cell potential drops, and at equilibrium E becomes zero with Q = K. Careful identification of the cell reaction, including electron count and species participating in Q, is essential to compute E correctly. This framework enables predictions of emf for concentration cells, evaluation of pH effects on hydrogen electrodes, and quantitative analysis of redox titrations and battery state-of-charge.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <ul>
+        <li><strong>(i)</strong> E° ≈ 2.71 V, n=2, Q=10 ⇒ E ≈ 2.71 − 0.0296 ≈ <strong>2.68 V</strong>.</li>
+        <li><strong>(ii)</strong> E° ≈ +0.440 V, n=2, Q=10⁻³ ⇒ E ≈ 0.440 − (0.0296)(−3) ≈ <strong>0.529 V</strong>.</li>
+        <li><strong>(iii)</strong> E° ≈ +0.136 V, n=2, Q=125 ⇒ E ≈ 0.136 − 0.0296×2.097 ≈ <strong>0.074 V</strong>.</li>
+        <li><strong>(iv)</strong> E° ≈ −1.065 V, n=2, Q≈0.111 ⇒ E ≈ −1.065 − 0.0296×(−0.954) ≈ <strong>−1.037 V</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Write the overall balanced reaction first to determine n and construct Q correctly.</li>
+        <li>Exclude solids and pure liquids from Q; include gases via partial pressure and solutes by activity (≈ concentration).</li>
+        <li>Use 0.05916/n factor only at 298 K; otherwise, compute RT/F explicitly.</li>
+        <li>Check log base: exam problems often use base‑10; ensure consistency when using calculators.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

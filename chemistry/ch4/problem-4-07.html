@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.7 — Effect of Temperature on k</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.7</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>What will be the effect of temperature on rate constant?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Arrhenius Equation</h2>
+      <p>The Arrhenius equation describes the temperature dependence of the rate constant: k = A e^(−Eₐ/RT), where A is the pre‑exponential factor reflecting collision frequency and orientation, Eₐ is the activation energy barrier, R is the gas constant, and T is the absolute temperature. As temperature increases, the exponential term grows because a larger fraction of molecules possess energies equal to or exceeding Eₐ, enhancing the likelihood of successful reactive encounters. Taking natural logs, ln k = ln A − Eₐ/(RT), predicts a straight line when ln k is plotted versus 1/T, with slope −Eₐ/R and intercept ln A. Typical chemical reactions show k roughly doubling for a 10 K temperature rise near room temperature, though the exact factor depends on Eₐ. Low activation energy processes exhibit weak temperature dependence, while high‑Eₐ processes show strong sensitivity. Deviations from simple Arrhenius behaviour can occur in complex mechanisms, diffusion‑limited regimes, or when heat alters equilibria upstream of the rate‑determining step. Nonetheless, Arrhenius analysis remains a cornerstone of extracting kinetic parameters from experimental data and for forecasting rates under new thermal conditions.</p>
+      <svg viewBox="0 0 600 220" role="img" aria-label="Arrhenius plot">
+        <line x1="60" y1="180" x2="560" y2="180" stroke="#e5e7eb" />
+        <line x1="60" y1="40" x2="60" y2="180" stroke="#e5e7eb" />
+        <text x="50" y="50" fill="#374151" transform="rotate(-90 50,50)">ln k</text>
+        <text x="560" y="200" fill="#374151">1/T</text>
+        <line x1="80" y1="160" x2="540" y2="60" stroke="#2563eb" stroke-width="3" />
+        <text x="400" y="90" fill="#374151">slope = −Eₐ/R</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Increasing temperature increases k approximately exponentially (k = A e^(−Eₐ/RT)); higher T yields a larger k.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use ln(k₂/k₁) = −Eₐ/R (1/T₂ − 1/T₁) to compare two temperatures.</li>
+        <li>From a ln k vs 1/T line: slope gives Eₐ; intercept gives ln A.</li>
+        <li>Rule of thumb: near room temperature, many reactions double in rate per +10 K.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

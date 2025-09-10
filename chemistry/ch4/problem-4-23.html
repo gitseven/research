@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.23 — Pre-exponential Factor from k and Eₐ</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.23</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The rate constant for the decomposition of hydrocarbons is 2.418 × 10⁻⁵ s⁻¹ at 546 K. If the energy of activation is 179.9 kJ mol⁻¹, what will be the value of pre‑exponential factor?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Solving A from Arrhenius</h2>
+      <p>Given k, T, and Eₐ, the Arrhenius equation can be rearranged to A = k e^(Eₐ/RT). Using Eₐ in J mol⁻¹ and R = 8.314 J mol⁻¹ K⁻¹ ensures consistent units. For unimolecular first‑order decompositions, typical A values range from 10¹² to 10¹⁵ s⁻¹, reflecting vibrational frequencies and steric factors. If a computed A falls grossly outside this range, reassess unit conversions, particularly the energy units and temperature.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">A = k e^(Eₐ/RT) = 2.418×10⁻⁵ × exp(1.799×10⁵ / (8.314×546)) ≈ 2.418×10⁻⁵ × e^{39.65} ≈ <strong>3.7×10¹² s⁻¹</strong></div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Convert Eₐ to J mol⁻¹; use kelvin for T.</li>
+        <li>Check that A has units of s⁻¹ for first‑order reactions.</li>
+        <li>Sanity check: A typically ~10¹²–10¹⁵ s⁻¹ for unimolecular gas reactions.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

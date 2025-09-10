@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.3 — Galvanic Cell: Zn | Zn²⁺ || Ag⁺ | Ag</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    svg { max-width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.3</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Depict the galvanic cell in which the reaction Zn(s)+2Ag⁺(aq) → Zn²⁺(aq)+2Ag(s) takes place. Further show: (i) Which electrode is negatively charged? (ii) The carriers of current in the cell. (iii) Individual reaction at each electrode.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Galvanic Cells</h2>
+      <p>A galvanic (voltaic) cell converts the chemical energy of a spontaneous redox reaction into electrical work by separating the oxidation and reduction processes into two half-cells linked by an external conductor and an internal ionic pathway. Oxidation occurs at the anode, which is therefore negatively charged because electrons are generated there and pushed into the external circuit. Reduction occurs at the cathode, which is positively charged because it attracts electrons from the external circuit to reduce an oxidised species in solution. The potential difference measured between the electrodes (cell emf) reflects the difference in the tendencies of the two half-reactions to proceed as reductions, given by their standard reduction potentials. By convention, E°cell = E°cathode − E°anode. The salt bridge or porous separator closes the internal circuit: it allows counter-ions to migrate so that charge balance is maintained in each half-cell, preventing the build-up of excess positive or negative charge that would otherwise halt electron flow. In the Zn‖Ag⁺ system, Zn has a more negative E° and thus prefers to oxidise to Zn²⁺, releasing electrons that travel through the wire to the silver half-cell, where Ag⁺ is reduced to Ag(s). The anode half-reaction is Zn → Zn²⁺ + 2e⁻ and the cathode half-reaction is 2Ag⁺ + 2e⁻ → 2Ag; summing gives the overall spontaneous reaction. This arrangement underpins batteries, corrosion cells, and redox sensors, and the same principles govern sign conventions, electron/ion carriers, and construction of cell diagrams.</p>
+      <svg viewBox="0 0 680 260" role="img" aria-label="Zn-Ag cell schematic">
+        <defs>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
+            <polygon points="0 0, 6 3, 0 6" fill="#34d399" />
+          </marker>
+        </defs>
+        <rect x="20" y="30" width="300" height="200" rx="12" fill="#0b1220" stroke="#1f2937" />
+        <rect x="360" y="30" width="300" height="200" rx="12" fill="#0b1220" stroke="#1f2937" />
+        <text x="170" y="28" fill="#9ca3af" text-anchor="middle">Anode: Zn | Zn²⁺</text>
+        <text x="510" y="28" fill="#9ca3af" text-anchor="middle">Cathode: Ag⁺ | Ag</text>
+        <rect x="70" y="80" width="30" height="110" fill="#94a3b8" />
+        <rect x="620" y="80" width="30" height="110" fill="#d1d5db" />
+        <text x="85" y="205" fill="#9ca3af" text-anchor="middle">Zn(s)</text>
+        <text x="635" y="205" fill="#9ca3af" text-anchor="middle">Ag(s)</text>
+        <line x1="100" y1="70" x2="620" y2="70" stroke="#34d399" stroke-width="3" marker-end="url(#arrow)"/>
+        <text x="360" y="60" fill="#34d399" text-anchor="middle">e⁻ flow →</text>
+        <line x1="320" y1="130" x2="360" y2="130" stroke="#a78bfa" stroke-width="5" />
+        <text x="340" y="120" fill="#a78bfa" text-anchor="middle">Salt bridge</text>
+        <text x="170" y="160" fill="#9ca3af" text-anchor="middle">Ox: Zn → Zn²⁺ + 2e⁻</text>
+        <text x="510" y="160" fill="#9ca3af" text-anchor="middle">Red: 2Ag⁺ + 2e⁻ → 2Ag</text>
+      </svg>
+      <ul>
+        <li><strong>Anode (−):</strong> Zn oxidizes.</li>
+        <li><strong>Cathode (+):</strong> Ag⁺ reduces to Ag.</li>
+        <li><strong>Carriers:</strong> electrons in the wire; ions via salt bridge.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Cell: <code>Zn(s) | Zn²⁺(aq) || Ag⁺(aq) | Ag(s)</code>. The Zn electrode is negative (anode). Electrons travel through the external circuit; ions carry charge through the salt bridge. Anode: Zn → Zn²⁺ + 2e⁻; Cathode: 2Ag⁺ + 2e⁻ → 2Ag.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Identify which half-reaction has the more positive E° as the cathode (reduction).</li>
+        <li>Write balanced half-reactions with electrons and then sum to get the overall reaction.</li>
+        <li>Mark electron flow from anode (−) to cathode (+) and show ions moving through the salt bridge.</li>
+        <li>Use the conventional cell notation: Anode | Anode solution || Cathode solution | Cathode.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

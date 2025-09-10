@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.11 — Molar Conductivity and Ka from Data</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Electrochemistry · Problem 3.11</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The conductivity of 0.00241 M acetic acid is 7.896 × 10⁻⁵ S cm⁻¹. Calculate its molar conductivity and, given Λm⁰ for acetic acid is 390.5 S cm² mol⁻¹, determine its dissociation constant.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Weak Electrolytes, Λm and Ka</h2>
+      <p>Molar conductivity Λm relates solution conductivity κ to concentration c by Λm = κ × (1000/c) for c in mol L⁻¹ and κ in S cm⁻¹, yielding Λm in S cm² mol⁻¹. For weak electrolytes such as acetic acid, Λm increases markedly on dilution because degree of ionization α increases. Using Kohlrausch’s law at infinite dilution, Λm⁰ equals the sum of limiting ionic conductivities. For weak acids, Ostwald’s dilution law links α to Λm via α = Λm/Λm⁰. The dissociation constant is Ka = cα²/(1−α). Combining these gives Ka = (cΛm²)/(Λm⁰(Λm⁰ − Λm)). In practice, use measured κ and c to compute Λm, then plug into the formula to estimate Ka. Units must be consistent; express c in mol L⁻¹, κ in S cm⁻¹, and Λm in S cm² mol⁻¹. Temperature affects Λm⁰ and κ; reported Λm⁰ values are at 298 K unless otherwise specified. Ensure that the solution is sufficiently dilute for Ostwald’s law to apply well, which is generally valid for weak electrolytes at millimolar concentrations. This method is classical in physical chemistry labs for determining Ka of weak acids from conductance measurements and highlights the contrast with strong electrolytes, where Λm approaches Λm⁰ slowly due to interionic interactions rather than dissociation limits.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Given: κ = 7.896 × 10⁻⁵ S cm⁻¹, c = 0.00241 mol L⁻¹</div>
+      <div class="formula">Λm = κ × 1000/c = (7.896×10⁻⁵ × 1000)/0.00241 ≈ 32.75 S cm² mol⁻¹</div>
+      <div class="formula">Ka = (cΛm²)/(Λm⁰(Λm⁰ − Λm)) = (0.00241×32.75²)/(390.5×(390.5 − 32.75)) ≈ 1.8 × 10⁻⁵</div>
+      <p>Thus, Λm ≈ 32.8 S cm² mol⁻¹ and Ka ≈ 1.8 × 10⁻⁵ at 298 K.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Compute Λm first via Λm = 1000κ/c.</li>
+        <li>Use Ka = (cΛm²)/(Λm⁰(Λm⁰ − Λm)) for weak acids.</li>
+        <li>Keep units consistent; c in mol L⁻¹, κ in S cm⁻¹.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.4 — Second-Order Dependence Effect</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.4</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The conversion of molecules X to Y follows second order kinetics. If concentration of X is increased to three times how will it affect the rate of formation of Y?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Interpreting Reaction Orders</h2>
+      <p>For a reaction that is second order in a single reactant X (rate r = k[X]^2), the instantaneous rate depends on the square of the reactant concentration. Consequently, proportional changes in [X] cause squared changes in rate. This sensitivity is a hallmark of bimolecular mechanisms or reactions where two X species interact in the rate-limiting step. In general, if [X] is scaled by a factor f, the rate scales by f² for second order, by f for first order, and is unchanged for zero order. Understanding these proportionalities enables quick reasoning about how dilution or concentration changes impact reaction speed and is widely used in designing kinetic experiments and reactors. Note that overall second-order kinetics can also arise from reactions first order in two different species (e.g., r = k[A][B]); in those cases, changing one species affects the rate linearly unless both are scaled. Here, with r ∝ [X]^2 and only X being varied, the rate change is immediate to compute.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Tripling [X] multiplies the rate by 3² = <strong>9</strong>. The formation rate of Y increases ninefold.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Replace [X] by f[X] in r = k[X]^2 → new rate = k(f[X])^2 = f²r.</li>
+        <li>Memorise proportionalities: zero order (f⁰), first order (f¹), second order (f²).</li>
+        <li>Distinguish single-reactant second order from mixed second order (e.g., k[A][B]).</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.30 — Eₐ from Rate Quadrupling (293→313 K)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.30</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The rate of a reaction quadruples when the temperature changes from 293 K to 313 K. Calculate the energy of activation of the reaction assuming that it does not change with temperature.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Two-Point Arrhenius with Rate Ratio</h2>
+      <p>Using k₂/k₁ = exp[Eₐ/R (1/T₁ − 1/T₂)], one solves for Eₐ directly from the observed factor change with temperature. When k₂/k₁ = 4, ln 4 multiplies the reciprocal temperature difference scaled by R. The method assumes constant Eₐ over the interval, which is typical for moderate temperature ranges.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">Eₐ = R ln 4 / (1/293 − 1/313) = 8.314×1.386 / (0.003413 − 0.003194) ≈ <strong>5.27×10⁴ J mol⁻¹</strong> ≈ <strong>52.7 kJ mol⁻¹</strong></div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use natural log of the rate ratio; ensure temperatures are in kelvin.</li>
+        <li>Check sign consistency: denominator (1/T₁ − 1/T₂) must be positive if T₂ &gt; T₁ placed in that order.</li>
+        <li>Report Eₐ in kJ mol⁻¹ for clarity.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

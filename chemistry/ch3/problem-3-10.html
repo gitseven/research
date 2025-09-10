@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.10 — Ka of Acetic Acid from Conductivity</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 3 · Problem 3.10</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The conductivity of 0.001 mol L⁻¹ acetic acid is 4.95 × 10⁻⁵ S cm⁻¹. Calculate its dissociation constant if Λ<sub>m</sub>⁰ for acetic acid is 390.5 S cm² mol⁻¹.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept</h2>
+      <p>Conductometric methods allow us to infer the extent of ionisation of weak acids from their ability to conduct electricity. The <em>molar conductivity</em> Λ<sub>m</sub> measures the contribution of one mole of electrolyte to the total conductivity of the solution and is given by Λ<sub>m</sub> = κ × (1000/C). For a weak monoprotic acid HA that partially dissociates into H⁺ and A⁻, the degree of dissociation α is the fraction of HA molecules that ionise. Because conductivity arises only from ions, Λ<sub>m</sub> scales with the number and mobility of ions present; at a given temperature, mobilities are fixed, so Λ<sub>m</sub> is proportional to α when referenced to the limiting (infinite dilution) value Λ<sub>m</sub>⁰, where ions migrate independently. Thus, α = Λ<sub>m</sub>/Λ<sub>m</sub>⁰. Ostwald’s dilution law relates the acid dissociation constant to α and C: K<sub>a</sub> = C α²/(1−α) for a monoprotic weak acid, valid at low ionic strength where activity coefficients are near unity. As the solution is diluted, α increases markedly for weak acids, so Λ<sub>m</sub> rises steeply and tends toward Λ<sub>m</sub>⁰. In practice, one measures κ, computes Λ<sub>m</sub>, estimates α relative to a tabulated Λ<sub>m</sub>⁰ (from limiting ionic conductivities of H⁺ and the conjugate base), and then evaluates K<sub>a</sub>. Care must be taken with temperature control and contamination by CO₂, which can alter conductivity via carbonic acid formation. This approach provides an independent route to acidity constants that complements pH-based and spectrophotometric methods.</p>
+      <div class="formula">Λ<sub>m</sub> = κ × (1000/C);  α = Λ<sub>m</sub>/Λ<sub>m</sub>⁰;  K<sub>a</sub> ≈ C α² /(1−α)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Λ<sub>m</sub> = 4.95×10⁻⁵ × (1000/0.001) = 49.5 S cm² mol⁻¹; α = 49.5/390.5 = 0.127. K<sub>a</sub> ≈ 0.001 × 0.127² / (1−0.127) ≈ <strong>1.85 × 10⁻⁵</strong>.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+

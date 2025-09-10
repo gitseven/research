@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.21 — Rate from Total Pressure (SO₂Cl₂ → SO₂ + Cl₂)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.21</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The following data were obtained during the first order thermal decomposition of SO₂Cl₂ at a constant volume. SO₂Cl₂ (g) → SO₂ (g) + Cl₂ (g). Calculate the rate of the reaction when total pressure is 0.65 atm.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Rate from Pressure at a Given Time</h2>
+      <p>For SO₂Cl₂ → SO₂ + Cl₂ in a constant-volume system, each mole of reactant forms two moles of products, increasing total moles and total pressure from P₀ to P(t) to P∞ as decomposition proceeds. If the reaction is first order in SO₂Cl₂, the extent can be inferred from pressure: define α(t) as fraction decomposed. Then P(t) = P₀(1 + α), and the instantaneous rate r = −d[SO₂Cl₂]/dt = k[SO₂Cl₂] = k·(n/V) = k·(P₀/RT)·(1 − α), where α = (P(t) − P₀)/P₀. Given P(t), P₀, T, and V (or using RT relations), one can compute α and hence r. Without explicit P₀ and T, the rate can be expressed in pressure units per time via dP/dt relationships derived from first‑order decay: d(P − P₀)/dt = k(P∞ − P(t)).</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <p>Compute α at P = 0.65 atm: α = (P − P₀)/P₀. Then rate r = k·(P₀/RT)(1 − α) in mol L⁻¹ s⁻¹, or use r = k(P∞ − P) in pressure/time units if k is known from earlier data.</p>
+      <div class="formula">r = k(P∞ − P) (constant V,T), or r = k[SO₂Cl₂] = k·(P₀/RT)(1 − α)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>First find k from the provided dataset (e.g., slope of ln(P∞ − Pₜ) vs t), then evaluate r at P = 0.65 atm.</li>
+        <li>Ensure units: if you report rate in mol L⁻¹ s⁻¹, include RT and volume; for pressure/time, use atm s⁻¹.</li>
+        <li>Use P∞ = P₀(1 + 1) = 2P₀ at full conversion for this stoichiometry in a closed vessel.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

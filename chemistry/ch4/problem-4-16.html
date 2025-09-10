@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.16 — Time to Reach 1/16th (First Order)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.16</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>The rate constant for a first order reaction is 60 s⁻¹. How much time will it take to reduce the initial concentration of the reactant to its 1/16th value?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Successive Half-lives</h2>
+      <p>First-order decay implies that each half-life reduces the amount by a factor of 2, regardless of the starting concentration. Reaching 1/16 of the initial amount corresponds to passing through four half-lives (since 2⁴ = 16). The half-life is t₁/₂ = (ln 2)/k, so the required time is t = 4 t₁/₂ = 4(ln 2)/k. This method avoids computing logarithms directly, though one can equivalently use t = (1/k) ln(1/f) with f = 1/16 to obtain the same result (t = (1/k) ln 16). The constancy of the half-life is unique to first-order processes; for other orders, the number of half-lives to reach a given fraction depends on [A]₀.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">t = (1/k) ln 16 = (1/60) × 2.7726 = <strong>4.62×10⁻² s</strong></div>
+      <p>Equivalently, 4 t₁/₂ with t₁/₂ = 0.693/60 = 0.01155 s → 4 × 0.01155 = 0.0462 s.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use half-life counting for powers of two; use ln for arbitrary fractions.</li>
+        <li>Check units: k in s⁻¹ gives time in seconds.</li>
+        <li>Sanity check: four half-lives at ~0.0116 s each ≈ 0.046 s total.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 9 Problem 9.25 — Violet Colour of [Ti(H₂O)₆]³⁺ (CFT Explanation)</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    svg { max-width:100%; height:auto; display:block; margin:8px 0; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    ul { margin:8px 0 8px 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coordination Compounds · Problem 9.25</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Explain the violet colour of the complex [Ti(H₂O)₆]³⁺ on the basis of crystal field theory.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — d¹ Octahedral CFT and d–d Transitions</h2>
+      <p>In [Ti(H₂O)₆]³⁺, titanium is in +3 oxidation state with electron configuration d¹. In an octahedral ligand field created by six water molecules, the five d orbitals split into a lower‑energy t₂g triplet and a higher‑energy e_g doublet, separated by crystal field splitting Δ₀. With a single d electron, the ground state is t₂g¹. When visible light passes through the solution, photons with energy close to Δ₀ can be absorbed to promote the electron from t₂g to e_g (a spin‑allowed, Laporte‑forbidden transition that gains intensity via vibronic coupling). The wavelength absorbed corresponds to the energy gap; the observed color is the complementary color of the absorbed light. For aqua ligands (weak field), Δ₀ lies in the visible region, typically resulting in absorption around yellow‑green, so the transmitted/reflected light appears violet. Slight distortions (Jahn–Teller effects for d¹ are small but possible) and solvation alter Δ₀ subtly, shifting hue. Charge‑transfer bands are generally weaker here than in π‑acceptor complexes; thus the color is dominated by the single d–d transition characteristic of an octahedral d¹ system. Temperature, concentration, and ligand substitution (e.g., replacing H₂O by stronger‑field ligands) will shift Δ₀ and the perceived color. This classic case illustrates how CFT relates electronic structure to color through the energy gap between split d levels.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">d¹ (Ti³⁺): t₂g¹ → e_g¹ absorption ≈ Δ₀ (octahedral); absorbs yellow‑green → appears violet.</div>
+      <ul>
+        <li>Weak‑field H₂O yields Δ₀ in visible range, enabling the d–d transition.</li>
+        <li>Vibronic coupling partially relaxes Laporte selection rule, giving observable intensity.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Visual: Octahedral d¹ Transition</h2>
+      <svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="480" height="160" fill="#f8fafc" stroke="#e5e7eb" rx="8"/>
+        <text x="260" y="40" text-anchor="middle" font-size="14" font-weight="bold" fill="#374151">t₂g → e_g excitation (d¹)</text>
+        <line x1="120" y1="140" x2="220" y2="140" stroke="#3b82f6" stroke-width="4"/>
+        <circle cx="170" cy="140" r="5" fill="#3b82f6"/>
+        <line x1="300" y1="80" x2="400" y2="80" stroke="#ef4444" stroke-width="4"/>
+        <path d="M 170 135 L 350 85" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="260" y="110" text-anchor="middle" font-size="12" fill="#6b7280">Δ₀</text>
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+          </marker>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>
+
+

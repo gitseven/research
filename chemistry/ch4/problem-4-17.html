@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.17 — Radioactive ⁹⁰Sr Remaining after Time</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.17</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>During nuclear explosion, one of the products is ⁹⁰Sr with half-life of 28.1 years. If 1 µg of ⁹⁰Sr was absorbed in the bones of a newly born baby instead of calcium, how much of it will remain after 10 years and 60 years if it is not lost metabolically?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Fraction Remaining via Half-lives</h2>
+      <p>Radioactive decay is first order with a characteristic half-life t₁/₂ = ln 2 / λ. The fraction remaining after time t is f = (1/2)^{t/t₁/₂}. Multiplying this fraction by the initial mass gives the mass at time t, provided no biological elimination or additional sources occur. Because the dependence is exponential, modest multiples of the half-life drastically reduce the remaining mass. In dose and risk assessments, both physical decay and biological clearance are combined (effective half-life), but for purely physical decay problems the single half-life suffices.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">f(10 y) = (1/2)^{10/28.1} = 0.781 → m ≈ 0.781 µg</div>
+      <div class="formula">f(60 y) = (1/2)^{60/28.1} = 0.326 → m ≈ 0.326 µg</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use f = 2^{−t/t₁/₂}; multiply by initial mass.</li>
+        <li>For combined physical and biological loss, replace with effective half-life.</li>
+        <li>Check that results decrease monotonically with t.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+

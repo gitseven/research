@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 3 Problem 3.18 — Electrolysis Products with Various Electrodes</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    ul { margin:8px 0 8px 20px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Electrochemistry · Problem 3.18</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>Predict the products of electrolysis in each of the following: (i) An aqueous solution of AgNO₃ with silver electrodes. (ii) An aqueous solution of AgNO₃ with platinum electrodes. (iii) A dilute solution of H₂SO₄ with platinum electrodes. (iv) An aqueous solution of CuCl₂ with platinum electrodes.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — Discharge Order and Electrode Reactivity</h2>
+      <p>Electrolysis outcomes depend on (a) the electrode material (inert vs reactive), (b) relative discharge potentials of possible cations/anions, and (c) solution composition. Reactive/soluble electrodes can participate (e.g., Ag anode dissolves to Ag⁺), whereas inert electrodes do not. In aqueous solutions, water reduction to H₂ and oxidation to O₂ must be considered alongside ions. At the cathode, species with higher reduction potential are reduced preferentially; at the anode, species that are more easily oxidized (or the electrode itself if reactive) are consumed. For halide solutions with inert electrodes, halogen evolution often competes with O₂ depending on concentration and overpotential (Cl⁻ often oxidized before water). For noble metal salts with metal electrodes, metal plating at cathode and anodic dissolution of the same metal can result in no net change in ion concentration (“electrorefining behavior”).</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <ul>
+        <li>(i) AgNO₃, Ag electrodes: Cathode — Ag⁺ + e⁻ → Ag(s) (silver deposition). Anode — Ag(s) → Ag⁺ + e⁻ (anodic dissolution). Net: silver shuttling; [Ag⁺] ~ constant; NO₃⁻ spectator.</li>
+        <li>(ii) AgNO₃, Pt electrodes (inert): Cathode — Ag⁺ + e⁻ → Ag(s). Anode — 2H₂O → O₂ + 4H⁺ + 4e⁻ (nitrate remains). Net: Ag deposited; O₂ evolved; solution acidifies.</li>
+        <li>(iii) Dilute H₂SO₄, Pt electrodes: Cathode — 2H⁺ + 2e⁻ → H₂(g). Anode — 2H₂O → O₂ + 4H⁺ + 4e⁻. Net: H₂ at cathode, O₂ at anode.</li>
+        <li>(iv) CuCl₂, Pt electrodes: Cathode — Cu²⁺ + 2e⁻ → Cu(s) (copper plating). Anode — 2Cl⁻ → Cl₂(g) + 2e⁻ (chlorine evolution) preferred over O₂ due to lower overpotential; at low [Cl⁻], O₂ may compete.</li>
+      </ul>
+      <div class="formula">Summary: (i) Ag/Ag cycling; (ii) Ag plating and O₂ at anode; (iii) H₂ and O₂; (iv) Cu plating and Cl₂.</div>
+    </div>
+  </div>
+</body>
+</html>
+
+

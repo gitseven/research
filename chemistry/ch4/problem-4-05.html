@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 4 Problem 4.5 — First-Order Decay Time from k</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chemical Kinetics · Problem 4.5</h1>
+    <div class="panel q">
+      <h2>Original Question</h2>
+      <p>A first order reaction has a rate constant 1.15 × 10⁻³ s⁻¹. How long will 5 g of this reactant take to reduce to 3 g?</p>
+    </div>
+
+    <div class="panel">
+      <h2>Background Concept — First-Order Kinetics and Integrated Law</h2>
+      <p>For first-order processes, the rate of decay is proportional to the current amount of reactant, leading to an exponential decay law: dN/dt = −kN. Integrating with respect to time gives N(t) = N₀ e^(−kt), or equivalently ln(N₀/N) = kt. Because concentration and mass are proportional for a single species in a fixed volume, ratios N₀/N are directly replaced by mass ratios m₀/m when volume and density are constant. The time to reach a given fraction f of the initial amount is t = (1/k) ln(1/f). The half-life t₁/₂ = (ln 2)/k is independent of initial amount, a diagnostic hallmark of first-order behaviour. In practical problems, ensure consistent units for k (e.g., s⁻¹) and t (s). If k is given in s⁻¹ and times are desired in minutes or hours, convert after solving. This framework is ubiquitous in chemical kinetics (unimolecular reactions), nuclear decay, pharmacokinetics (first-order elimination), and atmospheric lifetimes of trace species. When data are noisy, plotting ln(amount) vs time yields a straight line of slope −k, facilitating extraction of k by linear regression.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Answer</h2>
+      <div class="formula">t = (1/k) ln(m₀/m) = (1/1.15×10⁻³) ln(5/3) ≈ 869.6 × 0.5108 ≈ <strong>444 s</strong> (≈ 7.4 min)</div>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use the integrated first-order law with a ratio; absolute units cancel out.</li>
+        <li>Match time units to k; convert seconds to minutes at the end if needed.</li>
+        <li>Check that the result is sensible: reducing to 60% should take less than one half-life.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+
