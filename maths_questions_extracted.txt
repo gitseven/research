@@ -1,0 +1,244 @@
+MATHS QUESTIONS EXTRACTED FROM PDF FILES
+==================================================
+
+SOURCE: lemh101.pdf
+------------------------------
+Question 1:
+2. Now, a – c = (a – b) + (b – c) is even (Why?
+
+Question 2:
+2. Now, a – c = (a – b) + (b – c) is even (Why?
+
+Question 3:
+triangles among T1, T2 and T3 are related?
+
+Question 4:
+set of all elements in A related to the right angle triangle T with sides 3, 4 and 5?
+
+Question 5:
+R∗ is replaced by N with co-domain being same as R∗?
+
+Question 6:
+x ∈ A. Are f and g equal?
+
+
+==================================================
+
+SOURCE: lemh103.pdf
+------------------------------
+Question 1:
+2.
+If a matrix has 24 elements, what are the possible orders it can have?
+
+Question 2:
+3.
+If a matrix has 18 elements, what are the possible orders it can have?
+
+Question 3:
+2.
+If a matrix has 24 elements, what are the possible orders it can have?
+
+Question 4:
+3.
+If a matrix has 18 elements, what are the possible orders it can have?
+
+Question 5:
+Example 2 If a matrix has 8 elements, what are the possible orders it can have?
+
+Question 6:
+in the third row and second column represent?
+
+Question 7:
+Example 2 If a matrix has 8 elements, what are the possible orders it can have?
+
+Question 8:
+If a matrix has 24 elements, what are the possible orders it can have?
+
+Question 9:
+has 13 elements?
+
+Question 10:
+If a matrix has 18 elements, what are the possible orders it can have?
+
+Question 11:
+has 5 elements?
+
+Question 12:
+How much money does each need to spend?
+
+Question 13:
+C′ = (A – A′)′ = A′ – (A′)′     (Why?
+
+
+==================================================
+
+SOURCE: lemh104.pdf
+------------------------------
+Question 1:
+Solution Let P (x, y) be any point on AB. Then, area of triangle ABP is zero (Why?
+
+
+==================================================
+
+SOURCE: lemh105.pdf
+------------------------------
+Question 1:
+20.
+Is the function defined by f(x) = x2 – sin x + 5 continuous at x = π?
+
+Question 2:
+20.
+Is the function defined by f(x) = x2 – sin x + 5 continuous at x = π?
+
+Question 3:
+Example 7 Is the function defined by f(x) = | x |, a continuous function?
+
+Question 4:
+Example 25 Is it true that x = elog x for all real x?
+
+Question 5:
+Example 7 Is the function defined by f(x) = | x |, a continuous function?
+
+Question 6:
+continuous at x = 0?
+
+Question 7:
+a continuous function?
+
+Question 8:
+continuous at x = 0?
+
+Question 9:
+Is the function defined by f(x) = x2 – sin x + 5 continuous at x = π?
+
+Question 10:
+is a continuous function?
+
+Question 11:
+Now the natural question is; what if it doesn’t?
+
+Question 12:
+Example 25 Is it true that x = elog x for all real x?
+
+Question 13:
+Do they all give the same answer?
+
+Question 14:
+at exactly two points?
+
+
+==================================================
+
+SOURCE: lemh106.pdf
+------------------------------
+Question 1:
+9.
+What is the maximum value of the function sin x + cos x?
+
+Question 2:
+9.
+What is the maximum value of the function sin x + cos x?
+
+Question 3:
+centimetres ?
+
+Question 4:
+fast is the enclosed area increasing?
+
+Question 5:
+surface area increasing when the length of an edge is 12 cm?
+
+Question 6:
+volume of the cube increasing when the edge is 10 cm long?
+
+Question 7:
+the enclosed area increasing?
+
+Question 8:
+increase of its circumference?
+
+Question 9:
+on the wall decreasing when the foot of the ladder is 4 m away from the wall ?
+
+Question 10:
+volume of the bubble increasing when the radius is 1 cm?
+
+Question 11:
+height is 4 cm?
+
+Question 12:
+decreasing ?
+
+Question 13:
+acre will maximise the profit?
+
+Question 14:
+when it is nearest to him. What is the nearest distance?
+
+Question 15:
+What is the maximum value of the function sin x + cos x?
+
+Question 16:
+the side of the square to be cut off so that the volume of the box is maximum ?
+
+Question 17:
+two pieces so that the combined area of the square and the circle is minimum?
+
+Question 18:
+sides are equal to the base ?
+
+Question 19:
+the cost of least expensive tank?
+
+
+==================================================
+
+SOURCE: lemh1a1.pdf
+------------------------------
+Question 1:
+A.1.2  What is a Proof?
+
+Question 2:
+How does the expression (x – 3) (x – 2) is equal to the expression x2 – 5x + 6?
+
+Question 3:
+the former?
+
+
+==================================================
+
+SOURCE: lemh1a2.pdf
+------------------------------
+Question 1:
+A.2.2  Why Mathematical Modelling?
+
+Question 2:
+Why heart patients are not allowed to use lift?
+
+Question 3:
+Identify the available relevent data. (what is given?
+
+Question 4:
+orders in such a way that the firm makes the full use of its available raw material?
+
+Question 5:
+order to maximise profit?
+
+Question 6:
+any time t?
+
+
+==================================================
+
+SOURCE: lemh1ps.pdf
+------------------------------
+Question 1:
+A.1.2  What is a Proof?
+
+Question 2:
+A.2.2  Why Mathematical Modelling?
+
+
+==================================================
+
+TOTAL QUESTIONS EXTRACTED: 64 questions from 10 files

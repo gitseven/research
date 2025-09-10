@@ -21,10 +21,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload artifact (chemistry folder)
+      - name: Upload artifact (chemistry and maths folders)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: chemistry
+          path: |
+            chemistry
+            Maths
 
   deploy:
     needs: build
