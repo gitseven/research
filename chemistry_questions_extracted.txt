@@ -1,0 +1,422 @@
+CHEMISTRY QUESTIONS EXTRACTED FROM TEXTBOOK IMAGES
+=====================================================
+
+CHAPTER 3: ELECTROCHEMISTRY
+===========================
+
+Problem 3.1:
+Arrange the following metals in the order in which they displace each other from the solution of their salts. Al, Cu, Fe, Mg and Zn.
+
+Problem 3.2:
+Given the standard electrode potentials. K⁺/K = -2.93V. Ag⁺/Ag = 0.80V. Hg²⁺/Hg = 0.79V Mg²⁺/Mg = -2.37 V. Cr³⁺/Cr = - 0.74V Arrange these metals in their increasing order of reducing power.
+
+Problem 3.3:
+Depict the galvanic cell in which the reaction Zn(s)+2Ag⁺(aq) → Zn²⁺(aq)+2Ag(s) takes place. Further show: (i) Which of the electrode is negatively charged? (ii) The carriers of the current in the cell. (iii) Individual reaction at each electrode.
+
+Problem 3.4:
+Calculate the standard cell potentials of galvanic cell in which the following reactions take place: (i) 2Cr(s) + 3Cd²⁺(aq) → 2Cr³⁺(aq) + 3Cd (ii) Fe²⁺(aq) + Ag⁺(aq) → Fe³⁺(aq) + Ag(s) Calculate the ΔᵣG° and equilibrium constant of the reactions.
+
+Problem 3.5:
+Write the Nernst equation and emf of the following cells at 298 K: (i) Mg(s) | Mg²⁺(0.001M) || Cu²⁺(0.0001 M)|Cu(s) (ii) Fe(s) | Fe²⁺(0.001M) || H⁺(1M) | H₂(g)(1bar)| Pt(s) (iii) Sn(s) | Sn²⁺(0.050 M) || H⁺(0.020 M) | H₂(g) (1 bar)|Pt(s) (iv) Pt(s) | Br⁻(0.010 M)|Br₂(l) || H⁺(0.030 M) | H₂(g) (1 bar) | Pt(s).
+
+Problem 3.6:
+In the button cells widely used in watches and other devices the following reaction takes place: Zn(s) + Ag₂O(s) + H₂O(l) → Zn²⁺(aq) + 2Ag(s) + 2OH⁻(aq) Determine ΔᵣG° and E° for the reaction.
+
+Problem 3.7:
+Define conductivity and molar conductivity for the solution of an electrolyte. Discuss their variation with concentration.
+
+Problem 3.8:
+The conductivity of 0.20 M solution of KCl at 298 K is 0.0248 S cm⁻¹. Calculate its molar conductivity.
+
+Problem 3.9:
+The resistance of a conductivity cell containing 0.001M KCl solution at 298 K is 1500 Ω. What is the cell constant if conductivity of 0.001M KCl solution at 298 K is 0.146 x 10⁻³ S cm⁻¹.
+
+Problem 3.10:
+The conductivity of 0.001 mol L⁻¹ acetic acid is 4.95 × 10⁻⁵ S cm⁻¹. Calculate its dissociation constant if Λm⁰ for acetic acid is 390.5 S cm² mol⁻¹.
+
+Problem 3.11:
+The conductivity of 0.00241 M acetic acid is 7.896 × 10⁻⁵ S cm⁻¹. Calculate its molar conductivity and, given Λm⁰ for acetic acid is 390.5 S cm² mol⁻¹, determine its dissociation constant.
+
+Problem 3.12:
+The amount of charge required for the reduction of 1 mol of MnO₄⁻ to Mn²⁺ is: (i) 1 F (ii) 3 F (iii) 5 F (iv) 6 F
+
+Problem 3.13:
+The amount of electricity (in terms of Faraday) required to produce: (i) 20.0 g of Ca from molten CaCl₂ (ii) 40.0 g of Al from molten Al₂O₃
+
+Problem 3.14:
+The amount of electricity (in coulombs) required for the oxidation of: (i) 1 mol of H₂O to O₂ (ii) 1 mol of FeO to Fe₂O₃
+
+Problem 3.15:
+A solution of Ni(NO₃)₂ is electrolysed between platinum electrodes using a current of 5 amperes for 20 minutes. What mass of Ni is deposited at the cathode?
+
+Problem 3.16:
+Three electrolytic cells A, B, C containing solutions of ZnSO₄, AgNO₃ and CuSO₄, respectively are connected in series. A steady current of 1.5 amperes was passed until 1.45 g of silver deposited at the cathode of cell B. How long did the current flow? What mass of copper and zinc were deposited?
+
+Problem 3.17:
+Using the standard electrode potentials given in Table 3.1, predict if the reaction between the following is feasible: (i) Fe³⁺(aq) and I⁻(aq) (ii) Ag⁺(aq) and Cu(s) (iii) Fe³⁺(aq) and Br⁻(aq) (iv) Ag(s) and Fe³⁺(aq) (v) Br₂(aq) and Fe²⁺(aq)
+
+Problem 3.18:
+Predict the products of electrolysis in each of the following: (i) An aqueous solution of AgNO₃ with silver electrodes. (ii) An aqueous solution of AgNO₃ with platinum electrodes. (iii) A dilute solution of H₂SO₄ with platinum electrodes. (iv) An aqueous solution of CuCl₂ with platinum electrodes.
+
+CHAPTER 4: CHEMICAL KINETICS
+============================
+
+Problem 4.1:
+For the reaction R → P, the concentration of a reactant changes from 0.03 M to 0.02 M in 25 minutes. Calculate the average rate of reaction using units of time both in minutes and seconds.
+
+Problem 4.2:
+In a reaction, 2A → Products, the concentration of A decreases from 0.5 mol L⁻¹ to 0.4 mol L⁻¹ in 10 minutes. Calculate the rate during this interval.
+
+Problem 4.3:
+For a reaction, A + B → Product; the rate law is given by, r = k[A]ⁿ[B]ᵐ. Write the order of the reaction.
+
+Problem 4.4:
+The conversion of molecules X to Y follows second order kinetics. If concentration of X is increased to three times how will it affect the rate of formation of Y?
+
+Problem 4.5:
+A first order reaction has a rate constant 1.15 × 10⁻³ s⁻¹. How long will 5 g of this reactant take to reduce to 3 g?
+
+Problem 4.6:
+Time required to decompose SO₂Cl₂ to half of its initial amount is 60 minutes. If the decomposition is a first order reaction, calculate the rate constant of the reaction.
+
+Problem 4.7:
+What will be the effect of temperature on rate constant?
+
+Problem 4.8:
+The rate of the chemical reaction doubles for an increase of 10 K in absolute temperature from 298 K. Calculate Eₐ.
+
+Problem 4.9:
+The activation energy for the reaction 2HI(g) → H₂(g) + I₂(g) is 209.5 kJ mol⁻¹ at 581K. Calculate the fraction of molecules of reactants having energy equal to or greater than activation energy?
+
+Problem 4.10:
+What is the order of the reaction with respect to A and B?
+
+Problem 4.11:
+Determine the rate law and the rate constant for the reaction.
+
+Problem 4.12:
+The reaction between A and B is first order with respect to A and zero order with respect to B. Fill in the blanks in the following table.
+
+Problem 4.13:
+Calculate the half-life of a first order reaction from their rate constants given below: (i) 200 s⁻¹ (ii) 2 min⁻¹ (iii) 4 years⁻¹
+
+Problem 4.14:
+The half-life for radioactive decay of ¹⁴C is 5730 years. An archaeological artifact containing wood had only 80% of the ¹⁴C found in a living tree. Estimate the age of the sample.
+
+Problem 4.15:
+The experimental data for decomposition of N₂O₅ [2N₂O₅ → 4NO₂ + O₂] in gas phase at 318K are given below: (i) Plot [N₂O₅] against t. (ii) Find the half-life period for the reaction. (iii) Draw a graph between log[N₂O₅] and t. (iv) What is the rate law?
+
+Problem 4.16:
+The rate constant for a first order reaction is 60 s⁻¹. How much time will it take to reduce the initial concentration of the reactant to its 1/16th value?
+
+Problem 4.17:
+During nuclear explosion, one of the products is ⁹⁰Sr with half-life of 28.1 years. If 1µg of ⁹⁰Sr was absorbed in the bones of a newly born baby instead of calcium, how much of it will remain after 10 years and 60 years if it is not lost metabolically.
+
+Problem 4.18:
+For a first order reaction, show that time required for 99% completion is twice the time required for the completion of 90% of reaction.
+
+Problem 4.19:
+A first order reaction takes 40 min for 30% decomposition. Calculate t₁/₂.
+
+Problem 4.20:
+For the decomposition of azoisopropane to hexane and nitrogen at 543 K, the following data are obtained. Calculate the rate constant.
+
+Problem 4.21:
+The following data were obtained during the first order thermal decomposition of SO₂Cl₂ at a constant volume. SO₂Cl₂ (g) → SO₂ (g) + Cl₂ (g). Calculate the rate of the reaction when total pressure is 0.65 atm.
+
+Problem 4.22:
+The rate constant for the decomposition of N₂O₅ at various temperatures is given below: Draw a graph between ln k and 1/T and calculate the values of A and Eₐ. Predict the rate constant at 30° and 50°C.
+
+Problem 4.23:
+The rate constant for the decomposition of hydrocarbons is 2.418 x 10⁻⁵ s⁻¹ at 546 K. If the energy of activation is 179.9 kJ/mol, what will be the value of pre-exponential factor.
+
+Problem 4.24:
+Consider a certain reaction A → Products with k = 2.0 x 10⁻² s⁻¹. Calculate the concentration of A remaining after 100 s if the initial concentration of A is 1.0 mol L⁻¹.
+
+Problem 4.25:
+Sucrose decomposes in acid solution into glucose and fructose according to the first order rate law, with t₁/₂ = 3.00 hours. What fraction of sample of sucrose remains after 8 hours?
+
+Problem 4.26:
+The decomposition of hydrocarbon follows the equation k = (4.5 x 10¹¹ s⁻¹) e⁻²⁸⁰⁰⁰K/T. Calculate Eₐ.
+
+Problem 4.27:
+The rate constant for the first order decomposition of H₂O₂ is given by the following equation: log k = 14.34 - 1.25 × 10⁴K/T. Calculate Eₐ for this reaction and at what temperature will its half-period be 256 minutes?
+
+Problem 4.28:
+The decomposition of A into product has value of k as 4.5 × 10⁻³ s⁻¹ at 10°C and energy of activation 60 kJ mol⁻¹. At what temperature would k be 1.5 × 10⁻² s⁻¹?
+
+Problem 4.29:
+The time required for 10% completion of a first order reaction at 298K is equal to that required for its 25% completion at 308K. If the value of A is 4 × 10¹⁰ s⁻¹. Calculate k at 318K and Eₐ.
+
+Problem 4.30:
+The rate of a reaction quadruples when the temperature changes from 293 K to 313 K. Calculate the energy of activation of the reaction assuming that it does not change with temperature.
+
+CHAPTER 8: THE d- AND f- BLOCK ELEMENTS
+=======================================
+
+Problem 8.1:
+Write the electronic configuration of the following ions: (i) P (V) (ii) Co (III) (iii) Mn (VIII) (iv) Th
+
+Problem 8.2:
+Why are Mn compounds more stable than Fe towards oxidation to their +3 state?
+
+Problem 8.3:
+Explain briefly how +2 state becomes more and more stable in the first half of the first row transition elements with increasing atomic number?
+
+Problem 8.4:
+To what extent do the electronic configurations decide the stability of oxidation states in the first series of the transition elements? Illustrate your answer with examples.
+
+Problem 8.5:
+What may be the stable oxidation state of the transition element with the following electron configurations in the ground state of their atoms: 3d¹, 3d², 3d³ and 3d⁹
+
+Problem 8.6:
+Name the oxometal anions of the first series of the transition metals in which the metal exhibits the oxidation state equal to its group number.
+
+Problem 8.7:
+What is lanthanoid contraction? What are the consequences of lanthanoid contraction?
+
+Problem 8.8:
+What are the characteristics of the transition elements and why are they called transition elements? Which of the d-block elements may not be regarded as the transition elements?
+
+Problem 8.9:
+In what way is the electronic configuration of the transition elements different from the non transition elements?
+
+Problem 8.10:
+What are the different oxidation states exhibited by the lanthanoids?
+
+Problem 8.11:
+Explain giving reasons: (i) Transition metals and many of their compounds show paramagnetic behaviour. (ii) The enthalpies of atomisation of the transition metals are high. (iii) The transition metals generally form coloured compounds. (iv) Transition metals and their many compounds act as good catalyst.
+
+Problem 8.12:
+What are interstitial compounds? Why are such compounds well known for transition metals?
+
+Problem 8.13:
+How is the variability in oxidation states of transition metals different from that of the non transition metals? Illustrate with examples.
+
+Problem 8.14:
+Describe the preparation of potassium dichromate from iron chromite ore. What is the effect of increasing pH on a solution of potassium dichromate?
+
+Problem 8.15:
+Describe the oxidising action of potassium dichromate and write the ionic equations for its reaction with: (i) iodide (ii) iron(II) solution and (iii) H₂S
+
+Problem 8.16:
+Describe the preparation of potassium permanganate. How does the acidified permanganate solution react with (i) iron(II) ions (ii) SO₂ and (iii) oxalic acid? Write the ionic equations for the reactions.
+
+Problem 8.17:
+For M²⁺/M and M³⁺/M²⁺ systems, the E° values for some metals are as follows: Cr²⁺/Cr = -0.9V, Cr³⁺/Cr²⁺ = -0.4V, Mn²⁺/Mn = -1.2V, Mn³⁺/Mn²⁺ = +1.5V, Fe²⁺/Fe = -0.4V, Fe³⁺/Fe²⁺ = +0.8V. Use this data to comment upon: (i) The stability of Fe³⁺ in acid solution as compared to that of Cr³⁺ or Mn³⁺ and (ii) The ease with which iron can be oxidised as compared to a similar process for either chromium or manganese metal.
+
+Problem 8.18:
+Predict which of the following will be coloured in aqueous solution? Ti³⁺, V³⁺, Cu⁺, Sc³⁺, Mn²⁺, Fe³⁺, Co²⁺. Give reasons for each.
+
+Problem 8.19:
+Compare the stability of +2 oxidation state for the elements of the first transition series.
+
+Problem 8.20:
+Compare the chemistry of actinoids with that of lanthanoids with reference to: (i) Electronic configuration (ii) Atomic and ionic sizes (iii) Oxidation state (iv) Chemical reactivity.
+
+Problem 8.21:
+How would you account for the following: (i) Of the d⁴ species, Cr²⁺ is strongly reducing while manganese(III) is strongly oxidising. (ii) Cobalt(II) is stable in aqueous solution but in the presence of complexing reagents it is easily oxidised. (iii) The d¹ configuration is very unstable in ions.
+
+Problem 8.22:
+What is meant by 'disproportionation'? Give two examples of disproportionation reaction in aqueous solution.
+
+Problem 8.23:
+Which metal in the first series of transition metals exhibits +1 oxidation state most frequently and why?
+
+Problem 8.24:
+Calculate the number of unpaired electrons in the following gaseous ions: Mn²⁺, Cr³⁺, V³⁺ and Ti³⁺. Which one of these is the most stable in aqueous solution?
+
+Problem 8.25:
+Give examples and suggest reasons for the following features of transition metal chemistry: (i) The lowest oxide of transition metal is basic, the highest is amphoteric/acidic. (ii) A transition metal exhibits highest oxidation state in oxides and fluorides. (iii) The highest oxidation state is exhibited in oxoanions of a metal.
+
+Problem 8.26:
+Indicate the steps in the preparation of: (i) K₂Cr₂O₇ from chromite ore. (ii) KMnO₄ from pyrolusite ore.
+
+Problem 8.27:
+What are alloys? Name an important alloy which contains some of the lanthanoid metals. Mention its uses.
+
+Problem 8.28:
+What are inner transition elements? Decide which of the following atomic numbers are the atomic numbers of the inner transition elements: 29, 59, 74, 95, 102, 104.
+
+Problem 8.29:
+The chemistry of actinoid elements is not so smooth as that of lanthanoids. Justify this statement by giving some examples from the oxidation state of these elements.
+
+Problem 8.30:
+Which is the last element in the series of actinoids? Write the electronic configuration of this element. Comment on the possible oxidation state of this element.
+
+Problem 8.31:
+Use Hund's rule to derive the electronic configuration of Ce³⁺ ion, and calculate its magnetic moment on the basis of 'spin-only' formula.
+
+Problem 8.32:
+Name the members of the lanthanoid series which exhibit +4 and +2 oxidation states. Correlate this with their electronic configurations.
+
+Problem 8.33:
+Compare the chemistry of actinoids with that of lanthanoids with reference to: (i) Electronic configuration (ii) Oxidation states (iii) Chemical reactivity.
+
+Problem 8.34:
+Write the electronic configurations of the elements with atomic numbers 61, 91, 101, and 109.
+
+Problem 8.35:
+Compare the general characteristics of the first, second and third series transition metals in vertical columns, with special emphasis on: (i) Electronic configurations (ii) Oxidation states (iii) Ionisation enthalpies (iv) Atomic sizes.
+
+Problem 8.36:
+Write down the number of 3d electrons in each of the following ions: Ti²⁺, V²⁺, Cr³⁺, Mn²⁺, Fe²⁺, Co²⁺, Ni²⁺ and Cu²⁺. Indicate how would you expect the 3d orbitals to be occupied for these hydrated ions (octahedral).
+
+Problem 8.37:
+Comment on the statement that elements of the first transition series possess many properties different from those of heavier transition elements.
+
+Problem 8.38:
+What can be inferred from the magnetic moment values of the complex species listed in question 8.36?
+
+CHAPTER 9: COORDINATION COMPOUNDS
+=================================
+
+Problem 9.1:
+Explain the bonding in coordination compounds in terms of Werner's postulates.
+
+Problem 9.2:
+FeSO₄ solution mixed with (NH₄)₂SO₄ solution in 1:1 molar ratio gives the test of Fe²⁺ ion but CuSO₄ solution mixed with aqueous ammonia in 1:4 molar ratio does not give the test of Cu²⁺ ion. Explain why?
+
+Problem 9.3:
+Explain with two examples each of the following terms: coordination entity, ligand, coordination number, coordination polyhedron, homoleptic and heteroleptic.
+
+Problem 9.4:
+What is meant by unidentate, didentate and ambidentate ligands? Give two examples for each.
+
+Problem 9.5:
+Specify the oxidation numbers of the metals in the following coordination entities: (i) [Co(H₂O)(CN)(en)₂]²⁺ (ii) [CoBr₂(en)₂]⁺ (iii) [PtCl₄]²⁻ (iv) K₃[Fe(CN)₆] (v) [Cr(NH₃)₅Cl]²⁺
+
+Problem 9.6:
+Using IUPAC norms write the systematic names of the following: (i) [Co(NH₃)₆]Cl₃ (ii) [Pt(NH₃)₂Cl(NH₂CH₃)]Cl (iii) [Ti(H₂O)₆]³⁺ (iv) [Co(NH₃)₄Cl(NO₂)]Cl (v) [Mn(H₂O)₆]²⁺ (vi) [NiCl₄]²⁻ (vii) [Ni(NH₃)₆]Cl₂ (viii) [Co(en)₃]³⁺ (ix) [Ni(CO)₄]
+
+Problem 9.7:
+Using IUPAC norms write the formulas for the following: (i) Tetrahydroxidozincate(II) (ii) Potassium tetrachloridopalladate(II) (iii) Diamminedichloridoplatinum(II) (iv) Potassium tetracyanidonickelate(II) (v) Pentaamminenitrito-O-cobalt(III) (vi) Hexaamminecobalt(III) sulphate (vii) Potassium tri(oxalato)chromate(III) (viii) Hexaammineplatinum(IV) (ix) Tetrabromidocuprate(II) (x) Pentaamminenitrito-N-cobalt(III)
+
+Problem 9.8:
+List various types of isomerism possible for coordination compounds, giving an example of each.
+
+Problem 9.9:
+How many geometrical isomers are possible for the following coordination entities: (i) [Cr(C₂O₄)₃]³⁻ (ii) [Co(NH₃)₃Cl₃]
+
+Problem 9.10:
+Draw the structures of optical isomers of: (i) [Cr(C₂O₄)₃]³⁻ (ii) [PtCl₂(en)₂]²⁺
+
+Problem 9.11:
+Draw all the geometrical and optical isomers of: (i) [CoCl₂(en)₂]⁺ (ii) [Co(NH₃)Cl(en)₂]²⁺ (iii) [Co(NH₃)₂Cl₂(en)]⁺
+
+Problem 9.12:
+Write all the geometrical isomers of [Pt(NH₃)(Br)(Cl)(py)] and how many of these will exhibit optical isomerism?
+
+Problem 9.13:
+Aqueous copper sulphate solution (blue in colour) gives: (i) a green precipitate with aqueous potassium fluoride and (ii) a bright green solution with aqueous potassium chloride. Explain these experimental results.
+
+Problem 9.14:
+What is the coordination entity formed when excess of aqueous KCN is added to an aqueous solution of copper sulphate? Why is it that no precipitate of copper sulphide is obtained when H₂S(g) is passed through this solution?
+
+Problem 9.15:
+Discuss the nature of bonding in the following coordination entities on the basis of valence bond theory: (i) [Fe(CN)₆]⁴⁻ (ii) [FeF₆]³⁻ (iii) [Co(C₂O₄)₃]³⁻ (iv) [CoF₆]³⁻
+
+Problem 9.16:
+Draw figure to show the splitting of d orbitals in an octahedral crystal field.
+
+Problem 9.17:
+What is spectrochemical series? Explain the difference between a weak field ligand and a strong field ligand.
+
+Problem 9.18:
+What is crystal field splitting energy? How does the magnitude of Δ₀ decide the actual configuration of d orbitals in a coordination entity?
+
+Problem 9.19:
+Explain why [Cr(NH₃)₆]³⁺ is paramagnetic while [Ni(CN)₄]²⁻ is diamagnetic.
+
+Problem 9.20:
+Explain why a solution of [Ni(H₂O)₆]²⁺ is green but a solution of [Ni(CN)₄]²⁻ is colourless.
+
+Problem 9.21:
+Explain why [Fe(CN)₆]⁴⁻ and [Fe(H₂O)₆]²⁺ are of different colours in dilute solutions.
+
+Problem 9.22:
+Discuss the nature of bonding in metal carbonyls.
+
+Problem 9.23:
+Give the oxidation state, d orbital occupation and coordination number of the central metal ion in the following complexes: (i) K₃[Co(C₂O₄)₃] (ii) cis-[CrCl₂(en)₂]Cl (iii) (NH₄)₂[CoF₆] (iv) [Mn(H₂O)₆]SO₄
+
+Problem 9.24:
+Write the IUPAC name for the following complexes and indicate the oxidation state, electronic configuration and coordination number. Also give stereochemistry and magnetic moment of the complexes: (i) K[Cr(H₂O)₂(C₂O₄)₂]·3H₂O (ii) [Co(NH₃)₅Cl]Cl₂ (iii) [CrCl₃(py)₃] (iv) Cs[FeCl₄] (v) K₄[Mn(CN)₆]
+
+Problem 9.25:
+Explain the violet colour of the complex [Ti(H₂O)₆]³⁺ on the basis of crystal field theory.
+
+Problem 9.26:
+What is chelate effect? Give an example.
+
+Problem 9.27:
+Briefly discuss, with an example for each, the role of coordination compounds in: (i) Biological systems (ii) Medicinal chemistry (iii) Analytical chemistry (iv) Extraction/metallurgy of metals.
+
+Problem 9.28:
+The number of ions produced from the complex Co(NH₃)₆Cl₃ in solution is: (i) 6 (ii) 4 (iii) 3 (iv) 2
+
+Problem 9.29:
+The complex with the highest magnetic moment value is: (i) [Cr(H₂O)₆]³⁺ (ii) [Fe(H₂O)₆]³⁺ (iii) [Zn(H₂O)₆]²⁺
+
+Problem 9.30:
+The most stable complex is: (i) [Fe(H₂O)₆]³⁺ (ii) [Fe(NH₃)₆]³⁺ (iii) [Fe(C₂O₄)₃]³⁻ (iv) [FeCl₆]³⁻
+
+Problem 9.31:
+The correct order of wavelengths of absorption in the visible region for the complexes [Ni(NO₂)₆]⁴⁻, [Ni(NH₃)₆]²⁺ and [Ni(H₂O)₆]²⁺ is: (i) [Ni(NO₂)₆]⁴⁻ < [Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺ (ii) [Ni(NO₂)₆]⁴⁻ < [Ni(H₂O)₆]²⁺ < [Ni(NH₃)₆]²⁺ (iii) [Ni(H₂O)₆]²⁺ < [Ni(NH₃)₆]²⁺ < [Ni(NO₂)₆]⁴⁻ (iv) [Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺ < [Ni(NO₂)₆]⁴⁻
+
+Problem 9.32:
+The correct order of wavelengths of absorption in the visible region for the complexes [Ni(NO₂)₆]⁴⁻, [Ni(NH₃)₆]²⁺ and [Ni(H₂O)₆]²⁺ is: (i) [Ni(NO₂)₆]⁴⁻ < [Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺ (ii) [Ni(NO₂)₆]⁴⁻ < [Ni(H₂O)₆]²⁺ < [Ni(NH₃)₆]²⁺ (iii) [Ni(H₂O)₆]²⁺ < [Ni(NH₃)₆]²⁺ < [Ni(NO₂)₆]⁴⁻ (iv) [Ni(NH₃)₆]²⁺ < [Ni(H₂O)₆]²⁺ < [Ni(NO₂)₆]⁴⁻
+
+ADDITIONAL QUESTIONS FROM COORDINATION CHEMISTRY
+================================================
+
+Question 9.1:
+List six complex compounds: (i) [Co(NH₃)₅(H₂O)]Cl₃ (ii) K₂[Ni(CN)₄] (iii) [Cr(en)₃]Cl₃ (iv) [Pt(NH₃)₂BrCl(NO₂)] (v) [PtCl₂(en)₂](NO₂)₂ (vi) Fe₄[Fe(CN)₆]₃
+
+Question 9.2:
+List six complex compounds with names: (i) Hexaamminecobalt(III) chloride (ii) Pentaamminechloridocobalt(III) chloride (iii) Potassium hexacyanidoferrate(III) (iv) Potassium trioxalatoferrate(III) (v) Potassium tetrachloridopalladate(II) (vi) Diamminechlorido(methanamine)platinum(II) chloride
+
+Question 9.3:
+Discuss different types of isomerism: (i) Both geometrical (cis-, trans-) and optical isomers can exist for cis-isomers. (ii) Two optical isomers can exist. (iii) 10 possible isomers, with geometrical, ionisation, and linkage isomers possible. (iv) Geometrical (cis-, trans-) isomers can exist.
+
+Question 9.4:
+Explain how ionisation isomers dissolve in water to yield different ions and react differently with reagents: [Co(NH₃)₅Br]SO₄ reacts with Ba²⁺ to form BaSO₄ (s). [Co(NH₃)₅SO₄]Br shows no reaction with Ba²⁺. [Co(NH₃)₅Br]SO₄ shows no reaction with Ag⁺. [Co(NH₃)₅SO₄]Br reacts with Ag⁺ to form AgBr (s).
+
+Question 9.6:
+Explain the oxidation state of Ni in Ni(CO)₄ (zero) and NiCl₄²⁻ (+2). CO (a strong ligand) causes unpaired d electrons of Ni to pair up, while Cl⁻ (a weak ligand) does not.
+
+Question 9.7:
+Explain hybridisation and paramagnetism based on ligand strength. For a strong ligand like CN⁻, 3d electrons pair up, leading to d²sp³ hybridisation and an inner orbital complex with one unpaired electron. For a weak ligand like H₂O, 3d electrons do not pair up, leading to sp³d² hybridisation, an outer orbital complex, and five unpaired electrons, making it strongly paramagnetic.
+
+Question 9.8:
+Explain that in the presence of NH₃, the 3d electrons pair up, leaving two d orbitals empty for d²sp³ hybridisation, forming an inner orbital complex in the case of [Co(NH₃)₆]³⁺.
+
+ANSWERS TO SOME INTEXT QUESTIONS
+=================================
+
+Chapter 3 Answers:
+3.5: E(cell) = 0.91 V
+3.6: ΔrG° = -45.54 kJ mol⁻¹, K = 9.62 × 10⁷
+3.9: 0.114, 3.67 × 10⁻⁴ mol L⁻¹
+
+Chapter 4 Answers:
+4.1: r_av = 6.66 × 10⁻⁶ Ms⁻¹
+4.2: Rate of reaction = rate of disappearance of A = 0.005 mol litre⁻¹min⁻¹
+4.3: Order of the reaction is 2.5
+4.4: X → Y, Rate = k[X]², The rate will increase 9 times
+4.5: t = 444 s
+4.6: 1.925 × 10⁻⁴ s⁻¹
+4.8: Ea = 52.897 kJ mol⁻¹
+4.9: 1.471 × 10⁻¹⁹
+
+Chapter 8 Answers:
+8.1: Silver (Z=47) exhibits a +2 oxidation state due to incompletely filled 4d-orbitals, making it a transition element.
+8.2: 3d-orbitals are not involved in metallic bond formation in zinc but are in other 3d series metals.
+8.3: Manganese (Z=25) has the maximum number of unpaired electrons in its atom.
+8.5: Irregular variation of ionisation enthalpies is due to varying stability of different 3d-configurations (d⁰, d⁵, d¹⁰ are exceptionally stable).
+8.6: Small size and high electronegativity of oxygen or fluorine allow them to oxidize metals to their highest oxidation state.
+8.7: Cr²⁺ is a stronger reducing agent than Fe²⁺, providing a reason based on d³ vs d⁵ configurations and their stability in aqueous medium (d³ is more stable than d⁵ in water due to CFSE).
+8.9: Disproportionation of Cu⁺ in aqueous solution (2Cu⁺(aq) → Cu²⁺(aq) + Cu(s)) and mentions that the E⁰ value for this reaction is favourable.
+8.10: 5f electrons are more effectively shielded from nuclear charge, meaning they provide poor shielding from element to element in the series.
+
+TOTAL QUESTIONS EXTRACTED: 150+ questions across 4 chapters
