@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 5 Problem 4 — Product Rule</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,37 +22,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 5 · Problem 4</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Find the derivative of f(x) = x² sin(x).</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Product Rule</h2>
+      The product rule states that if f(x) = u(x)v(x), then f'(x) = u'(x)v(x) + u(x)v'(x). This is used for functions that are products of two other functions. The product rule can be extended to products of more than two functions. It's essential for finding derivatives of polynomial and trigonometric functions.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>Let u(x) = x² and v(x) = sin(x). Then u'(x) = 2x and v'(x) = cos(x). By the product rule: f'(x) = u'(x)v(x) + u(x)v'(x) = 2x sin(x) + x² cos(x).</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Identify u(x) and v(x)</li>
+<li>Find u'(x) and v'(x)</li>
+<li>Use f'(x) = u'(x)v(x) + u(x)v'(x)</li>
+<li>Substitute and simplify</li>
+<li>Check with other methods</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        Product rule: d/dx[u(x)v(x)] = u'(x)v(x) + u(x)v'(x)
       </div>
     </div>
 

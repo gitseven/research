@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 4 Problem 7 — Determinant Expansion</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 4 · Problem 7</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Expand the determinant of A = [[2,1,0],[1,3,2],[0,1,1]] along the first row.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Determinant Expansion</h2>
+      The determinant can be expanded along any row or column using the formula det(A) = Σⱼ aᵢⱼCᵢⱼ where Cᵢⱼ is the cofactor. Expanding along the first row: det(A) = a₁₁C₁₁ + a₁₂C₁₂ + a₁₃C₁₃. This method is useful for larger matrices.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>Expanding along first row: det(A) = 2C₁₁ + 1C₁₂ + 0C₁₃ = 2det([[3,2],[1,1]]) - 1det([[1,2],[0,1]]) + 0 = 2(3×1-2×1) - 1(1×1-2×0) = 2(3-2) - 1(1-0) = 2(1) - 1(1) = 2 - 1 = 1.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Use det(A) = Σⱼ aᵢⱼCᵢⱼ</li>
+<li>Calculate each cofactor</li>
+<li>Alternate signs: +, -, +</li>
+<li>Check arithmetic</li>
+<li>Verify with other methods</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        det(A) = Σⱼ aᵢⱼCᵢⱼ; Cᵢⱼ = (-1)ᵢ⁺ʲMᵢⱼ
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 5</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 4</p>
     </div>
   </div>
 </body>

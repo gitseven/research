@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 1 Problem 1 — Types of Relations</title>
+  <title>Ch 1 Problem 6 — Identity and Inverse Elements</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -25,42 +25,42 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 1 · Problem 1</h1>
+    <h1>Chapter 1 · Problem 6</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Let A = {1, 2, 3, 4} and R = {(1,1), (1,2), (2,1), (2,2), (3,3), (4,4)}. Check if R is reflexive, symmetric, and transitive.</p>
+      <p>For the binary operation * on Z defined by a * b = a + b - ab, find the identity element and inverse of element 3.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Types of Relations</h2>
-      A relation R on set A is: <strong>Reflexive</strong> if (a,a) ∈ R for all a ∈ A; <strong>Symmetric</strong> if (a,b) ∈ R implies (b,a) ∈ R; <strong>Transitive</strong> if (a,b) ∈ R and (b,c) ∈ R implies (a,c) ∈ R. An equivalence relation satisfies all three properties. Relations are fundamental in mathematics and computer science.
+      <h2>Background Concept — Identity and Inverse Elements</h2>
+      An <strong>identity element</strong> e for operation * satisfies a * e = e * a = a for all a. An <strong>inverse</strong> of element a is an element b such that a * b = b * a = e. Not all elements have inverses. The identity is unique if it exists. Inverses are unique if they exist.
     </div>
 
     <div class="panel">
       <h2>Visualization</h2>
-      <svg viewBox="0 0 400 200" class="math-diagram"><circle cx="100" cy="100" r="60" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="100" y="105" text-anchor="middle" font-size="12" fill="#374151">A = {1,2,3,4}</text><text x="100" y="180" text-anchor="middle" font-size="10" fill="#6b7280">Reflexive, Symmetric, Transitive</text></svg>
+      <svg viewBox="0 0 400 150" class="math-diagram"><circle cx="100" cy="75" r="30" fill="#f3f4f6" stroke="#6b7280"/><text x="100" y="80" text-anchor="middle" font-size="10" fill="#374151">a</text><circle cx="200" cy="75" r="30" fill="#f3f4f6" stroke="#6b7280"/><text x="200" y="80" text-anchor="middle" font-size="10" fill="#374151">e</text><text x="150" y="50" text-anchor="middle" font-size="12" fill="#374151">*</text></svg>
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>Reflexive: Yes, as (1,1), (2,2), (3,3), (4,4) ∈ R. Symmetric: Yes, as (1,2) ∈ R and (2,1) ∈ R. Transitive: Yes, checking all combinations: (1,1) and (1,2) → (1,2) ∈ R ✓. Since R satisfies all three properties, it is an equivalence relation.</p>
+      <p>Identity: Let e be the identity. Then a * e = a, so a + e - ae = a, giving e - ae = 0, so e(1 - a) = 0. For this to hold for all a, we need e = 0. Check: a * 0 = a + 0 - a·0 = a ✓. Inverse of 3: Let 3 * x = 0, so 3 + x - 3x = 0, giving 3 + x(1 - 3) = 0, so 3 - 2x = 0, hence x = 3/2. But 3/2 ∉ Z, so 3 has no inverse in Z.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check reflexivity: (a,a) must be in R for all a</li>
-<li>Check symmetry: if (a,b) ∈ R, then (b,a) ∈ R</li>
-<li>Check transitivity: if (a,b) and (b,c) ∈ R, then (a,c) ∈ R</li>
-<li>Use systematic approach for each property</li>
-<li>Equivalence relation = reflexive + symmetric + transitive</li>
+        <li>For identity: solve a * e = a</li>
+<li>For inverse: solve a * x = e</li>
+<li>Check if solution is in the set</li>
+<li>Verify by substitution</li>
+<li>Not all elements have inverses</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        Reflexive: (a,a) ∈ R ∀a ∈ A; Symmetric: (a,b) ∈ R ⟹ (b,a) ∈ R; Transitive: (a,b), (b,c) ∈ R ⟹ (a,c) ∈ R
+        Identity: a * e = e * a = a; Inverse: a * a⁻¹ = a⁻¹ * a = e
       </div>
     </div>
 

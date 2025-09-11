@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 4 Problem 2 — Cramer's Rule</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 4 · Problem 2</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Solve using Cramer's rule: 2x + 3y = 7, 4x + 5y = 13.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Cramer's Rule</h2>
+      Cramer's rule provides a method to solve systems of linear equations using determinants. For the system ax + by = e, cx + dy = f, the solutions are x = det([[e,b],[f,d]])/det([[a,b],[c,d]]) and y = det([[a,e],[c,f]])/det([[a,b],[c,d]]). This method works when the coefficient matrix is invertible.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>The coefficient matrix is A = [[2,3],[4,5]] with det(A) = 2×5 - 3×4 = 10 - 12 = -2. For x: replace first column with constants: A₁ = [[7,3],[13,5]], det(A₁) = 7×5 - 3×13 = 35 - 39 = -4, so x = -4/(-2) = 2. For y: replace second column with constants: A₂ = [[2,7],[4,13]], det(A₂) = 2×13 - 7×4 = 26 - 28 = -2, so y = -2/(-2) = 1.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Find det(A) of coefficient matrix</li>
+<li>Replace columns with constants</li>
+<li>Calculate determinants of modified matrices</li>
+<li>Use x = det(A₁)/det(A), y = det(A₂)/det(A)</li>
+<li>Check the solution</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        x = det(A₁)/det(A), y = det(A₂)/det(A) where A₁, A₂ are matrices with replaced columns
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 5</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 4</p>
     </div>
   </div>
 </body>

@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 3 Problem 2 — Matrices</title>
+  <title>Ch 3 Problem 2 — Matrix Multiplication</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
-    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
     .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
-    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .math-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
     .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
     li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
   </style>
 </head>
 <body>
@@ -24,26 +25,40 @@
     <h1>Chapter 3 · Problem 2</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>3.
-If a matrix has 18 elements, what are the possible orders it can have?</p>
+      <p>If A = [[1,2],[3,4]] and B = [[5,6],[7,8]], find AB.</p>
     </div>
 
-    
-    <h2>Background Concept — Matrices</h2>
-    <p>This problem involves concepts from Chapter 3: Matrices. The key mathematical concepts include:</p>
-    
+    <div class="concept-section">
+      <h2>Background Concept — Matrix Multiplication</h2>
+      Matrix multiplication is defined as (AB)ᵢⱼ = Σₖ AᵢₖBₖⱼ. The number of columns in A must equal the number of rows in B. The result has the same number of rows as A and the same number of columns as B. Matrix multiplication is not commutative: AB ≠ BA in general.
+    </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>What, if it
-has 5 elements?</p>
+      <p>AB = [[1×5+2×7, 1×6+2×8], [3×5+4×7, 3×6+4×8]] = [[5+14, 6+16], [15+28, 18+32]] = [[19, 22], [43, 50]].</p>
     </div>
 
-    <h2>Tips to Solve</h2><ul><li>Write matrices clearly with proper row and column alignment</li><li>For matrix multiplication, ensure the number of columns of first matrix equals rows of second</li><li>Use elementary row operations systematically for finding inverse</li><li>Check your work by verifying A × A⁻¹ = I</li><li>Remember that matrix multiplication is not commutative</li></ul>
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Use (AB)ᵢⱼ = Σₖ AᵢₖBₖⱼ</li>
+<li>Check dimensions: A is m×n, B is n×p</li>
+<li>Result is m×p</li>
+<li>Multiply row by column</li>
+<li>Verify each element</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        (AB)ᵢⱼ = Σₖ AᵢₖBₖⱼ; Dimensions: (m×n)(n×p) = (m×p)
+      </div>
+    </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Extracted from: lemh103.pdf</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 2 Problem 3 — Properties</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 2 · Problem 3</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Prove that sin⁻¹(x) + cos⁻¹(x) = π/2 for -1 ≤ x ≤ 1.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Properties</h2>
+      Inverse trigonometric functions have important properties. The identity sin⁻¹(x) + cos⁻¹(x) = π/2 holds for all x ∈ [-1, 1]. This can be proved by showing that if θ = sin⁻¹(x), then cos⁻¹(x) = π/2 - θ. These properties are useful in solving equations and simplifying expressions.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>Let θ = sin⁻¹(x), so sin θ = x. Since sin²θ + cos²θ = 1, we have cos²θ = 1 - x², so cos θ = ±√(1 - x²). Since θ ∈ [-π/2, π/2], cos θ ≥ 0, so cos θ = √(1 - x²). Therefore, cos⁻¹(x) = π/2 - θ = π/2 - sin⁻¹(x). Hence sin⁻¹(x) + cos⁻¹(x) = π/2.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Let θ = sin⁻¹(x)</li>
+<li>Use sin²θ + cos²θ = 1</li>
+<li>Consider the range of θ</li>
+<li>Use cos⁻¹(x) = π/2 - θ</li>
+<li>Verify the identity</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        sin⁻¹(x) + cos⁻¹(x) = π/2; sin²θ + cos²θ = 1
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 5</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 2</p>
     </div>
   </div>
 </body>

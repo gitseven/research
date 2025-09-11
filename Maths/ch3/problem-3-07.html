@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 3 Problem 7 — Elementary Operations</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 3 · Problem 7</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Use elementary row operations to find the inverse of A = [[1,2],[3,4]].</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Elementary Operations</h2>
+      Elementary row operations are: (1) Interchange two rows, (2) Multiply a row by a non-zero constant, (3) Add a multiple of one row to another. To find A⁻¹, form the augmented matrix [A|I] and use elementary row operations to transform it to [I|A⁻¹].
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>Form [A|I] = [[1,2|1,0],[3,4|0,1]]. R₂ → R₂ - 3R₁: [[1,2|1,0],[0,-2|-3,1]]. R₂ → (-1/2)R₂: [[1,2|1,0],[0,1|3/2,-1/2]]. R₁ → R₁ - 2R₂: [[1,0|-2,1],[0,1|3/2,-1/2]]. Therefore A⁻¹ = [[-2,1],[3/2,-1/2]].</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Form augmented matrix [A|I]</li>
+<li>Use elementary row operations</li>
+<li>Transform to [I|A⁻¹]</li>
+<li>Check each step</li>
+<li>Verify AA⁻¹ = I</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        Use [A|I] → [I|A⁻¹] using elementary row operations
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 5</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>

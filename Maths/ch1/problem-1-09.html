@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 1 Problem 1 — Types of Relations</title>
+  <title>Ch 1 Problem 9 — Domain and Range</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -25,42 +25,42 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 1 · Problem 1</h1>
+    <h1>Chapter 1 · Problem 9</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Let A = {1, 2, 3, 4} and R = {(1,1), (1,2), (2,1), (2,2), (3,3), (4,4)}. Check if R is reflexive, symmetric, and transitive.</p>
+      <p>Find the domain and range of f(x) = √(4 - x²).</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Types of Relations</h2>
-      A relation R on set A is: <strong>Reflexive</strong> if (a,a) ∈ R for all a ∈ A; <strong>Symmetric</strong> if (a,b) ∈ R implies (b,a) ∈ R; <strong>Transitive</strong> if (a,b) ∈ R and (b,c) ∈ R implies (a,c) ∈ R. An equivalence relation satisfies all three properties. Relations are fundamental in mathematics and computer science.
+      <h2>Background Concept — Domain and Range</h2>
+      The <strong>domain</strong> of a function is the set of all possible input values (x-values). The <strong>range</strong> is the set of all possible output values (y-values). For √f(x), we need f(x) ≥ 0. For rational functions, exclude values that make the denominator zero. For logarithmic functions, the argument must be positive.
     </div>
 
     <div class="panel">
       <h2>Visualization</h2>
-      <svg viewBox="0 0 400 200" class="math-diagram"><circle cx="100" cy="100" r="60" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="100" y="105" text-anchor="middle" font-size="12" fill="#374151">A = {1,2,3,4}</text><text x="100" y="180" text-anchor="middle" font-size="10" fill="#6b7280">Reflexive, Symmetric, Transitive</text></svg>
+      <svg viewBox="0 0 400 150" class="math-diagram"><path d="M 100 75 Q 200 25 300 75" stroke="#6b7280" stroke-width="2" fill="none"/><text x="200" y="100" text-anchor="middle" font-size="10" fill="#374151">f(x) = √(4-x²)</text><text x="200" y="115" text-anchor="middle" font-size="8" fill="#6b7280">Domain: [-2,2], Range: [0,2]</text></svg>
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>Reflexive: Yes, as (1,1), (2,2), (3,3), (4,4) ∈ R. Symmetric: Yes, as (1,2) ∈ R and (2,1) ∈ R. Transitive: Yes, checking all combinations: (1,1) and (1,2) → (1,2) ∈ R ✓. Since R satisfies all three properties, it is an equivalence relation.</p>
+      <p>Domain: For √(4 - x²) to be real, we need 4 - x² ≥ 0, so x² ≤ 4, giving -2 ≤ x ≤ 2. Domain = [-2, 2]. Range: Since x² ≥ 0, we have 4 - x² ≤ 4, so √(4 - x²) ≤ 2. Also, √(4 - x²) ≥ 0. Range = [0, 2].</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check reflexivity: (a,a) must be in R for all a</li>
-<li>Check symmetry: if (a,b) ∈ R, then (b,a) ∈ R</li>
-<li>Check transitivity: if (a,b) and (b,c) ∈ R, then (a,c) ∈ R</li>
-<li>Use systematic approach for each property</li>
-<li>Equivalence relation = reflexive + symmetric + transitive</li>
+        <li>For √f(x): solve f(x) ≥ 0</li>
+<li>For 1/f(x): exclude f(x) = 0</li>
+<li>For log f(x): solve f(x) > 0</li>
+<li>Consider all restrictions</li>
+<li>Express in interval notation</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        Reflexive: (a,a) ∈ R ∀a ∈ A; Symmetric: (a,b) ∈ R ⟹ (b,a) ∈ R; Transitive: (a,b), (b,c) ∈ R ⟹ (a,c) ∈ R
+        Domain: set of valid x-values; Range: set of possible y-values
       </div>
     </div>
 

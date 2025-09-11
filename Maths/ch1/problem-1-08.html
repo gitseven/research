@@ -3,62 +3,70 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 1 Problem 8 — Periodic Functions</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
     .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
     .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
     .math-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
     .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
     li { margin:4px 0; }
     .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 1 · Problem 8</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Find the period of f(x) = sin(3x + π/4).</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Periodic Functions</h2>
+      A function f is <strong>periodic</strong> with period T if f(x + T) = f(x) for all x. The smallest positive T is called the fundamental period. For f(x) = sin(ax + b), the period is 2π/|a|. For f(x) = cos(ax + b), the period is also 2π/|a|. The phase shift is -b/a. Periodic functions repeat their values at regular intervals.
+    </div>
+
+    <div class="panel">
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="math-diagram"><path d="M 50 75 L 100 25 L 150 125 L 200 25 L 250 125 L 300 25 L 350 75" stroke="#6b7280" stroke-width="2" fill="none"/><text x="200" y="140" text-anchor="middle" font-size="10" fill="#374151">Period = 2π/3</text></svg>
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>For f(x) = sin(3x + π/4), comparing with sin(ax + b), we have a = 3. The period is T = 2π/|a| = 2π/3. The phase shift is -b/a = -(π/4)/3 = -π/12.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Identify a in sin(ax + b)</li>
+<li>Use period = 2π/|a|</li>
+<li>Phase shift = -b/a</li>
+<li>Check with f(x + T) = f(x)</li>
+<li>Verify with graph</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        Period of sin(ax + b): T = 2π/|a|; Phase shift: -b/a
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 5</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 1</p>
     </div>
   </div>
 </body>

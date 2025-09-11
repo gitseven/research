@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 5 Problem 2 — Differentiability</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,37 +22,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 5 · Problem 2</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Check if f(x) = |x| is differentiable at x = 0.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Differentiability</h2>
+      A function f is differentiable at x = a if f'(a) exists. This requires the left and right derivatives to exist and be equal. For f(x) = |x|, the derivative is f'(x) = 1 for x > 0 and f'(x) = -1 for x < 0. At x = 0, the left and right derivatives are different, so f is not differentiable at x = 0.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>For x > 0: f(x) = x, so f'(x) = 1. For x < 0: f(x) = -x, so f'(x) = -1. At x = 0: Left derivative = lim(h→0⁻) (f(0+h)-f(0))/h = lim(h→0⁻) (|h|-0)/h = lim(h→0⁻) (-h)/h = -1. Right derivative = lim(h→0⁺) (f(0+h)-f(0))/h = lim(h→0⁺) (|h|-0)/h = lim(h→0⁺) h/h = 1. Since left derivative ≠ right derivative, f is not differentiable at x = 0.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Find left and right derivatives</li>
+<li>Use definition of derivative</li>
+<li>Check if they are equal</li>
+<li>Consider the function definition</li>
+<li>Verify with graph</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        f'(a) = lim(h→0) (f(a+h)-f(a))/h; Differentiable ⟺ left derivative = right derivative
       </div>
     </div>
 

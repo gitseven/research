@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 1 Problem 1 — Types of Relations</title>
+  <title>Ch 1 Problem 3 — Composition of Functions</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -25,42 +25,42 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 1 · Problem 1</h1>
+    <h1>Chapter 1 · Problem 3</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Let A = {1, 2, 3, 4} and R = {(1,1), (1,2), (2,1), (2,2), (3,3), (4,4)}. Check if R is reflexive, symmetric, and transitive.</p>
+      <p>If f(x) = x² and g(x) = x + 1, find (f∘g)(x) and (g∘f)(x).</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Types of Relations</h2>
-      A relation R on set A is: <strong>Reflexive</strong> if (a,a) ∈ R for all a ∈ A; <strong>Symmetric</strong> if (a,b) ∈ R implies (b,a) ∈ R; <strong>Transitive</strong> if (a,b) ∈ R and (b,c) ∈ R implies (a,c) ∈ R. An equivalence relation satisfies all three properties. Relations are fundamental in mathematics and computer science.
+      <h2>Background Concept — Composition of Functions</h2>
+      The <strong>composition</strong> of functions f and g is defined as (f∘g)(x) = f(g(x)). Composition is generally not commutative, i.e., (f∘g)(x) ≠ (g∘f)(x). The domain of f∘g is the set of all x in the domain of g such that g(x) is in the domain of f. Composition is associative: (f∘g)∘h = f∘(g∘h).
     </div>
 
     <div class="panel">
       <h2>Visualization</h2>
-      <svg viewBox="0 0 400 200" class="math-diagram"><circle cx="100" cy="100" r="60" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="100" y="105" text-anchor="middle" font-size="12" fill="#374151">A = {1,2,3,4}</text><text x="100" y="180" text-anchor="middle" font-size="10" fill="#6b7280">Reflexive, Symmetric, Transitive</text></svg>
+      <svg viewBox="0 0 400 150" class="math-diagram"><rect x="50" y="50" width="80" height="40" fill="#f3f4f6" stroke="#6b7280"/><text x="90" y="75" text-anchor="middle" font-size="10" fill="#374151">g(x)</text><rect x="200" y="50" width="80" height="40" fill="#f3f4f6" stroke="#6b7280"/><text x="240" y="75" text-anchor="middle" font-size="10" fill="#374151">f(x)</text><text x="150" y="30" text-anchor="middle" font-size="10" fill="#6b7280">f∘g</text></svg>
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>Reflexive: Yes, as (1,1), (2,2), (3,3), (4,4) ∈ R. Symmetric: Yes, as (1,2) ∈ R and (2,1) ∈ R. Transitive: Yes, checking all combinations: (1,1) and (1,2) → (1,2) ∈ R ✓. Since R satisfies all three properties, it is an equivalence relation.</p>
+      <p>(f∘g)(x) = f(g(x)) = f(x + 1) = (x + 1)² = x² + 2x + 1. (g∘f)(x) = g(f(x)) = g(x²) = x² + 1. Note that (f∘g)(x) ≠ (g∘f)(x), showing that composition is not commutative.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check reflexivity: (a,a) must be in R for all a</li>
-<li>Check symmetry: if (a,b) ∈ R, then (b,a) ∈ R</li>
-<li>Check transitivity: if (a,b) and (b,c) ∈ R, then (a,c) ∈ R</li>
-<li>Use systematic approach for each property</li>
-<li>Equivalence relation = reflexive + symmetric + transitive</li>
+        <li>Use (f∘g)(x) = f(g(x))</li>
+<li>Substitute g(x) into f</li>
+<li>Composition is not commutative</li>
+<li>Check domains of composition</li>
+<li>Simplify the final expression</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        Reflexive: (a,a) ∈ R ∀a ∈ A; Symmetric: (a,b) ∈ R ⟹ (b,a) ∈ R; Transitive: (a,b), (b,c) ∈ R ⟹ (a,c) ∈ R
+        (f∘g)(x) = f(g(x)); (g∘f)(x) = g(f(x))
       </div>
     </div>
 

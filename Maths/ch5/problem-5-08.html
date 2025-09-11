@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 5 Problem 1 — Continuity</title>
+  <title>Ch 5 Problem 8 — Logarithmic Differentiation</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,37 +22,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 5 · Problem 1</h1>
+    <h1>Chapter 5 · Problem 8</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Check if f(x) = {x² if x < 1, 2x-1 if x ≥ 1} is continuous at x = 1.</p>
+      <p>Find the derivative of f(x) = xˣ.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Continuity</h2>
-      A function f is continuous at x = a if lim(x→a) f(x) = f(a). This requires: (1) f(a) exists, (2) lim(x→a) f(x) exists, (3) lim(x→a) f(x) = f(a). For piecewise functions, check left and right limits separately. Continuity is essential for differentiability.
+      <h2>Background Concept — Logarithmic Differentiation</h2>
+      Logarithmic differentiation is used for functions of the form f(x) = g(x)ʰ⁽ˣ⁾. We take the natural logarithm of both sides and then differentiate. This method is useful when both the base and exponent are functions of x. The key steps are: take ln, differentiate, solve for f'(x).
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>At x = 1: f(1) = 2(1) - 1 = 1. Left limit: lim(x→1⁻) f(x) = lim(x→1⁻) x² = 1. Right limit: lim(x→1⁺) f(x) = lim(x→1⁺) (2x-1) = 1. Since lim(x→1) f(x) = f(1) = 1, f is continuous at x = 1.</p>
+      <p>Taking natural logarithm: ln(f(x)) = ln(xˣ) = x ln(x). Differentiating both sides: (1/f(x))f'(x) = d/dx[x ln(x)] = 1·ln(x) + x·(1/x) = ln(x) + 1. Therefore f'(x) = f(x)(ln(x) + 1) = xˣ(ln(x) + 1).</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Check f(a) exists</li>
-<li>Find left and right limits</li>
-<li>Check if limits are equal</li>
-<li>Verify lim(x→a) f(x) = f(a)</li>
-<li>Use appropriate formulas for each piece</li>
+        <li>Take natural logarithm of both sides</li>
+<li>Use properties of logarithms</li>
+<li>Differentiate both sides</li>
+<li>Solve for f'(x)</li>
+<li>Substitute back for f(x)</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        f continuous at x = a ⟺ lim(x→a) f(x) = f(a)
+        For f(x) = g(x)ʰ⁽ˣ⁾: ln(f(x)) = h(x)ln(g(x)), then differentiate
       </div>
     </div>
 
