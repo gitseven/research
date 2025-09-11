@@ -3,44 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 4 Problem 4.4 — Second-Order Dependence Effect</title>
+  <title>Ch 4 Problem 4 — Arrhenius Equation</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
-    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
-    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chemical Kinetics · Problem 4.4</h1>
+    <h1>Chapter 4 · Problem 4</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>The conversion of molecules X to Y follows second order kinetics. If concentration of X is increased to three times how will it affect the rate of formation of Y?</p>
+      <h2>Question</h2>
+      <p>The rate constant of a reaction at 300 K is 2.0 × 10⁻⁵ s⁻¹ and at 320 K is 8.0 × 10⁻⁵ s⁻¹. Calculate the activation energy.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Arrhenius Equation</h2>
+      The Arrhenius equation relates rate constant to temperature: k = A e^(-Ea/RT), where A is pre-exponential factor, Ea is activation energy, R is gas constant, and T is temperature. The logarithmic form is ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂). Activation energy is the minimum energy required for reactants to form products.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Interpreting Reaction Orders</h2>
-      <p>For a reaction that is second order in a single reactant X (rate r = k[X]^2), the instantaneous rate depends on the square of the reactant concentration. Consequently, proportional changes in [X] cause squared changes in rate. This sensitivity is a hallmark of bimolecular mechanisms or reactions where two X species interact in the rate-limiting step. In general, if [X] is scaled by a factor f, the rate scales by f² for second order, by f for first order, and is unchanged for zero order. Understanding these proportionalities enables quick reasoning about how dilution or concentration changes impact reaction speed and is widely used in designing kinetic experiments and reactors. Note that overall second-order kinetics can also arise from reactions first order in two different species (e.g., r = k[A][B]); in those cases, changing one species affects the rate linearly unless both are scaled. Here, with r ∝ [X]^2 and only X being varied, the rate change is immediate to compute.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Arrhenius: k = A e^(-Ea/RT)</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <p>Tripling [X] multiplies the rate by 3² = <strong>9</strong>. The formation rate of Y increases ninefold.</p>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Using Arrhenius equation: ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂). Given k₁ = 2.0 × 10⁻⁵ s⁻¹ at T₁ = 300 K, k₂ = 8.0 × 10⁻⁵ s⁻¹ at T₂ = 320 K. ln(8.0 × 10⁻⁵/2.0 × 10⁻⁵) = (Ea/8.314)(1/300 - 1/320). ln(4) = (Ea/8.314)(0.00333 - 0.00313). 1.386 = (Ea/8.314)(0.0002). Ea = (1.386 × 8.314)/0.0002 = 57,600 J/mol = 57.6 kJ/mol.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Replace [X] by f[X] in r = k[X]^2 → new rate = k(f[X])^2 = f²r.</li>
-        <li>Memorise proportionalities: zero order (f⁰), first order (f¹), second order (f²).</li>
-        <li>Distinguish single-reactant second order from mixed second order (e.g., k[A][B]).</li>
+        <li>Use ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂)</li>
+<li>Convert temperatures to Kelvin</li>
+<li>Calculate the ratio k₂/k₁</li>
+<li>Solve for Ea</li>
+<li>Convert to kJ/mol</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        Arrhenius: ln(k₂/k₁) = (Ea/R)(1/T₁ - 1/T₂); k = A e^(-Ea/RT)
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 4</p>
     </div>
   </div>
 </body>
 </html>
-
-

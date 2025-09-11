@@ -3,51 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 8 Problem 8.1 — Electronic Configurations of Given Ions</title>
+  <title>Ch 8 Problem 1 — Electronic Configuration of d-Block Elements</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
-    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
-    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>d- and f-Block Elements · Problem 8.1</h1>
+    <h1>Chapter 8 · Problem 1</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>Write the electronic configuration of the following ions: (i) P (V) (ii) Co (III) (iii) Mn (VIII) (iv) Th.</p>
+      <h2>Question</h2>
+      <p>Write the electronic configuration of chromium (Z = 24) and explain why it is an exception to the general rule.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Electronic Configuration of d-Block Elements</h2>
+      The d-block elements have their valence electrons in d orbitals. The general rule is to fill orbitals in order of increasing energy, but chromium and copper are exceptions due to extra stability of half-filled and completely filled d orbitals. Chromium has configuration [Ar] 3d⁵ 4s¹ instead of [Ar] 3d⁴ 4s² because half-filled d orbital is more stable.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Building Configurations for Ions</h2>
-      <p>Electronic configurations are assigned by filling orbitals according to the aufbau principle (increasing n + l, then n), Hund’s rule (maximum multiplicity with parallel spins), and the Pauli exclusion principle. For <em>ions</em>, electrons are removed first from the highest <em>principal quantum number</em> shell (valence ns) and then from (n−1)d for transition elements. Thus, for first‑row transition metals, a common pitfall is removing 4s before 3d when forming cations. For main‑group p‑block elements such as phosphorus, the oxidation state V (+5) indicates removal of five valence electrons, resulting in a noble‑gas‑like core. For very high oxidation states like Mn(VIII), all 3d and 4s electrons are removed, yielding a 3d⁰ species; such states are typically stabilised in oxoanions/oxides (e.g., MnO₄⁻), not as free ions in solution. Actinoids such as thorium (Th) involve 5f/6d/7s shells; their ground‑state configurations reflect close energetic spacing and relativistic effects, but a commonly accepted configuration for Th is [Rn] 6d² 7s². When writing concise configurations, use noble‑gas cores (e.g., [Ar], [Kr], [Xe], [Rn]) to emphasise valence shells responsible for chemistry. For accuracy, remember small anomalies (Cr, Cu) in neutrals and apply the ionisation rule (remove ns before (n−1)d) when forming cations. These guidelines ensure correct electron counts and d‑electron tallies crucial for magnetism, color, and crystal field arguments used throughout transition metal chemistry.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Cr: [Ar] 3d⁵ 4s¹</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <ul>
-        <li>(i) P(V): P⁵⁺ has configuration 1s² 2s² 2p⁶ = [Ne].</li>
-        <li>(ii) Co(III): Co atom [Ar] 3d⁷ 4s²; Co³⁺ → remove 4s² then one 3d → [Ar] 3d⁶.</li>
-        <li>(iii) Mn(VIII): Mn atom [Ar] 3d⁵ 4s²; Mn⁸⁺ → remove 7 valence electrons (2 from 4s, 5 from 3d) → [Ar] 3d⁰ = [Ar].</li>
-        <li>(iv) Th: ≈ [Rn] 6d² 7s² (often written [Rn] 6d² 7s²; minor 5f/6d mixing may be cited in advanced texts).</li>
-      </ul>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Electronic configuration of chromium (Z = 24): [Ar] 3d⁵ 4s¹. This is an exception because chromium has one electron in 4s and five electrons in 3d, giving a half-filled d orbital. The half-filled d orbital (3d⁵) is more stable than 3d⁴ 4s² due to exchange energy, which is maximum for half-filled and completely filled orbitals.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>For transition metal cations, remove ns electrons before (n−1)d electrons.</li>
-        <li>Use noble‑gas shorthand; double‑check total electron count matches the ionic charge.</li>
-        <li>High oxidation states (+7, +8) often imply d⁰ configurations in oxides/oxoanions.</li>
+        <li>Write the noble gas core first</li>
+<li>Fill 4s before 3d</li>
+<li>Consider stability of half-filled orbitals</li>
+<li>Explain exchange energy concept</li>
+<li>Compare with expected configuration</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        Cr: [Ar] 3d⁵ 4s¹; Exception due to half-filled d orbital stability
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 8</p>
     </div>
   </div>
 </body>
 </html>
-
-

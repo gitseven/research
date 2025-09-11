@@ -3,53 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 3 Problem 3.5 — Nernst Equation Applications</title>
+  <title>Ch 3 Problem 5 — Kohlrausch's Law</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 3 · Problem 3.5</h1>
+    <h1>Chapter 3 · Problem 5</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>Write the Nernst equation and emf of the following cells at 298 K: (i) Mg(s) | Mg²⁺(0.001 M) || Cu²⁺(0.0001 M) | Cu(s) (ii) Fe(s) | Fe²⁺(0.001 M) || H⁺(1 M) | H₂(g)(1 bar) | Pt(s) (iii) Sn(s) | Sn²⁺(0.050 M) || H⁺(0.020 M) | H₂(g)(1 bar) | Pt(s) (iv) Pt(s) | Br⁻(0.010 M) | Br₂(l) || H⁺(0.030 M) | H₂(g)(1 bar) | Pt(s).</p>
+      <h2>Question</h2>
+      <p>The molar conductivities at infinite dilution for NaCl, HCl, and CH₃COONa are 126.4, 426.2, and 91.0 S cm² mol⁻¹ respectively. Calculate the molar conductivity of CH₃COOH at infinite dilution.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Kohlrausch's Law</h2>
+      Kohlrausch's law states that the molar conductivity of an electrolyte at infinite dilution is the sum of the molar conductivities of its constituent ions. For CH₃COOH: Λ°(CH₃COOH) = λ°(CH₃COO⁻) + λ°(H⁺). We can find λ°(CH₃COO⁻) from CH₃COONa and λ°(H⁺) from HCl.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Nernst Equation</h2>
-      <div class="formula">E = E° − (0.05916 / n) log Q  (at 298 K)</div>
-      <p>The Nernst equation expresses how the cell potential depends on the activities (or effective concentrations/pressures) of reactants and products under nonstandard conditions. Starting from ΔG = ΔG° + R T ln Q and ΔG = −n F E, substitution yields E = E° − (R T / n F) ln Q, which becomes the base-10 form shown at 298 K. Here, n is the number of electrons transferred in the balanced overall reaction, and Q is the reaction quotient constructed from product activities divided by reactant activities, each raised to the power of their stoichiometric coefficients. Solids and pure liquids have unit activity and therefore do not appear in Q; gases enter via their partial pressures; dissolved species enter via their molar activities (often approximated by molarities at low to moderate ionic strength). The equation shows that when products accumulate (Q increases), the cell potential drops, and at equilibrium E becomes zero with Q = K. Careful identification of the cell reaction, including electron count and species participating in Q, is essential to compute E correctly. This framework enables predictions of emf for concentration cells, evaluation of pH effects on hydrogen electrodes, and quantitative analysis of redox titrations and battery state-of-charge.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Kohlrausch Law: Sum of Ion Conductivities</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <ul>
-        <li><strong>(i)</strong> E° ≈ 2.71 V, n=2, Q=10 ⇒ E ≈ 2.71 − 0.0296 ≈ <strong>2.68 V</strong>.</li>
-        <li><strong>(ii)</strong> E° ≈ +0.440 V, n=2, Q=10⁻³ ⇒ E ≈ 0.440 − (0.0296)(−3) ≈ <strong>0.529 V</strong>.</li>
-        <li><strong>(iii)</strong> E° ≈ +0.136 V, n=2, Q=125 ⇒ E ≈ 0.136 − 0.0296×2.097 ≈ <strong>0.074 V</strong>.</li>
-        <li><strong>(iv)</strong> E° ≈ −1.065 V, n=2, Q≈0.111 ⇒ E ≈ −1.065 − 0.0296×(−0.954) ≈ <strong>−1.037 V</strong>.</li>
-      </ul>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>From CH₃COONa: λ°(CH₃COO⁻) = Λ°(CH₃COONa) - λ°(Na⁺) = 91.0 - λ°(Na⁺). From HCl: λ°(H⁺) = Λ°(HCl) - λ°(Cl⁻) = 426.2 - λ°(Cl⁻). From NaCl: λ°(Na⁺) + λ°(Cl⁻) = 126.4. Solving: λ°(CH₃COO⁻) = 91.0 - (126.4 - λ°(Cl⁻)) = 91.0 - 126.4 + λ°(Cl⁻). λ°(H⁺) = 426.2 - λ°(Cl⁻). Λ°(CH₃COOH) = λ°(CH₃COO⁻) + λ°(H⁺) = (91.0 - 126.4 + λ°(Cl⁻)) + (426.2 - λ°(Cl⁻)) = 91.0 - 126.4 + 426.2 = 390.8 S cm² mol⁻¹.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Write the overall balanced reaction first to determine n and construct Q correctly.</li>
-        <li>Exclude solids and pure liquids from Q; include gases via partial pressure and solutes by activity (≈ concentration).</li>
-        <li>Use 0.05916/n factor only at 298 K; otherwise, compute RT/F explicitly.</li>
-        <li>Check log base: exam problems often use base‑10; ensure consistency when using calculators.</li>
+        <li>Use Kohlrausch's law: Λ° = λ°(cation) + λ°(anion)</li>
+<li>Find individual ion conductivities</li>
+<li>Set up equations from given data</li>
+<li>Solve for unknown conductivities</li>
+<li>Check the final answer</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        Λ° = λ°(cation) + λ°(anion); Kohlrausch's law for weak electrolytes
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>
 </html>
-
-

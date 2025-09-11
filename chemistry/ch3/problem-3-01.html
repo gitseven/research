@@ -3,75 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 3 Problem 3.1 — Metal Displacement Series</title>
+  <title>Ch 3 Problem 1 — Galvanic Cell and Cell Potential</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; }
-    svg { max-width:100%; height:auto; display:block; margin:8px 0; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
     .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 3 · Problem 3.1</h1>
+    <h1>Chapter 3 · Problem 1</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>Arrange the following metals in the order in which they displace each other from the solution of their salts: Al, Cu, Fe, Mg and Zn.</p>
+      <h2>Question</h2>
+      <p>A galvanic cell consists of Zn/Zn²⁺ and Cu/Cu²⁺ half-cells. If E°(Zn²⁺/Zn) = -0.76 V and E°(Cu²⁺/Cu) = +0.34 V, calculate the standard cell potential and write the cell reaction.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Galvanic Cell and Cell Potential</h2>
+      A galvanic cell converts chemical energy to electrical energy through redox reactions. The standard cell potential E°cell = E°cathode - E°anode. The more positive electrode acts as cathode (reduction) and the more negative as anode (oxidation). The cell reaction is the sum of half-reactions with electrons canceling out.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Reactivity (Activity) Series</h2>
-      <p>The ability of one metal to displace another from the solution of its salt is governed by the relative ease with which each metal is oxidised to its cation. This tendency is summarised in the activity (reactivity) series, which orders metals from the strongest reducing agents at the top to the weakest at the bottom. A metal that is higher in the series will spontaneously displace a metal that is lower from an aqueous solution of its ions. Thermodynamically, the driving force is captured by standard reduction potentials, E°(Mⁿ⁺/M). A more negative reduction potential means the reverse process (oxidation of M to Mⁿ⁺) is more favourable, and hence the metal acts as a stronger reducing agent. For displacement reactions of the type M₁ + M₂ⁿ⁺ → M₁ⁿ⁺ + M₂, the reaction will be spontaneous when E°(M₂ⁿ⁺/M₂) − E°(M₁ⁿ⁺/M₁) is positive. Kinetics (surface oxide layers, passivation, and complexation) can sometimes slow or inhibit observable displacement, but under typical aqueous conditions the E° ordering is a reliable predictor. In practical terms, highly electropositive metals such as alkali and alkaline earth metals readily reduce many cations, whereas coinage metals like copper and silver are reluctant to oxidise and therefore sit near the bottom of the activity series. For common first-row metals relevant here, standard potentials at 298 K indicate the following trend in reducing strength: Mg (very negative E°) > Al > Zn > Fe >> Cu (positive E°). Thus, magnesium will displace aluminium, zinc, iron, and copper; aluminium will displace zinc, iron, and copper; and so on. This conceptual framework directly translates into a simple rule-of-thumb for predicting single displacement reactions in aqueous solution and is foundational to corrosion science, galvanic series behaviour, and metal extraction processes.</p>
-      <div class="muted">Typical E° values (V): Mg −2.37, Al −1.66, Zn −0.76, Fe −0.44, Cu +0.34.</div>
-      <svg viewBox="0 0 600 160" role="img" aria-label="Activity series bar">
-        <defs>
-          <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#34d399" />
-            <stop offset="100%" stop-color="#38bdf8" />
-          </linearGradient>
-        </defs>
-        <text x="300" y="20" fill="#9ca3af" text-anchor="middle">Higher Reactivity → Displaces below</text>
-        <g font-size="12" fill="#e5e7eb">
-          <rect x="40" y="40" width="520" height="18" fill="url(#g)" rx="9" />
-          <text x="60" y="75">Mg</text>
-          <text x="170" y="75">Al</text>
-          <text x="280" y="75">Zn</text>
-          <text x="390" y="75">Fe</text>
-          <text x="500" y="75">Cu</text>
-          <circle cx="60" cy="50" r="4" fill="#f59e0b" />
-          <circle cx="170" cy="50" r="4" fill="#f59e0b" />
-          <circle cx="280" cy="50" r="4" fill="#f59e0b" />
-          <circle cx="390" cy="50" r="4" fill="#f59e0b" />
-          <circle cx="500" cy="50" r="4" fill="#f59e0b" />
-        </g>
-      </svg>
-      <ul>
-        <li><strong>Rule of thumb</strong>: M₁ displaces M₂ from M₂-salt if M₁ is higher in the series (more reducing).</li>
-      </ul>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 200" class="chemistry-diagram"><rect x="50" y="50" width="100" height="100" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="100" y="110" text-anchor="middle" font-size="12" fill="#374151">Zn/Zn²⁺</text><rect x="250" y="50" width="100" height="100" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="300" y="110" text-anchor="middle" font-size="12" fill="#374151">Cu/Cu²⁺</text><line x1="150" y1="100" x2="250" y2="100" stroke="#6b7280" stroke-width="2"/><text x="200" y="90" text-anchor="middle" font-size="10" fill="#374151">Salt Bridge</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <p><strong>Order (most reactive → least):</strong> Mg &gt; Al &gt; Zn &gt; Fe &gt; Cu.</p>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>E°cell = E°cathode - E°anode = E°(Cu²⁺/Cu) - E°(Zn²⁺/Zn) = 0.34 - (-0.76) = 1.10 V. Cell reaction: Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s). The zinc electrode is the anode (oxidation) and copper electrode is the cathode (reduction).</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Recall or quickly derive the activity series from standard reduction potentials E°(Mⁿ⁺/M).</li>
-        <li>More negative E° → stronger reducing agent → metal sits higher in displacement order.</li>
-        <li>When unsure, test a pairwise displacement: does M₁ + M₂ⁿ⁺ → M₁ⁿ⁺ + M₂ have E°cell &gt; 0?</li>
-        <li>Watch for kinetic/passivation exceptions in real life; exam problems assume thermodynamic control.</li>
+        <li>Identify cathode (more positive E°) and anode (more negative E°)</li>
+<li>Use E°cell = E°cathode - E°anode</li>
+<li>Write half-reactions with electrons</li>
+<li>Balance the overall reaction</li>
+<li>Check that electrons cancel out</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        E°cell = E°cathode - E°anode; Anode: oxidation, Cathode: reduction
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>
 </html>
-
-

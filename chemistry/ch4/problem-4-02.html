@@ -3,47 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 4 Problem 4.2 — Rate from Concentration Decrease (2A → products)</title>
+  <title>Ch 4 Problem 2 — Order of Reaction</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
-    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
-    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chemical Kinetics · Problem 4.2</h1>
+    <h1>Chapter 4 · Problem 2</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>In a reaction, 2A → Products, the concentration of A decreases from 0.5 mol L⁻¹ to 0.4 mol L⁻¹ in 10 minutes. Calculate the rate during this interval.</p>
+      <h2>Question</h2>
+      <p>The rate of reaction A + B → C is given by Rate = k[A]²[B]. What is the order of reaction with respect to A, B, and overall order?</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Order of Reaction</h2>
+      The order of reaction with respect to a reactant is the power to which its concentration is raised in the rate law. The overall order is the sum of all individual orders. For Rate = k[A]ᵐ[B]ⁿ, the order with respect to A is m, with respect to B is n, and the overall order is m + n. The order must be determined experimentally.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Stoichiometric Normalisation of Rate</h2>
-      <p>For a general reaction aA → products, the experimentally measured rate based on reactant A must be normalised by its stoichiometric coefficient to provide a reaction-rate definition independent of which species is monitored. The convention ensures a single scalar rate that is positive for a forward reaction: v = −(1/a) Δ[A]/Δt for average rate (or v = −(1/a) d[A]/dt instantaneously). This matters whenever the balanced equation has coefficients other than one, such as 2A → products, where A disappears twice as fast as the reaction progress variable advances. Without normalisation, rates computed from different species would disagree by constant factors, hindering comparison with rate laws and kinetic parameters. In classroom problems, average rates are often requested over finite intervals between two concentration measurements; one computes Δ[A]/Δt and then applies the coefficient correction. Units should reflect amount per volume per time (e.g., mol L⁻¹ s⁻¹). Note that the rate law (e.g., first or second order) determines how the instantaneous rate depends on concentration but is not required to compute a finite-interval average rate. When comparing multiple intervals, decreasing slopes typically indicate the reaction is slowing as reactant is depleted, consistent with most rate laws that have positive concentration orders.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Rate = k[A]²[B]</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <div class="formula">Δ[A] = 0.4 − 0.5 = −0.1 mol L⁻¹; Δt = 10 min</div>
-      <div class="formula">v = −(1/2) · Δ[A]/Δt = −(1/2) · (−0.1/10) = 0.005 mol L⁻¹ min⁻¹</div>
-      <p>In SI seconds: 10 min = 600 s → v = 0.005 / 60 = <strong>8.33×10⁻⁵ mol L⁻¹ s⁻¹</strong>.</p>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Given Rate = k[A]²[B]. Order with respect to A = 2 (exponent of [A]). Order with respect to B = 1 (exponent of [B]). Overall order = 2 + 1 = 3. Therefore, the reaction is second order with respect to A, first order with respect to B, and third order overall.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Always divide by the stoichiometric coefficient of the monitored species.</li>
-        <li>Keep sign conventions: Δ[A] is negative; the overall rate v is reported positive.</li>
-        <li>Convert minutes to seconds when needed and match units with the requested output.</li>
+        <li>Identify the exponents in the rate law</li>
+<li>Order with respect to each reactant = its exponent</li>
+<li>Overall order = sum of all exponents</li>
+<li>Check the units of rate constant</li>
+<li>Verify with experimental data</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        For Rate = k[A]ᵐ[B]ⁿ: Order w.r.t. A = m, Order w.r.t. B = n, Overall order = m + n
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 4</p>
     </div>
   </div>
 </body>
 </html>
-
-

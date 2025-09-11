@@ -3,37 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 3 Problem 3.9 — Cell Constant from Conductivity Cell</title>
+  <title>Ch 3 Problem 9 — Standard Hydrogen Electrode</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 3 · Problem 3.9</h1>
+    <h1>Chapter 3 · Problem 9</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>The resistance of a conductivity cell containing 0.001 M KCl solution at 298 K is 1500 Ω. What is the cell constant if conductivity of 0.001 M KCl solution at 298 K is 0.146 × 10⁻³ S cm⁻¹?</p>
+      <h2>Question</h2>
+      <p>Explain the construction and working of a standard hydrogen electrode (SHE) and why it is assigned zero potential.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Standard Hydrogen Electrode</h2>
+      The standard hydrogen electrode (SHE) is the reference electrode with zero potential. It consists of a platinum electrode coated with platinum black, immersed in 1 M H⁺ solution, and hydrogen gas at 1 atm pressure. The half-reaction is 2H⁺ + 2e⁻ → H₂. It is assigned zero potential by convention to establish a reference point for measuring other electrode potentials.
     </div>
 
     <div class="panel">
-      <h2>Background Concept</h2>
-      <p>Conductivity measurements require translating an observed electrical resistance into a material property of the solution. The bridge between these is the <em>cell constant</em> G* (cm⁻¹), which captures the geometry of the conductivity cell: G* = l/A, the ratio of electrode separation l to electrode area A. The specific conductivity κ (S cm⁻¹) of the solution is then κ = G* / R, where R is the measured resistance, or equivalently G* = κ × R. Because real cells deviate from ideal parallel-plate geometry (edge effects, field fringing, electrode surface roughness), G* is determined by <em>calibration</em> using a standard solution with accurately known κ, most commonly aqueous KCl at specified molarities and temperature. After calibration, subsequent measurements in unknown solutions at the same temperature yield κ via the same cell, assuming electrode cleanliness and stable surface conditions. Temperature control matters because κ is sensitive to temperature through ion mobility and viscosity; therefore, both calibration and measurement should be performed at the same temperature, usually 298 K. Additionally, AC measurements mitigate electrode polarisation, and the chosen frequency is selected to minimise capacitive and Faradaic artefacts. In summary, the cell constant converts a raw resistance reading into a robust, geometry-independent conductivity value, enabling quantitative comparisons across solutions and instruments.</p>
-      <div class="formula">Cell constant (G*) = κ × R</div>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="100" height="100" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="100" y="110" text-anchor="middle" font-size="10" fill="#374151">Pt electrode</text><text x="100" y="125" text-anchor="middle" font-size="8" fill="#374151">H₂ gas</text><text x="100" y="140" text-anchor="middle" font-size="8" fill="#374151">1 M H⁺</text></svg>
+    </div>
+
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Construction: Platinum electrode coated with platinum black, immersed in 1 M H⁺ solution, with H₂ gas at 1 atm pressure bubbling over it. Half-reaction: 2H⁺ + 2e⁻ → H₂. It is assigned zero potential by international convention to provide a reference point. All other electrode potentials are measured relative to SHE. The platinum black provides a large surface area for the reaction.</p>
     </div>
 
     <div class="panel">
-      <h2>Answer</h2>
-      <p>G* = 0.146×10⁻³ × 1500 = <strong>0.219 cm⁻¹</strong>.</p>
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Describe the physical construction</li>
+<li>Write the half-reaction</li>
+<li>Explain the role of platinum black</li>
+<li>State the standard conditions</li>
+<li>Explain why it's assigned zero potential</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        SHE: 2H⁺ + 2e⁻ → H₂; E° = 0 V by convention; Standard conditions: 1 M H⁺, 1 atm H₂, 25°C
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>
 </html>
-
-

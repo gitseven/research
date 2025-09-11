@@ -3,72 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 3 Problem 3.3 — Galvanic Cell: Zn | Zn²⁺ || Ag⁺ | Ag</title>
+  <title>Ch 3 Problem 3 — Electrolysis and Faraday's Laws</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    svg { max-width:100%; height:auto; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 3 · Problem 3.3</h1>
+    <h1>Chapter 3 · Problem 3</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>Depict the galvanic cell in which the reaction Zn(s)+2Ag⁺(aq) → Zn²⁺(aq)+2Ag(s) takes place. Further show: (i) Which electrode is negatively charged? (ii) The carriers of current in the cell. (iii) Individual reaction at each electrode.</p>
+      <h2>Question</h2>
+      <p>How many grams of copper will be deposited when 2 amperes of current is passed through CuSO₄ solution for 30 minutes? (Atomic mass of Cu = 63.5 g/mol)</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Electrolysis and Faraday's Laws</h2>
+      Faraday's first law states that the amount of substance deposited is proportional to the quantity of electricity passed. W = (E × I × t)/96500, where E is the equivalent mass, I is current, t is time in seconds, and 96500 C is Faraday's constant. For Cu²⁺ + 2e⁻ → Cu, equivalent mass = atomic mass/2.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Galvanic Cells</h2>
-      <p>A galvanic (voltaic) cell converts the chemical energy of a spontaneous redox reaction into electrical work by separating the oxidation and reduction processes into two half-cells linked by an external conductor and an internal ionic pathway. Oxidation occurs at the anode, which is therefore negatively charged because electrons are generated there and pushed into the external circuit. Reduction occurs at the cathode, which is positively charged because it attracts electrons from the external circuit to reduce an oxidised species in solution. The potential difference measured between the electrodes (cell emf) reflects the difference in the tendencies of the two half-reactions to proceed as reductions, given by their standard reduction potentials. By convention, E°cell = E°cathode − E°anode. The salt bridge or porous separator closes the internal circuit: it allows counter-ions to migrate so that charge balance is maintained in each half-cell, preventing the build-up of excess positive or negative charge that would otherwise halt electron flow. In the Zn‖Ag⁺ system, Zn has a more negative E° and thus prefers to oxidise to Zn²⁺, releasing electrons that travel through the wire to the silver half-cell, where Ag⁺ is reduced to Ag(s). The anode half-reaction is Zn → Zn²⁺ + 2e⁻ and the cathode half-reaction is 2Ag⁺ + 2e⁻ → 2Ag; summing gives the overall spontaneous reaction. This arrangement underpins batteries, corrosion cells, and redox sensors, and the same principles govern sign conventions, electron/ion carriers, and construction of cell diagrams.</p>
-      <svg viewBox="0 0 680 260" role="img" aria-label="Zn-Ag cell schematic">
-        <defs>
-          <marker id="arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
-            <polygon points="0 0, 6 3, 0 6" fill="#34d399" />
-          </marker>
-        </defs>
-        <rect x="20" y="30" width="300" height="200" rx="12" fill="#0b1220" stroke="#1f2937" />
-        <rect x="360" y="30" width="300" height="200" rx="12" fill="#0b1220" stroke="#1f2937" />
-        <text x="170" y="28" fill="#9ca3af" text-anchor="middle">Anode: Zn | Zn²⁺</text>
-        <text x="510" y="28" fill="#9ca3af" text-anchor="middle">Cathode: Ag⁺ | Ag</text>
-        <rect x="70" y="80" width="30" height="110" fill="#94a3b8" />
-        <rect x="620" y="80" width="30" height="110" fill="#d1d5db" />
-        <text x="85" y="205" fill="#9ca3af" text-anchor="middle">Zn(s)</text>
-        <text x="635" y="205" fill="#9ca3af" text-anchor="middle">Ag(s)</text>
-        <line x1="100" y1="70" x2="620" y2="70" stroke="#34d399" stroke-width="3" marker-end="url(#arrow)"/>
-        <text x="360" y="60" fill="#34d399" text-anchor="middle">e⁻ flow →</text>
-        <line x1="320" y1="130" x2="360" y2="130" stroke="#a78bfa" stroke-width="5" />
-        <text x="340" y="120" fill="#a78bfa" text-anchor="middle">Salt bridge</text>
-        <text x="170" y="160" fill="#9ca3af" text-anchor="middle">Ox: Zn → Zn²⁺ + 2e⁻</text>
-        <text x="510" y="160" fill="#9ca3af" text-anchor="middle">Red: 2Ag⁺ + 2e⁻ → 2Ag</text>
-      </svg>
-      <ul>
-        <li><strong>Anode (−):</strong> Zn oxidizes.</li>
-        <li><strong>Cathode (+):</strong> Ag⁺ reduces to Ag.</li>
-        <li><strong>Carriers:</strong> electrons in the wire; ions via salt bridge.</li>
-      </ul>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Electrolysis: Cu²⁺ + 2e⁻ → Cu</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <p>Cell: <code>Zn(s) | Zn²⁺(aq) || Ag⁺(aq) | Ag(s)</code>. The Zn electrode is negative (anode). Electrons travel through the external circuit; ions carry charge through the salt bridge. Anode: Zn → Zn²⁺ + 2e⁻; Cathode: 2Ag⁺ + 2e⁻ → 2Ag.</p>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Equivalent mass of Cu = 63.5/2 = 31.75 g. Time = 30 × 60 = 1800 seconds. W = (31.75 × 2 × 1800)/96500 = 114300/96500 = 1.185 g. Therefore, 1.185 g of copper will be deposited.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Identify which half-reaction has the more positive E° as the cathode (reduction).</li>
-        <li>Write balanced half-reactions with electrons and then sum to get the overall reaction.</li>
-        <li>Mark electron flow from anode (−) to cathode (+) and show ions moving through the salt bridge.</li>
-        <li>Use the conventional cell notation: Anode | Anode solution || Cathode solution | Cathode.</li>
+        <li>Calculate equivalent mass = atomic mass/valency</li>
+<li>Convert time to seconds</li>
+<li>Use W = (E × I × t)/96500</li>
+<li>Check units (grams)</li>
+<li>Verify with stoichiometry</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        W = (E × I × t)/96500; E = atomic mass/valency; 1 Faraday = 96500 C
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>
 </html>
-
-

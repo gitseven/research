@@ -3,50 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 9 Problem 9.5 — Oxidation Numbers in Coordination Entities</title>
+  <title>Ch 9 Problem 5 — Bonding in Coordination Compounds</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
-    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
-    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Coordination Compounds · Problem 9.5</h1>
+    <h1>Chapter 9 · Problem 5</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>Specify the oxidation numbers of the metals in the following coordination entities: (i) [Co(H₂O)(CN)(en)₂]²⁺ (ii) [CoBr₂(en)₂]⁺ (iii) [PtCl₄]²⁻ (iv) K₃[Fe(CN)₆] (v) [Cr(NH₃)₅Cl]²⁺</p>
+      <h2>Question</h2>
+      <p>Explain the bonding in coordination compounds using valence bond theory with reference to [Ni(CN)₄]²⁻.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Bonding in Coordination Compounds</h2>
+      Valence bond theory explains bonding in coordination compounds by considering hybridization of metal orbitals. The type of hybridization depends on the coordination number and geometry. For square planar complexes like [Ni(CN)₄]²⁻, the metal uses dsp² hybridization. The hybrid orbitals overlap with ligand orbitals to form coordinate bonds.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Counting Charges with Neutral/Anionic Ligands</h2>
-      <p>Oxidation number is determined by balancing the overall charge with known ligand charges. Neutral ligands such as NH₃, H₂O, en, CO carry zero charge; anionic ligands such as Cl⁻, Br⁻, CN⁻, OH⁻ carry −1 (unless otherwise noted). For a complex cation/anions, sum of metal oxidation state and ligand charges equals the ion’s overall charge. For salts, include counter‑ions as needed to infer the complex ion’s charge before solving for the metal oxidation state.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">[Ni(CN)₄]²⁻: dsp² hybridization</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <div class="formula">(i) [Co(H₂O)(CN)(en)₂]²⁺: x + (0 − 1 + 0 + 0) = +2 → x = +3</div>
-      <div class="formula">(ii) [CoBr₂(en)₂]⁺: x + (−1 − 1 + 0 + 0) = +1 → x = +3</div>
-      <div class="formula">(iii) [PtCl₄]²⁻: x + 4(−1) = −2 → x = +2</div>
-      <div class="formula">(iv) K₃[Fe(CN)₆]: complex ion charge = −3, so x + 6(−1) = −3 → x = +3</div>
-      <div class="formula">(v) [Cr(NH₃)₅Cl]²⁺: x + (0×5) + (−1) = +2 → x = +3</div>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>For [Ni(CN)₄]²⁻: Ni²⁺ has d⁸ configuration. To form square planar geometry, Ni²⁺ uses dsp² hybridization (one d, one s, two p orbitals). The four hybrid orbitals point towards the corners of a square and overlap with CN⁻ orbitals to form four coordinate bonds. This explains the square planar geometry and the formation of coordinate bonds.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Assign 0 to NH₃, H₂O, en; −1 to Cl⁻, Br⁻, CN⁻.</li>
-        <li>Sum ligand charges with metal oxidation to match overall ion charge.</li>
-        <li>For salts, deduce complex ion charge from counter‑ions first.</li>
+        <li>Identify the geometry and hybridization</li>
+<li>Write the electronic configuration</li>
+<li>Explain orbital overlap</li>
+<li>Connect hybridization to geometry</li>
+<li>Mention coordinate bond formation</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        Square planar: dsp² hybridization; Coordinate bonds by orbital overlap
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 9</p>
     </div>
   </div>
 </body>
 </html>
-
-

@@ -3,45 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 4 Problem 4.3 — Order from Rate Law r = k[A]^n[B]^m</title>
+  <title>Ch 4 Problem 3 — Integrated Rate Law</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
-    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
-    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chemical Kinetics · Problem 4.3</h1>
+    <h1>Chapter 4 · Problem 3</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>For a reaction, A + B → Product; the rate law is r = k[A]^n[B]^m. Write the order of the reaction.</p>
+      <h2>Question</h2>
+      <p>For a first-order reaction A → B, if the initial concentration of A is 0.1 M and after 100 seconds it becomes 0.05 M, calculate the rate constant.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Integrated Rate Law</h2>
+      For a first-order reaction A → B, the integrated rate law is ln([A]₀/[A]ₜ) = kt, where [A]₀ is initial concentration, [A]ₜ is concentration at time t, k is rate constant, and t is time. The half-life of a first-order reaction is t₁/₂ = 0.693/k and is independent of initial concentration.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Molecularity vs Order, Overall Order</h2>
-      <p>The <em>order</em> of a reaction is an empirical quantity derived from the rate law, indicating how the instantaneous rate depends on reactant concentrations. For a general rate law r = k[A]^n[B]^m..., the <em>overall order</em> is the sum of exponents n + m + ..., while the <em>partial orders</em> are n with respect to A and m with respect to B. These exponents need not be integers and must be determined experimentally (e.g., via initial rates or isolation method), as they reflect the mechanism’s rate-determining step and may differ from stoichiometric coefficients. This contrasts with <em>molecularity</em>, a theoretical count of molecules involved in a single elementary event, which is inherently an integer and not directly measurable for complex reactions. Knowledge of orders guides integrated rate law selection (first order: ln[A] vs t linear; second order: 1/[A] vs t; zero order: [A] vs t) and informs half-life behavior and sensitivity to concentration changes. When catalysts, inhibitors, or complex formation are present, apparent orders can shift with conditions. Thus, when a rate law is provided, computing the overall order is straightforward: sum the concentration exponents. This quantity provides a compact descriptor of kinetic dependence and is essential for comparing and categorising reaction kinetics across systems.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">First-order: A → B</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <div class="formula">Order = n + m</div>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Using the integrated rate law for first-order reaction: ln([A]₀/[A]ₜ) = kt. Given [A]₀ = 0.1 M, [A]ₜ = 0.05 M, t = 100 s. ln(0.1/0.05) = k × 100. ln(2) = 100k. 0.693 = 100k. Therefore k = 0.693/100 = 0.00693 s⁻¹.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Sum the exponents of all concentration terms present in the rate law.</li>
-        <li>Do not use stoichiometric coefficients unless the reaction is elementary and stated as such.</li>
-        <li>Remember that orders may be fractional or zero; report the sum as given.</li>
+        <li>Use ln([A]₀/[A]ₜ) = kt for first-order</li>
+<li>Calculate the ratio [A]₀/[A]ₜ</li>
+<li>Take natural logarithm</li>
+<li>Solve for k</li>
+<li>Check units (s⁻¹ for first-order)</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        First-order: ln([A]₀/[A]ₜ) = kt; Half-life: t₁/₂ = 0.693/k
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 4</p>
     </div>
   </div>
 </body>
 </html>
-
-

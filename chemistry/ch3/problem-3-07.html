@@ -3,50 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 3 Problem 3.7 — Conductivity and Molar Conductivity</title>
+  <title>Ch 3 Problem 7 — Corrosion and Prevention</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
     h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
     h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
-    .formula { background:#f8fafc; border:1px solid #e5e7eb; padding:8px 10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    svg { max-width:100%; height:auto; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 3 · Problem 3.7</h1>
+    <h1>Chapter 3 · Problem 7</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>Define conductivity and molar conductivity for the solution of an electrolyte. Discuss their variation with concentration.</p>
+      <h2>Question</h2>
+      <p>Explain the mechanism of rusting of iron and suggest two methods to prevent it.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Corrosion and Prevention</h2>
+      Rusting is an electrochemical process where iron acts as anode and gets oxidized to Fe²⁺, while oxygen acts as cathode and gets reduced to OH⁻. The overall reaction is 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃. Prevention methods include galvanizing, painting, cathodic protection, and alloying. The process requires both oxygen and water.
     </div>
 
     <div class="panel">
-      <h2>Background Concept</h2>
-      <p>Electrical conduction in electrolyte solutions arises from the motion of ions under an applied electric field. The <em>conductivity</em> κ (S cm⁻¹) is the conductance of a solution slab of 1 cm length and 1 cm² cross-sectional area and depends on both the number density of charge carriers and their mobilities. To compare electrolytes independent of concentration and cell geometry, chemists use the <em>molar conductivity</em> Λ<sub>m</sub> (S cm² mol⁻¹), defined as κ multiplied by the volume (in cm³) that contains one mole of electrolyte: Λ<sub>m</sub> = κ·(1000/C), where C is the molar concentration (mol L⁻¹). For <strong>strong electrolytes</strong> (fully dissociated), Λ<sub>m</sub> increases moderately with dilution because inter-ionic interactions (ion–ion attraction, electrophoretic and relaxation effects) diminish, allowing ions to move more freely. However, even at moderate concentrations, deviations from ideality persist and can be analysed with Kohlrausch’s law of independent migration at infinite dilution. For <strong>weak electrolytes</strong>, dilution increases both the mobility and the <em>degree of dissociation</em> (α), often causing a steep rise in Λ<sub>m</sub> as C decreases; in the limit of infinite dilution, Λ<sub>m</sub> approaches Λ<sub>m</sub>⁰, the sum of limiting ionic conductivities. These trends underpin conductometric methods to determine dissociation constants (via Ostwald’s dilution law), equivalence points in titrations, and ion transport properties. Accurate measurements require calibration of the cell constant and correction for temperature, since ionic mobility and solvent viscosity are temperature-dependent.</p>
-      <div class="formula">Λ<sub>m</sub> = κ · (1000 / C)</div>
-      <svg viewBox="0 0 640 220" role="img" aria-label="Conductivity vs concentration">
-        <text x="320" y="20" fill="#9ca3af" text-anchor="middle">Molar conductivity vs concentration</text>
-        <line x1="60" y1="180" x2="600" y2="180" stroke="#1f2937" />
-        <line x1="60" y1="40" x2="60" y2="180" stroke="#1f2937" />
-        <text x="40" y="50" fill="#9ca3af" transform="rotate(-90 40,50)">Λm</text>
-        <text x="600" y="200" fill="#9ca3af">C</text>
-        <path d="M60 120 Q 200 140 340 160 T 600 170" fill="none" stroke="#38bdf8" stroke-width="3" />
-        <path d="M60 80 Q 200 90 340 110 T 600 150" fill="none" stroke="#a78bfa" stroke-width="3" />
-        <text x="480" y="120" fill="#38bdf8">Strong electrolyte</text>
-        <text x="480" y="90" fill="#a78bfa">Weak electrolyte</text>
-      </svg>
-      <p>Strong electrolytes: Λ<sub>m</sub> increases moderately upon dilution due to decreased inter-ionic interactions. Weak electrolytes: Λ<sub>m</sub> increases sharply due to enhanced dissociation.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Iron Rusting: Fe + O₂ + H₂O → Fe(OH)₃</text></svg>
+    </div>
+
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>Mechanism: Anode: Fe → Fe²⁺ + 2e⁻. Cathode: O₂ + 2H₂O + 4e⁻ → 4OH⁻. Overall: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃ (rust). Prevention methods: (1) Galvanizing: Coating with zinc, (2) Painting: Creating a barrier to oxygen and water, (3) Cathodic protection: Connecting to a more reactive metal, (4) Alloying: Making stainless steel.</p>
     </div>
 
     <div class="panel">
-      <h2>Answer</h2>
-      <p>Conductivity is S cm⁻¹ of 1 cm pathlength, 1 cm² area. Molar conductivity Λ<sub>m</sub> = κ × (1000/C). Λ<sub>m</sub> rises with dilution; sharply for weak electrolytes, moderately for strong electrolytes.</p>
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Write electrochemical half-reactions</li>
+<li>Identify anode and cathode</li>
+<li>Explain the role of oxygen and water</li>
+<li>Suggest practical prevention methods</li>
+<li>Consider cost and effectiveness</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        Anode: Fe → Fe²⁺ + 2e⁻; Cathode: O₂ + 2H₂O + 4e⁻ → 4OH⁻; Overall: 4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 3</p>
     </div>
   </div>
 </body>
 </html>
-
-

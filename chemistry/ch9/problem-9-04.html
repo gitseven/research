@@ -3,48 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 9 Problem 9.4 — Unidentate, Didentate, Ambidentate Ligands</title>
+  <title>Ch 9 Problem 4 — Crystal Field Theory</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
-    h1 { margin:0 0 8px; font-size:26px; color:#1f2937; }
-    h2 { margin:18px 0 8px; font-size:20px; color:#374151; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
     .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
     .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .chemistry-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
     ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+    .highlight { background:#fef3c7; padding:2px 4px; border-radius:4px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Coordination Compounds · Problem 9.4</h1>
+    <h1>Chapter 9 · Problem 4</h1>
     <div class="panel q">
-      <h2>Original Question</h2>
-      <p>What is meant by unidentate, didentate and ambidentate ligands? Give two examples for each.</p>
+      <h2>Question</h2>
+      <p>Explain crystal field splitting in octahedral complexes and calculate CFSE for [Fe(CN)₆]³⁻.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Crystal Field Theory</h2>
+      Crystal field theory explains the electronic structure and properties of coordination compounds. In octahedral complexes, the d orbitals split into two sets: t₂g (lower energy) and eg (higher energy). The energy difference is called crystal field splitting energy (Δo). CFSE = (0.4n₁ - 0.6n₂)Δo, where n₁ is electrons in t₂g and n₂ is electrons in eg.
     </div>
 
     <div class="panel">
-      <h2>Background Concept — Denticity and Ambidentate Binding</h2>
-      <p>Denticity refers to the number of donor atoms of a ligand that simultaneously bind to a metal center. Unidentate ligands bind through a single donor atom (e.g., NH₃, H₂O, Cl⁻). Didentate ligands use two donor atoms to form a chelate ring with the metal (e.g., ethane‑1,2‑diamine “en”, oxalate C₂O₄²⁻). Ambidentate ligands possess two (or more) potential donor atoms but bind through only one at a time; classic examples include nitrito (NO₂⁻) which can bind via N (nitro) or O (nitrito‑O), and thiocyanato (SCN⁻) which can bind via S (thiocyanato‑S) or N (isothiocyanato‑N). Ambidentate binding leads to linkage isomerism when the point of attachment changes.</p>
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 150" class="chemistry-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="12" fill="#374151">Octahedral d orbital splitting</text></svg>
     </div>
 
-    <div class="panel">
-      <h2>Answer</h2>
-      <ul>
-        <li><strong>Unidentate:</strong> NH₃ (ammine), H₂O (aqua); Cl⁻ (chlorido), CN⁻ (cyanido)</li>
-        <li><strong>Didentate:</strong> Ethane‑1,2‑diamine (en), Oxalate (C₂O₄²⁻)</li>
-        <li><strong>Ambidentate:</strong> NO₂⁻ (nitro vs nitrito‑O), SCN⁻ (thiocyanato‑S vs isothiocyanato‑N)</li>
-      </ul>
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p>In octahedral complexes, d orbitals split into t₂g (dxy, dxz, dyz) and eg (dx²-y², dz²). For [Fe(CN)₆]³⁻: Fe³⁺ has d⁵ configuration. In strong field (CN⁻), all 5 electrons pair up in t₂g orbitals: t₂g⁵ eg⁰. CFSE = (0.4×5 - 0.6×0)Δo = 2.0Δo. This is a low-spin complex with maximum CFSE due to strong field ligand CN⁻.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Define each term concisely and list exactly two examples.</li>
-        <li>For ambidentate, mention the alternative donor atoms and linkage isomerism.</li>
+        <li>Identify the d orbital splitting</li>
+<li>Determine electron configuration</li>
+<li>Apply CFSE formula</li>
+<li>Consider field strength of ligand</li>
+<li>Check for high-spin vs low-spin</li>
       </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        CFSE = (0.4n₁ - 0.6n₂)Δo; t₂g (lower), eg (higher)
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Expected 12th Board 2026 - Chapter 9</p>
     </div>
   </div>
 </body>
 </html>
-
-
