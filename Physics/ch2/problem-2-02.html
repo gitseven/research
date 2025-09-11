@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 1 Problem 1 — Scientific Notation</title>
+  <title>Ch 2 Problem 2 — Uniform Acceleration</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -24,48 +24,48 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 1 · Problem 1</h1>
+    <h1>Chapter 2 · Problem 2</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>Express the following in scientific notation: (a) 0.000000000154 m (radius of hydrogen atom) (b) 0.000000000000000000000000000000910938356 kg (mass of electron) (c) 299792458 m/s (speed of light)</p>
+      <p>A car accelerates from rest at 2 m/s² for 10 seconds, then moves at constant velocity for 5 seconds. Calculate total distance traveled.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Scientific Notation</h2>
-      Scientific notation is essential for expressing very large or very small numbers in physics. It follows the format a × 10ⁿ where 1 ≤ |a| < 10 and n is an integer. This notation makes calculations easier and reduces errors when dealing with extreme values common in physics.
+      <h2>Background Concept — Uniform Acceleration</h2>
+      Uniform acceleration means constant acceleration. Use kinematic equations: v = v₀ + at, x = x₀ + v₀t + ½at². For constant velocity, x = vt. Break motion into phases with different accelerations.
     </div>
 
     <div class="panel">
       <h2>Visualization</h2>
-      <svg viewBox="0 0 400 150" class="physics-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="14" fill="#374151">Scientific Notation: a × 10ⁿ</text></svg>
+      <svg viewBox="0 0 400 150" class="physics-diagram"><rect x="50" y="50" width="300" height="50" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/><text x="200" y="80" text-anchor="middle" font-size="14" fill="#374151">Acceleration then Constant Velocity</text></svg>
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>(a) 1.54 × 10⁻¹⁰ m (3 significant figures) (b) 9.10938356 × 10⁻³¹ kg (9 significant figures) (c) 2.99792458 × 10⁸ m/s (9 significant figures)</p>
+      <p>Phase 1: v = 0 + (2)(10) = 20 m/s, x₁ = 0 + 0 + ½(2)(10)² = 100 m. Phase 2: x₂ = (20)(5) = 100 m. Total distance = 100 + 100 = 200 m.</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Move decimal point to get number between 1 and 10</li>
-<li>Count places moved for exponent</li>
-<li>Left movement = positive exponent</li>
-<li>Right movement = negative exponent</li>
-<li>Preserve significant figures</li>
+        <li>Break motion into phases</li>
+<li>Use appropriate equations for each phase</li>
+<li>Final velocity of one phase = initial velocity of next</li>
+<li>Add distances from each phase</li>
+<li>Draw velocity-time graph if helpful</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        a × 10ⁿ where 1 ≤ |a| < 10
+        v = v₀ + at, x = x₀ + v₀t + ½at², x = vt (constant velocity)
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 1</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 2</p>
     </div>
   </div>
 </body>
