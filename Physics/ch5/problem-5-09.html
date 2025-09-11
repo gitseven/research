@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 2 Problem 1 — Projectile Motion</title>
+  <title>Ch 5 Problem 9 — Parallel Axis Theorem</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 2 · Problem 1</h1>
+    <h1>Chapter 5 · Problem 9</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>A ball is thrown horizontally from a height of 20 m with an initial velocity of 10 m/s. Calculate: (a) time to hit ground, (b) horizontal distance, (c) velocity just before hitting ground.</p>
+      <p>A rod of mass 1 kg and length 2 m rotates about an axis through one end. Find moment of inertia. (I_cm = 1/12 mL²)</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Projectile Motion</h2>
-      Projectile motion involves two-dimensional motion under gravity. Horizontal and vertical components are independent. Horizontal velocity remains constant, while vertical velocity changes due to gravity. The trajectory is parabolic.
+      <h2>Background Concept — Parallel Axis Theorem</h2>
+      Parallel axis theorem: I = I_cm + Md². It relates moment of inertia about any axis to that about center of mass. The distance d is between the two parallel axes. This theorem is essential for calculating moments of inertia.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>(a) Using y = y₀ + v₀ᵧt + ½gt²: 0 = 20 + 0 + ½(9.8)t² → t = 2.02 s. (b) x = v₀ₓt = (10)(2.02) = 20.2 m. (c) vₓ = 10 m/s, vᵧ = gt = 19.8 m/s, v = √(vₓ² + vᵧ²) = 22.2 m/s.</p>
+      <p>I_cm = (1/12)mL² = (1/12)(1)(2)² = 1/3 kg·m². Distance from center to end = L/2 = 1 m. I = I_cm + Md² = 1/3 + (1)(1)² = 1/3 + 1 = 4/3 kg·m²</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Draw clear diagram with coordinate system</li>
-<li>Separate horizontal and vertical motion</li>
-<li>Use kinematic equations for each direction</li>
-<li>Time is same for both directions</li>
-<li>Check units and reasonableness</li>
+        <li>Calculate I_cm first</li>
+<li>Find distance between axes</li>
+<li>Use I = I_cm + Md²</li>
+<li>Check units (kg·m²)</li>
+<li>Verify with direct calculation</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        x = v₀ₓt, y = y₀ + v₀ᵧt + ½gt², vᵧ = v₀ᵧ + gt
+        I = I_cm + Md²
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 2</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 5</p>
     </div>
   </div>
 </body>

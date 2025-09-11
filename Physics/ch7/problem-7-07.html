@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 2 Problem 1 — Projectile Motion</title>
+  <title>Ch 7 Problem 7 — Bernoulli's Principle</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 2 · Problem 1</h1>
+    <h1>Chapter 7 · Problem 7</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>A ball is thrown horizontally from a height of 20 m with an initial velocity of 10 m/s. Calculate: (a) time to hit ground, (b) horizontal distance, (c) velocity just before hitting ground.</p>
+      <p>Water flows through a pipe with velocity 2 m/s at point A and 4 m/s at point B. If pressure at A is 2×10⁵ Pa, find pressure at B. (ρ = 1000 kg/m³)</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Projectile Motion</h2>
-      Projectile motion involves two-dimensional motion under gravity. Horizontal and vertical components are independent. Horizontal velocity remains constant, while vertical velocity changes due to gravity. The trajectory is parabolic.
+      <h2>Background Concept — Bernoulli's Principle</h2>
+      Bernoulli's principle states that total energy (pressure + kinetic + potential) is constant along streamline. P + ½ρv² + ρgh = constant. For horizontal flow, P + ½ρv² = constant. Higher velocity means lower pressure.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>(a) Using y = y₀ + v₀ᵧt + ½gt²: 0 = 20 + 0 + ½(9.8)t² → t = 2.02 s. (b) x = v₀ₓt = (10)(2.02) = 20.2 m. (c) vₓ = 10 m/s, vᵧ = gt = 19.8 m/s, v = √(vₓ² + vᵧ²) = 22.2 m/s.</p>
+      <p>P_A + ½ρv_A² = P_B + ½ρv_B². 2×10⁵ + ½(1000)(2)² = P_B + ½(1000)(4)². 2×10⁵ + 2000 = P_B + 8000. P_B = 2×10⁵ + 2000 - 8000 = 1.94×10⁵ Pa</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Draw clear diagram with coordinate system</li>
-<li>Separate horizontal and vertical motion</li>
-<li>Use kinematic equations for each direction</li>
-<li>Time is same for both directions</li>
-<li>Check units and reasonableness</li>
+        <li>Use P + ½ρv² = constant</li>
+<li>Apply to both points</li>
+<li>Solve for unknown pressure</li>
+<li>Check units (Pa)</li>
+<li>Verify pressure decreases</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        x = v₀ₓt, y = y₀ + v₀ᵧt + ½gt², vᵧ = v₀ᵧ + gt
+        P + ½ρv² + ρgh = constant
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 2</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 7</p>
     </div>
   </div>
 </body>

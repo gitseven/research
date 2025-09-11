@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 2 Problem 1 — Projectile Motion</title>
+  <title>Ch 2 Problem 6 — Motion Under Gravity</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,37 +22,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 2 · Problem 1</h1>
+    <h1>Chapter 2 · Problem 6</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>A ball is thrown horizontally from a height of 20 m with an initial velocity of 10 m/s. Calculate: (a) time to hit ground, (b) horizontal distance, (c) velocity just before hitting ground.</p>
+      <p>A ball is thrown upward with velocity 20 m/s. Find: (a) maximum height, (b) time to reach maximum height, (c) total time in air.</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Projectile Motion</h2>
-      Projectile motion involves two-dimensional motion under gravity. Horizontal and vertical components are independent. Horizontal velocity remains constant, while vertical velocity changes due to gravity. The trajectory is parabolic.
+      <h2>Background Concept — Motion Under Gravity</h2>
+      Motion under gravity involves constant acceleration g = 9.8 m/s² downward. At maximum height, velocity becomes zero. Time to go up equals time to come down. Use v = v₀ + at and h = v₀t + ½at².
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>(a) Using y = y₀ + v₀ᵧt + ½gt²: 0 = 20 + 0 + ½(9.8)t² → t = 2.02 s. (b) x = v₀ₓt = (10)(2.02) = 20.2 m. (c) vₓ = 10 m/s, vᵧ = gt = 19.8 m/s, v = √(vₓ² + vᵧ²) = 22.2 m/s.</p>
+      <p>(a) At max height, v = 0. Using v² = v₀² + 2ah: 0 = 20² + 2(-9.8)h → h = 20.4 m. (b) Using v = v₀ + at: 0 = 20 + (-9.8)t → t = 2.04 s. (c) Total time = 2 × 2.04 = 4.08 s</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Draw clear diagram with coordinate system</li>
-<li>Separate horizontal and vertical motion</li>
-<li>Use kinematic equations for each direction</li>
-<li>Time is same for both directions</li>
-<li>Check units and reasonableness</li>
+        <li>At max height, v = 0</li>
+<li>Use v² = v₀² + 2ah for height</li>
+<li>Apply v = v₀ + at for time</li>
+<li>Total time = 2 × time to max height</li>
+<li>Check with h = v₀t - ½gt²</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        x = v₀ₓt, y = y₀ + v₀ᵧt + ½gt², vᵧ = v₀ᵧ + gt
+        h_max = v₀²/(2g), t_up = v₀/g, t_total = 2v₀/g
       </div>
     </div>
 

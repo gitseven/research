@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ch 2 Problem 1 — Projectile Motion</title>
+  <title>Ch 7 Problem 10 — Heat Transfer</title>
   <style>
     body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
     .container { max-width: 960px; margin:0 auto; padding:24px; }
@@ -22,43 +22,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>Chapter 2 · Problem 1</h1>
+    <h1>Chapter 7 · Problem 10</h1>
     <div class="panel q">
       <h2>Question</h2>
-      <p>A ball is thrown horizontally from a height of 20 m with an initial velocity of 10 m/s. Calculate: (a) time to hit ground, (b) horizontal distance, (c) velocity just before hitting ground.</p>
+      <p>A 2 kg iron block at 100°C is dropped into 5 kg water at 20°C. Find final temperature. (c_iron = 450 J/kg⋅K, c_water = 4200 J/kg⋅K)</p>
     </div>
 
     <div class="concept-section">
-      <h2>Background Concept — Projectile Motion</h2>
-      Projectile motion involves two-dimensional motion under gravity. Horizontal and vertical components are independent. Horizontal velocity remains constant, while vertical velocity changes due to gravity. The trajectory is parabolic.
+      <h2>Background Concept — Heat Transfer</h2>
+      Heat transfer occurs until thermal equilibrium. Heat lost by hot object = Heat gained by cold object. Q = mcΔT where m is mass, c is specific heat, and ΔT is temperature change. Conservation of energy applies.
     </div>
 
     <div class="panel solution">
       <h2>Solution</h2>
-      <p>(a) Using y = y₀ + v₀ᵧt + ½gt²: 0 = 20 + 0 + ½(9.8)t² → t = 2.02 s. (b) x = v₀ₓt = (10)(2.02) = 20.2 m. (c) vₓ = 10 m/s, vᵧ = gt = 19.8 m/s, v = √(vₓ² + vᵧ²) = 22.2 m/s.</p>
+      <p>Heat lost by iron = Heat gained by water. m₁c₁(T₁ - T_f) = m₂c₂(T_f - T₂). 2×450×(100 - T_f) = 5×4200×(T_f - 20). 900×(100 - T_f) = 21000×(T_f - 20). 90000 - 900T_f = 21000T_f - 420000. 510000 = 21900T_f. T_f = 23.3°C</p>
     </div>
 
     <div class="panel">
       <h2>Tips to Solve</h2>
       <ul>
-        <li>Draw clear diagram with coordinate system</li>
-<li>Separate horizontal and vertical motion</li>
-<li>Use kinematic equations for each direction</li>
-<li>Time is same for both directions</li>
-<li>Check units and reasonableness</li>
+        <li>Apply heat conservation</li>
+<li>Use Q = mcΔT</li>
+<li>Set heat lost = heat gained</li>
+<li>Solve for final temperature</li>
+<li>Check units (°C)</li>
       </ul>
     </div>
 
     <div class="panel">
       <h2>Key Formulas</h2>
       <div class="formula">
-        x = v₀ₓt, y = y₀ + v₀ᵧt + ½gt², vᵧ = v₀ᵧ + gt
+        Q = mcΔT, Heat lost = Heat gained
       </div>
     </div>
 
     <div class="panel">
       <h2>Source</h2>
-      <p class="muted">Expected 12th Board 2026 - Chapter 2</p>
+      <p class="muted">Expected 12th Board 2026 - Chapter 7</p>
     </div>
   </div>
 </body>
