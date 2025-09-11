@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 1 Problem 1 — Physical World and Measurement</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .physics-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 1 · Problem 1</h1>
+    <div class="panel q">
+      <h2>Question</h2>
+      <p>Express the following measurements in scientific notation with appropriate significant figures: (a) 0.000000000154 m (b) 0.000000000000000000000000000000910938356 kg (c) 299792458 m/s</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Physical World and Measurement</h2>
+      <p>This problem involves fundamental concepts from Chapter 1: Physical World and Measurement. Understanding these concepts is crucial for solving physics problems systematically.</p>
+      
+      <div class="concept-section">
+        <h3>Measurement and Units</h3>
+        <p><strong>Measurement and Units:</strong> Physics is fundamentally about measuring physical quantities. The International System of Units (SI) provides seven base units: meter (m) for length, kilogram (kg) for mass, second (s) for time, ampere (A) for electric current, kelvin (K) for temperature, mole (mol) for amount of substance, and candela (cd) for luminous intensity. All other units are derived from these base units. For example, velocity is measured in m/s, acceleration in m/s², and force in kg⋅m/s² = newton (N). <br><br>
+        <strong>Dimensional Analysis:</strong> Every physical quantity has dimensions expressed in terms of fundamental quantities [M], [L], [T] for mass, length, and time respectively. Dimensional analysis helps verify equations and derive relationships between physical quantities. The principle of homogeneity states that both sides of an equation must have the same dimensions.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 200" class="physics-diagram">
+        <defs>
+          <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
+          </marker>
+        </defs>
+        <rect x="50" y="50" width="300" height="100" fill="#f3f4f6" stroke="#6b7280" stroke-width="2"/>
+        <text x="200" y="80" text-anchor="middle" font-size="14" fill="#374151">Measurement and Units</text>
+        <text x="200" y="100" text-anchor="middle" font-size="12" fill="#6b7280">Length (m), Mass (kg), Time (s)</text>
+        <text x="200" y="120" text-anchor="middle" font-size="12" fill="#6b7280">Dimensional Analysis: [M]ᵃ[L]ᵇ[T]ᶜ</text>
+        <line x1="100" y1="140" x2="300" y2="140" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="200" y="160" text-anchor="middle" font-size="12" fill="#3b82f6">Physical Quantities</text>
+      </svg>
+    </div>
+
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p><strong>(a) 0.000000000154 m</strong><br>
+      This is the radius of a hydrogen atom. In scientific notation: 1.54 × 10⁻¹⁰ m<br>
+      <em>Significant figures:</em> 3 (1, 5, 4)</p>
+      
+      <p><strong>(b) 0.000000000000000000000000000000910938356 kg</strong><br>
+      This is the mass of an electron. In scientific notation: 9.10938356 × 10⁻³¹ kg<br>
+      <em>Significant figures:</em> 9 (all digits are significant)</p>
+      
+      <p><strong>(c) 299792458 m/s</strong><br>
+      This is the speed of light in vacuum. In scientific notation: 2.99792458 × 10⁸ m/s<br>
+      <em>Significant figures:</em> 9 (all digits are significant)</p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Always check units and dimensions - they must be consistent throughout</li>
+        <li>Use significant figures rules: multiplication/division uses least sig figs, addition/subtraction uses least decimal places</li>
+        <li>Convert all quantities to SI units before calculations</li>
+        <li>Estimate answers to check if they're reasonable</li>
+        <li>Use dimensional analysis to verify derived formulas</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        Dimensional Analysis: [M]ᵃ[L]ᵇ[T]ᶜ
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Sample problem demonstrating Physics problem format</p>
+    </div>
+  </div>
+</body>
+</html>

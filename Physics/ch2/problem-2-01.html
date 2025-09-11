@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ch 2 Problem 1 — Kinematics</title>
+  <style>
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#ffffff; color:#111827; line-height:1.55; }
+    .container { max-width: 960px; margin:0 auto; padding:24px; }
+    h1 { margin:0 0 8px; font-size:26px; color:#38bdf8; }
+    h2 { margin:18px 0 8px; font-size:20px; color:#a78bfa; }
+    h3 { margin:16px 0 6px; font-size:18px; color:#7c3aed; }
+    .panel { background:#ffffff; border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0; }
+    .q { border-left:3px solid #f59e0b; padding-left:10px; }
+    .solution { border-left:3px solid #10b981; padding-left:10px; background:#f0fdf4; }
+    .concept-section { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px; margin:12px 0; }
+    .physics-diagram { max-width:100%; height:auto; display:block; margin:12px auto; border:1px solid #e5e7eb; border-radius:8px; background:#fafafa; }
+    code { background:#f8fafc; border:1px solid #e5e7eb; padding:2px 6px; border-radius:6px; font-family: 'Courier New', monospace; }
+    .muted { color:#374151; }
+    ul { margin:8px 0 8px 20px; }
+    li { margin:4px 0; }
+    .formula { background:#fef3c7; border:1px solid #f59e0b; border-radius:6px; padding:8px; margin:8px 0; text-align:center; font-family: 'Courier New', monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chapter 2 · Problem 1</h1>
+    <div class="panel q">
+      <h2>Question</h2>
+      <p>A ball is thrown horizontally from a height of 20 m with an initial velocity of 10 m/s. Calculate: (a) the time it takes to hit the ground, (b) the horizontal distance traveled, and (c) the velocity just before hitting the ground.</p>
+    </div>
+
+    <div class="concept-section">
+      <h2>Background Concept — Kinematics</h2>
+      <p>This problem involves fundamental concepts from Chapter 2: Kinematics. Understanding these concepts is crucial for solving physics problems systematically.</p>
+      
+      <div class="concept-section">
+        <h3>Kinematics</h3>
+        <p><strong>Kinematics:</strong> The branch of mechanics that describes motion without considering its causes. Key concepts include displacement (Δx = x_f - x_i), velocity (v = dx/dt), and acceleration (a = dv/dt). For constant acceleration, we use the kinematic equations: v = v₀ + at, x = x₀ + v₀t + ½at², v² = v₀² + 2a(x-x₀), and x = x₀ + ½(v₀ + v)t. <br><br>
+        <strong>Projectile Motion:</strong> Two-dimensional motion under gravity where horizontal and vertical components are independent. Horizontal velocity remains constant (v_x = v₀cosθ), while vertical velocity changes due to gravity (v_y = v₀sinθ - gt). The trajectory is parabolic, and the range R = (v₀²sin2θ)/g.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Visualization</h2>
+      <svg viewBox="0 0 400 250" class="physics-diagram">
+        <defs>
+          <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+          </marker>
+        </defs>
+        <line x1="50" y1="200" x2="350" y2="200" stroke="#374151" stroke-width="2"/>
+        <circle cx="100" cy="200" r="8" fill="#ef4444"/>
+        <path d="M 100 200 Q 200 100 300 200" stroke="#ef4444" stroke-width="3" fill="none"/>
+        <text x="100" y="190" text-anchor="middle" font-size="12" fill="#ef4444">v₀ = 10 m/s</text>
+        <text x="200" y="90" text-anchor="middle" font-size="12" fill="#ef4444">Projectile Path</text>
+        <text x="300" y="190" text-anchor="middle" font-size="12" fill="#ef4444">Range</text>
+        <line x1="100" y1="200" x2="120" y2="180" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead2)"/>
+        <text x="130" y="175" font-size="10" fill="#ef4444">θ = 0°</text>
+        <text x="50" y="220" font-size="10" fill="#374151">Ground Level</text>
+        <text x="100" y="220" font-size="10" fill="#374151">h = 20m</text>
+      </svg>
+    </div>
+
+    <div class="panel solution">
+      <h2>Solution</h2>
+      <p><strong>Given:</strong> h = 20 m, v₀ₓ = 10 m/s, v₀ᵧ = 0 m/s, g = 9.8 m/s²</p>
+      
+      <p><strong>(a) Time to hit the ground:</strong><br>
+      Using vertical motion: y = y₀ + v₀ᵧt + ½gt²<br>
+      0 = 20 + 0 + ½(9.8)t²<br>
+      t² = 40/9.8 = 4.08<br>
+      <strong>t = 2.02 s</strong></p>
+      
+      <p><strong>(b) Horizontal distance:</strong><br>
+      Using horizontal motion: x = v₀ₓt<br>
+      x = (10 m/s)(2.02 s)<br>
+      <strong>x = 20.2 m</strong></p>
+      
+      <p><strong>(c) Velocity just before hitting ground:</strong><br>
+      vₓ = v₀ₓ = 10 m/s (constant)<br>
+      vᵧ = v₀ᵧ + gt = 0 + (9.8)(2.02) = 19.8 m/s<br>
+      v = √(vₓ² + vᵧ²) = √(10² + 19.8²) = √(100 + 392.04)<br>
+      <strong>v = 22.2 m/s</strong></p>
+    </div>
+
+    <div class="panel">
+      <h2>Tips to Solve</h2>
+      <ul>
+        <li>Draw a clear diagram showing initial and final positions</li>
+        <li>Choose a coordinate system and stick to it consistently</li>
+        <li>List given quantities and what you need to find</li>
+        <li>Use the appropriate kinematic equation based on what's given</li>
+        <li>Check if acceleration is constant before using kinematic equations</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Key Formulas</h2>
+      <div class="formula">
+        v = v₀ + at, x = x₀ + v₀t + ½at², v² = v₀² + 2a(x-x₀)
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Source</h2>
+      <p class="muted">Sample problem demonstrating Physics problem format</p>
+    </div>
+  </div>
+</body>
+</html>
